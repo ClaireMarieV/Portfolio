@@ -2,20 +2,12 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import Picture from "../components/Picture.js";
+import TranslateRepeat from "../components/TranslateRepeat.js";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="container">
-      <div className="title">
-        <h2>Hello, I'm Claire Marie Vaney</h2>
-        <h1>THIS IS MY PORTFOLIO</h1>
-      </div>
-      <div className="month">
-        <h3>November 2020</h3>
-      </div>
-    </div>
-
+    <Picture picture="svg/title.svg" />
     <style jsx>{`
       .container {
         display: grid;
