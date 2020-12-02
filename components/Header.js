@@ -8,7 +8,7 @@ const Header = () => (
       <div className="img">
         <Link href="/">
           <a>
-            <Picture picture="logoDef.svg" />
+            <Picture picture="svg/logoDef.svg" />
           </a>
         </Link>
       </div>
@@ -22,9 +22,16 @@ const Header = () => (
             </Link>
           </li>
           <li>
+            <Link href="/about#skills">
+              <a>
+                <span>MY SKILLS</span>
+              </a>
+            </Link>
+          </li>
+          <li>
             <Link href="/projects">
               <a>
-                <span>PROJECTS</span>
+                <span>MY PROJECTS</span>
               </a>
             </Link>
           </li>
