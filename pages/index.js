@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import Picture from "../components/Picture.js";
-import TranslateRepeat from "../components/TranslateRepeat.js";
+import TranslateRight from "../components/TranslateRight.js";
 import Icon from "../components/Icon.js";
 import AnimatedText from "../components/AnimatedText.js";
 import AnimatedLetterBottom from "../components/AnimatedLetterBottom.js";
@@ -39,8 +39,8 @@ const IndexPage = () => (
       section {
         display: flex;
         justify-content: center;
-        width: 100vw;
-        height: 100vh;
+        // width: 100vw;
+        // height: 100vh;
       }
       #icons {
         display: flex;
