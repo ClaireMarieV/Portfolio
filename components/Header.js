@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Picture from "./Picture.js";
-import TranslateRepeat from "./TranslateRepeat.js";
 
 const Header = () => (
   <header>
