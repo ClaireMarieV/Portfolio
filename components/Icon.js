@@ -35,6 +35,7 @@ const Icon = ({ picture, title, className, id }) => (
       }
       .title h3 {
         font-size: 2.5rem;
+        font-weight: 600;
       }
 
       span {
