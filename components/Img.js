@@ -18,14 +18,12 @@ const Img = ({ children }) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 0.8 }}
-      style={{
-        zIndex: 1,
-        maxWidth: "43vw",
-      }}
+      transition={{ duration: 1 }}
       variants={{
-        visible: { top: 0 },
-        hidden: { top: -10 },
+        visible: { translateY: 0 },
+        hidden: {
+          translateY: 40,
+        },
       }}
     >
       {children}
