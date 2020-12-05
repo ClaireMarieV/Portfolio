@@ -1,71 +1,60 @@
 import React from "react";
 import Link from "next/link";
 import Picture from "./Picture.js";
+import TranslateRepeat from "./TranslateRepeat.js";
 
 const Header = () => (
   <header>
     <div className="header">
-      <div className="img">
+      <div className="name">
         <Link href="/">
           <a>
-            <Picture picture="svg/logoDef.svg" />
+            <h3>Claire Marie Vaney </h3>
           </a>
         </Link>
       </div>
-      <div>
-        <ul>
-          <li>
-            <Link href="/about">
-              <a>
-                <span>ABOUT ME</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about#skills">
-              <a>
-                <span>MY SKILLS</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects">
-              <a>
-                <span>MY PROJECTS</span>
-              </a>
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <Link href="/about">
+            <a>
+              <span>ABOUT</span>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about#skills">
+            <a>
+              <span>MY SKILLS</span>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/projects">
+            <a>
+              <span>MY PROJECT</span>
+            </a>
+          </Link>
+        </li>
+      </ul>
     </div>
 
     <style jsx>{`
-      .header a {
-        text-decoration: none;
-      }
-
       .header {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        margin: 2rem 2rem 4rem 2rem;
-        max-height: 50vh;
+        margin: 1rem 1rem 2rem 1rem;
       }
-      div {
-        align-self: self-end;
+      .header > .name,
+      .header > ul {
+        align-self: center;
       }
-      div {
+
+      ul {
         display: flex;
-        justify-content: flex-end;
+        justify-self: self-end;
       }
-      div > ul {
-        display: flex;
-        border-bottom: 1px solid;
-      }
-      div ul > li {
+      ul > li {
         margin: 1rem;
-      }
-      .img {
-        width: 8rem;
       }
       @media (max-width: 600px) {
         .header {
