@@ -68,17 +68,14 @@ const Layout = ({ children }) => (
           text-decoration: none;
         }
         h1 {
-          font-family: davis-sans, sans-serif;
-
+          font-family: josefin-sans, sans-serif;
           font-weight: 400;
-
           font-style: normal;
           font-size: 7rem;
           margin-bottom: 0.5rem;
         }
         h2 {
           font-family: gravesend-sans, sans-serif;
-          font-weight: 500;
           font-style: normal;
           font-size: 2rem;
         }
