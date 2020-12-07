@@ -18,13 +18,12 @@ const AnimatedLetterBottom = ({ letter }) => {
       initial="hidden"
       transition={{ duration: 1 }}
       variants={{
-        visible: { opacity: 1, translateY: 0 },
+        visible: { translateY: 0 },
         hidden: {
-          opacity: 0,
-          translateY: 100,
+          translateY: 50,
         },
       }}
-      style={{ margin: 20 }}
+      style={{ margin: 10 }}
     >
       {letter}
     </motion.span>
