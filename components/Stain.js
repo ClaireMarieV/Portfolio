@@ -3,20 +3,23 @@ import Link from "next/link";
 import { fromArticle } from "../lib/link";
 
 const Svg = ({ title, category, className, id, a }) => (
-  <div id="wrapper">
-    <svg id="stain" viewBox="0 0 1440 800" xmlns="http://www.codrops.com/">
-      <path
-        fill="#fb9fa4"
-        id="base"
-        d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,
+  <div class="wrapper">
+    <Link href={fromArticle({ category, title })}>
+      <a>
+        <svg id="stain" viewBox="0 0 1440 800">
+          <path
+            fill="#f9b9b9"
+            id="yellow"
+            d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,
               725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,
-              229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z;"
-      >
-        <animate
-          attributeName="d"
-          repeatCount="indefinite"
-          dur="4s"
-          values="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,
+              229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z;
+          "
+          >
+            <animate
+              attributeName="d"
+              repeatCount="indefinite"
+              dur="4s"
+              values="M 1041,450.4 C 1023,547.7 992.8,667.7 905.7,714.5 793.1,
                 775 639,728.7 524.5,671.8 453.3,636.4 382.2,575.4 360.2,499 329.7,
                 393 344.6,249.2 426,174.9 568.6,44.66 851.1,-8.71 1002,111.8 1091,182.7 1061,
                 338.6 1041,450.4 Z;M 1066,436 C 1051,543.8 976.5,664.5 873.6,700.1 761,739.1 636.4,
@@ -27,14 +30,12 @@ const Svg = ({ title, category, className, id, a }) => (
 
 
                 M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,
-                725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,
-                229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,
-                328.8 1066,436 Z"
-        />
-      </path>
-    </svg>
-    <Link href={fromArticle({ category, title })}>
-      <a>
+                  725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,
+                  229.2 462.5,160.5 589.5,57.34 815.4,42.24 952.4,131.7 1044,190.8 1081,328.8 1066,436 Z;"
+            />
+          </path>
+        </svg>
+
         <div className="title">
           <h3>{title}</h3>
           <h4>{category}</h4>
@@ -42,20 +43,26 @@ const Svg = ({ title, category, className, id, a }) => (
       </a>
     </Link>
     <style jsx>{`
-      #wrapper {
+      .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
+        align-self: auto;
+        height: auto;
+        padding-bottom: 1.2rem;
       }
       a {
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
       }
       .title {
+        position: absolute;
         z-index: 2;
       }
       .title h3 {
-        font-weight: bold;
+        font-size: 3rem;
       }
       svg {
         z-index: -1;

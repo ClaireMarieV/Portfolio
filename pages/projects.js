@@ -11,25 +11,22 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="content">
-      <Link href="/blog">
-        <a>
-          <Svg title="il était une fois" category="blog" />
-        </a>
-      </Link>
+      <Svg title="il était une fois" category="blog" />
+
+      <Svg title="haute couture" category="pantone" />
+
+      <Svg
+        title="childhood to young adults"
+        category="Psychologue&Psychothérapeute"
+      />
     </div>
     <style jsx>{`
       .content {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         align-self: auto;
         justify-self: center;
         margin: 2rem;
-      }
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
       }
     `}</style>
   </Layout>

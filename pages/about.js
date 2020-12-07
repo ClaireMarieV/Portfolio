@@ -34,11 +34,15 @@ const IndexPage = () => (
         </p>
       </TranslateRight>
       <TranslateLeft>
-        <Picture picture="svg/skills.svg" />
+        <div id="skills">
+          <h3>MY SKILLS</h3>
+          <h2>MY SKILLS</h2>
+        </div>
+        <h2></h2>
       </TranslateLeft>
     </div>
 
-    <div id="skills">
+    <div className="skills">
       <Icon picture="svg/responsiveBis.svg" title="RESPONSIVE" />
       <Icon picture="svg/computerBis.svg" title="WEB DEVELOPMENT" />
     </div>
@@ -52,7 +56,11 @@ const IndexPage = () => (
         grid-template-rows: repeat(2, minmax(0, 1fr));
         margin: 2rem;
       }
-
+      .name {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
       .img {
         max-width: 50vh;
       }
@@ -60,12 +68,23 @@ const IndexPage = () => (
       .face {
         box-shadow: -1px -1px 18px 2px rgba(0, 0, 0, 0.2);
       }
-      #skills {
-        display: flex;
-        justify-content: space-evenly;
+      #skills h2 {
+        color: #a9c4b1;
+        font-size: 6rem;
+        margin: 0;
+      }
+      #skills h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+        position: absolute;
       }
       .arrow {
         max-width: 57vh !important;
+      }
+      .skills {
+        display: flex;
+        justify-content: space-evenly;
       }
     `}</style>
   </Layout>

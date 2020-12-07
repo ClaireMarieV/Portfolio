@@ -13,17 +13,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="index">
       <section className="title">
-        <h1>
-          <AnimatedText letter="P" />
-          <AnimatedLetterMiddle letter="O" />
-          <AnimatedLetterBottom letter="R" />
-          <AnimatedText letter="T" />
-          <AnimatedLetterMiddle letter="F" />
-          <AnimatedLetterBottom letter="O" />
-          <AnimatedText letter="L" />
-          <AnimatedLetterMiddle letter="I" />
-          <AnimatedLetterBottom letter="O" />
-        </h1>
+        <h1>PORTFOLIO</h1>
       </section>
     </div>
     <style jsx>{`
