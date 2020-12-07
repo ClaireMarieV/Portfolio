@@ -1,35 +1,37 @@
 import React from "react";
+import Link from "next/link";
+
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import Picture from "../components/Picture.js";
+import Img from "../components/Img.js";
+import Svg from "../components/Svg.js";
 
-const IndexPage = () => (
+const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
-
     <div className="content">
-      <Picture picture="projects.svg" />
-
-      <div className="img">
-        <Picture picture="pictures/arrow.svg" />
-      </div>
-      <div>
-        <p></p>
-      </div>
+      <Link href="/blog">
+        <a>
+          <Svg title="il était une fois" category="blog" />
+        </a>
+      </Link>
     </div>
     <style jsx>{`
       .content {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
+        align-self: auto;
+        justify-self: center;
         margin: 2rem;
       }
-      .name {
-        justify-self: center;
-      }
-      .skills {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
       }
     `}</style>
   </Layout>
 );
-export default IndexPage;
+export default ProjectsPage;
