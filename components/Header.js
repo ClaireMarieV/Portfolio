@@ -14,23 +14,23 @@ const Header = () => (
       </div>
       <ul>
         <li>
-          <Link href="/about">
+          <Link href="/#skills">
             <a>
-              <span>ABOUT</span>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about#skills">
-            <a>
-              <span>MY SKILLS</span>
+              <span>SKILLS</span>
             </a>
           </Link>
         </li>
         <li>
           <Link href="/projects">
             <a>
-              <span>MY PROJECT</span>
+              <span>PROJECTS</span>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a>
+              <span>CONTACT</span>
             </a>
           </Link>
         </li>
@@ -53,7 +53,33 @@ const Header = () => (
         justify-self: self-end;
       }
       ul > li {
-        margin: 1rem;
+        position: relative;
+      }
+
+      a {
+        display: inline-block;
+        padding: 15px 20px;
+      }
+      a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #f2c7bf;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      a:hover:after {
+        width: 100%;
+        left: 0;
+      }
+      @media screen and (max-height: 300px) {
+        ul {
+          margin-top: 40px;
+        }
       }
       @media (max-width: 600px) {
         .header {
