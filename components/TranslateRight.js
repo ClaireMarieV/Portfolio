@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-const TranslateRight = ({ children }) => {
+const TranslateRight = ({ children, id }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
@@ -13,6 +13,7 @@ const TranslateRight = ({ children }) => {
   }, [controls, inView]);
   return (
     <motion.div
+      id={id}
       ref={ref}
       animate={controls}
       initial="hidden"
@@ -24,8 +25,15 @@ const TranslateRight = ({ children }) => {
           skewX: 1,
         },
       }}
+      style={{ padding: 50 }}
     >
       {children}
+      <style jsx>{`
+        div {
+          padding: 3rem;
+          min-height: fit-content;
+        }
+      `}</style>
     </motion.div>
   );
 };
