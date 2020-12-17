@@ -6,7 +6,7 @@ const Svg = ({ title, category, className, id, a }) => (
   <div id="wrapper">
     <svg id="stain" viewBox="0 0 1440 800" xmlns="http://www.codrops.com/">
       <path
-        fill="#fb9fa4"
+        fill="#E5E1E2"
         id="base"
         d="M 1066,436 C 1051,543.8 973.2,656.2 873.6,700.1 756.6,751.7 600.9,
               725 492.4,657.4 431.5,619.5 387.5,546.9 376.7,476 360.3,368.3 377.9,
@@ -36,12 +36,19 @@ const Svg = ({ title, category, className, id, a }) => (
     <Link href={fromArticle({ category, title })}>
       <a>
         <div className="title">
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <h4>{category}</h4>
         </div>
       </a>
     </Link>
     <style jsx>{`
+      a {
+        font-size: 4.5rem;
+        padding: 1rem;
+        color: #121212;
+        border: 3px solid #ededed;
+        border-radius: 10px;
+      }
       #wrapper {
         display: flex;
         justify-content: center;
@@ -62,7 +69,7 @@ const Svg = ({ title, category, className, id, a }) => (
         width: 60vw;
       }
       path {
-        transition: 0.3s;
+        transition: 0.4s;
       }
     `}</style>
   </div>
