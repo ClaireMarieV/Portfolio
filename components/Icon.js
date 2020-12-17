@@ -22,11 +22,9 @@ const Icon = ({ picture, title, className, id }) => (
       .container {
         display: flex;
         justify-content: flex-start;
-        max-width: 25vw;
-        max-height: 40vh;
+        max-width: 20vw;
+        max-height: 25vh;
         width: 100%;
-        transition: all 1s;
-        opacity: 0.8;
       }
 
       .title {
@@ -34,7 +32,7 @@ const Icon = ({ picture, title, className, id }) => (
         position: absolute;
       }
       .title h3 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
       }
 
