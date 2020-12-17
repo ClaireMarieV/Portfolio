@@ -37,7 +37,6 @@ const Layout = ({ children }) => (
           margin: 0;
           padding: 0;
           border: 0;
-          font-family: arboria, sans-serif;
           color: #26332e;
         }
         body {
@@ -46,7 +45,8 @@ const Layout = ({ children }) => (
           overflow-y: auto;
           height: 100%;
           perspective: 1px;
-          background-color: #e6e9ef;
+          background-color: #121212;
+          color: #ededed;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -68,42 +68,62 @@ const Layout = ({ children }) => (
           text-decoration: none;
         }
         h1 {
-          font-family: josefin-sans, sans-serif;
+          font-size: 7rem;
+        }
+        h1,
+        h2 {
+          font-family: fino-sans, sans-serif;
           font-weight: 400;
           font-style: normal;
-          font-size: 7rem;
           margin-bottom: 0.5rem;
         }
         h2 {
-          font-family: gravesend-sans, sans-serif;
+          font-size: 2rem;
+        }
+        h3 {
+          font-family: graphie, sans-serif;
           font-style: normal;
           font-size: 2rem;
         }
-        h3,
-        h4 {
-          margin: 0.5em;
-          font-family: gravesend-sans, sans-serif;
-          font-weight: 500;
+
+        h4,
+        button {
+          font-family: graphie, sans-serif;
           font-style: normal;
-          font-size: 1.5rem;
+          font-weight: 500;
+        }
+
+        h4 {
+          font-size: 1rem;
+          font-weight: 500;
+          margin: 0.5em;
         }
         p {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           padding: 1.5em;
           text-align: justify;
+          line-height: 1.7rem;
+          font-family: arboria, sans-serif;
+          font-weight: 300;
         }
         ul {
           list-style: none;
           padding: 0;
           font-family: graphie, sans-serif;
-          font-weight: 700;
+          font-weight: 800;
         }
         span {
           font-weight: 800;
+          font-family: arboria, sans-serif;
+          font-weight: 300;
         }
         button {
           border-radius: 7px;
-          padding: 0.5rem;
+          padding: 1.5rem;
+          color: #373737;
+          border: none;
+          background-color: #f2c7bf;
+          letter-spacing: 0.1rem;
         }
       `}
     </style>
