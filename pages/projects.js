@@ -28,6 +28,9 @@ const ProjectsPage = () => (
         align-self: auto;
         justify-self: center;
       }
+      h1 {
+        justify-self: center;
+      }
       #span {
         display: flex;
         justify-content: center;
