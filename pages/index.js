@@ -77,12 +77,10 @@ const IndexPage = () => (
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: bold;
       }
       .name {
         justify-self: center;
       }
-      #skills h2,
       .img {
         max-width: 50vh;
       }
