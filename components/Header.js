@@ -68,7 +68,7 @@ const Header = () => (
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #f2c7bf;
+        background: #fed6b6;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
