@@ -1,3 +1,3 @@
-import blog from "./2020/classicBlue";
+import blog from "./2020/blog";
 
 export default [blog];

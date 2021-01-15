@@ -3,11 +3,8 @@ import Link from "next/link";
 
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
-import Picture from "../components/Picture.js";
-import Img from "../components/Img.js";
-import Svg from "../components/Svg.js";
-import Stain from "../components/Stain.js";
-import StainPink from "../components/StainPink.js";
+import ArticleProject from "../components/ArticleProject";
+import blog from "../data/2020/blog";
 
 const ProjectsPage = () => (
   <Layout>
@@ -15,8 +12,9 @@ const ProjectsPage = () => (
     <div className="content">
       <h1>Projects</h1>
       <div id="span">
-        <span>Il était une fois </span>
+        <ArticleProject title={blog.title} />
         <span>Pantone et la Haute couture</span>
+        <span>Organic blob</span>
         <span>Kiru</span>
         <span>Children to young Adults</span>
       </div>
