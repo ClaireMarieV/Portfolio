@@ -3,10 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 366.1 292.4" style="enable-background:new 0 0 366.1 292.4;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#A9DDBA;stroke-width:6;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#A9DDBA;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#A9DDBA;stroke-width:3;stroke-miterlimit:10;}
-	.st3{fill:#A9DDBA;stroke:#A9DDBA;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#F6E056;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#F6E056;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#F6E056;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:#F6E056;stroke:#F6E056;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M14.8,3h336.5c6.5,0,11.8,5.3,11.8,11.8v203.7c0,6.5-5.3,11.8-11.8,11.8H14.8C8.3,230.3,3,225,3,218.5V14.8
 	C3,8.3,8.3,3,14.8,3z"/>
