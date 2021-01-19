@@ -8,7 +8,7 @@ const Header = () => (
       <div className="name">
         <Link href="/">
           <a>
-            <h3>Claire Marie Vaney </h3>
+            <h3>CMV </h3>
           </a>
         </Link>
       </div>
@@ -57,7 +57,7 @@ const Header = () => (
       }
 
       a {
-        display: inline-block;
+        display: inline-flex;
         padding: 15px 20px;
       }
       a:after {
@@ -68,7 +68,7 @@ const Header = () => (
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #a9ddba;
+        background: #d6d6d6;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
@@ -76,6 +76,7 @@ const Header = () => (
         width: 100%;
         left: 0;
       }
+
       @media screen and (max-height: 300px) {
         ul {
           margin-top: 40px;
