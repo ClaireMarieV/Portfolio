@@ -5,8 +5,8 @@ const animation = (node, animationPercentage) => {
 };
 
 const AnimatedWords = ({ text }) => {
-  const animationTime = 500;
-  const staggerTime = 50;
+  const animationTime = 1500;
+  const staggerTime = 150;
 
   const words = (text || "").split(" ");
   const wordsRef = useRef(words.map(() => createRef()));
@@ -20,17 +20,29 @@ const AnimatedWords = ({ text }) => {
   const animate = (time) => {
     if (previousTimeRef.current === undefined) {
       startTimeRef.current = time;
-      console.log(time);
     } else {
       const deltaTime = time - previousTimeRef.current;
 
       // Pass on a function to the setter of the state
       // to make sure we always have the latest state
-      wordsRef.current.forEach((ref) =>
-        animation(ref.current, (time - startTimeRef.current) / animationTime)
+      wordsRef.current.forEach((ref, index) =>
+        animation(
+          ref.current,
+          Math.min(
+            1,
+            Math.max(
+              0,
+              (time - startTimeRef.current - index * staggerTime) /
+                animationTime
+            )
+          )
+        )
       );
     }
-    if (startTimeRef.current + animationTime > time) {
+    if (
+      startTimeRef.current + animationTime + (words.length - 1) * staggerTime >
+      time
+    ) {
       previousTimeRef.current = time;
       requestRef.current = requestAnimationFrame(animate);
     }
