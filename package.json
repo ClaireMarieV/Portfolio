@@ -10,7 +10,7 @@
   "dependencies": {
     "framer": "^1.2.10",
     "framer-motion": "^2.9.5",
-    "gsap": "^3.5.1",
+    "gsap": "^3.6.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "lqip-loader": "^2.2.1",
