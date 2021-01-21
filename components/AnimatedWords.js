@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef, createRef } from "react";
 
 const animation = (node, animationPercentage) => {
-  node.style.transform = `translate(0px, ${(1 - animationPercentage) * 100}%)`;
+  // node.style.transform = `translate(0px, ${(1 - animationPercentage) * 100}%)`;
+  node.style.transform = `matrix(1, 0, 0, ${animationPercentage}, -${animationPercentage}, -10)`;
 };
 
 const AnimatedWords = ({ text }) => {
-  const animationDuration = 1500;
-  const staggerDelay = 150;
+  const animationDuration = 900;
+  const staggerDelay = 50;
 
   const words = (text || "").split(" ");
   const wordsRef = useRef(words.map(() => createRef()));
@@ -79,30 +80,18 @@ const AnimatedWords = ({ text }) => {
         {`
           .split {
             display: flex;
-            justify-content: center;
-            margin: auto;
           }
           h2 {
             overflow: hidden;
-            display: flex;
-            flex-wrap: wrap;
-            font-weight: bold;
+            display: block;
+            font-size: 3.5rem;
+            margin: 0;
           }
-          h2 > span {
+          span {
             display: inline-block;
-            transform: translate(0px, 100%);
           }
           h2 > span.whitespace {
             width: 0.5rem;
-          }
-          @media (max-width: 600px) {
-            .article-base-title {
-              line-height: normal;
-              display: block;
-            }
-            h2 {
-              font-size: 2.5rem;
-            }
           }
         `}
       </style>
