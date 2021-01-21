@@ -3,16 +3,17 @@ import Picture from "./picture";
 
 const Icon = ({ picture, title, className, id }) => (
   <div className="icons">
-    <div className="title">
-      <h3>{title}</h3>
-    </div>
     <div className="container">
       <Picture className="picture" picture={picture} />
+    </div>
+    <div className="title">
+      <h3>{title}</h3>
     </div>
 
     <style jsx>{`
       .icons {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         align-self: auto;
@@ -22,17 +23,14 @@ const Icon = ({ picture, title, className, id }) => (
       .container {
         display: flex;
         justify-content: flex-start;
-        max-width: 20vw;
-        max-height: 25vh;
-        width: 100%;
+        width: 20vw;
+        height: 25vh;
+        max-width: 100%;
+        max-height: 100%;
       }
 
-      .title {
-        z-index: -1;
-        position: absolute;
-      }
       .title h3 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 600;
       }
 
