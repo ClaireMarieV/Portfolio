@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 429 321.2" style="enable-background:new 0 0 429 321.2;" xml:space="preserve">
+	 viewBox="0 0 330.7 321.2" style="enable-background:new 0 0 330.7 321.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#F6E056;stroke-width:6;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#F6E056;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#F6E056;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#F6E056;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#F6E056;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#F6E056;stroke-width:10;stroke-miterlimit:10;}
+	.st4{fill:#F6E056;stroke:#F6E056;stroke-width:2;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M45.4,31.9h336.5c6.5,0,11.8,5.3,11.8,11.8v203.7c0,6.5-5.3,11.8-11.8,11.8H45.4c-6.5,0-11.8-5.3-11.8-11.8
-	V43.7C33.6,37.2,38.9,31.9,45.4,31.9z"/>
+<path class="st0" d="M33.2,247.4V43.7c0-6.5,3.9-11.8,8.6-11.8h246.4c4.8,0,8.6,5.3,8.6,11.8v203.7c0,6.5-3.9,11.8-8.6,11.8H41.9
+	C37.1,259.2,33.2,253.9,33.2,247.4z"/>
 <path class="st1" d="M17.5,266v-1"/>
-<ellipse class="st2" cx="215.6" cy="47.9" rx="4.3" ry="4.4"/>
-<line class="st3" x1="32.2" y1="221.7" x2="393.6" y2="222.4"/>
-<path class="st3" d="M197.8,261.3c-1.7,28.1-5.9,35.3-26.9,44.6"/>
-<path class="st3" d="M283,306.6c0.9,0,2.9,1.1,2.9,2.6l0.1,6.6c0,2.9-1.6,3.9-3.5,3.9l-124,0.1c-1.9,0-3.5-2.4-3.5-5.3v-3.1
-	c0-3.1,1.7-5.6,3.8-5.5l122.1,1L283,306.6z"/>
-<path class="st3" d="M241,259.8c1.5,27.4,5.6,37.3,24.8,46.4"/>
-<line class="st3" x1="174.7" y1="233.9" x2="261.1" y2="233.9"/>
+<line class="st2" x1="296.8" y1="68.7" x2="32.2" y2="69.4"/>
+<line class="st2" x1="284.7" y1="50.7" x2="221.4" y2="50.7"/>
+<path class="st3" d="M143.7,101.7l-47.3,41.8c-2.7,2-2.8,6.7-0.2,8.6l46.6,43"/>
+<line class="st3" x1="183.7" y1="86" x2="150.5" y2="213"/>
+<path class="st3" d="M189.9,101.8l47.3,41.8c2.7,2,2.8,6.7,0.2,8.6l-46.6,43"/>
+<ellipse class="st4" cx="62.5" cy="51.2" rx="2.9" ry="4.3"/>
+<ellipse class="st4" cx="92.4" cy="51.1" rx="2.9" ry="4.3"/>
+<ellipse class="st4" cx="82.2" cy="51.2" rx="2.9" ry="4.3"/>
+<ellipse class="st4" cx="72.4" cy="51.1" rx="2.9" ry="4.3"/>
+<ellipse class="st4" cx="212.2" cy="50.6" rx="2.9" ry="4.3"/>
 </svg>
