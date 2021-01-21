@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef, createRef } from "react";
 
+const animation = (node, animationPercentage) => {
+  node.style.transform = `translate(0px, ${(1 - animationPercentage) * 100}%)`;
+};
+
 const AnimatedWords = ({ text }) => {
   const animationTime = 500;
   const staggerTime = 50;
@@ -22,11 +26,8 @@ const AnimatedWords = ({ text }) => {
 
       // Pass on a function to the setter of the state
       // to make sure we always have the latest state
-      wordsRef.current.forEach(
-        (ref) =>
-          (ref.current.style.transform = `translate(0px, ${
-            (1 - (time - startTimeRef.current) / animationTime) * 100
-          }%)`)
+      wordsRef.current.forEach((ref) =>
+        animation(ref.current, (time - startTimeRef.current) / animationTime)
       );
     }
     if (startTimeRef.current + animationTime > time) {
