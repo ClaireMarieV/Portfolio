@@ -6,51 +6,60 @@ const Header = () => (
   <header>
     <div className="header">
       <div className="name">
-        <Link href="/">
-          <a>
-            <h3>CMV </h3>
-          </a>
-        </Link>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>
+                <h3>claire marie vaney</h3>
+              </a>
+            </Link>
+          </li>
+          <span>____</span>
+          <li>
+            <Link href="/contact">
+              <a>
+                <h3>contact </h3>
+              </a>
+            </Link>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>
-          <Link href="/#skills">
-            <a>
-              <span>SKILLS</span>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/projects">
-            <a>
-              <span>PROJECTS</span>
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a>
-              <span>CONTACT</span>
-            </a>
-          </Link>
-        </li>
-      </ul>
+      <div className="ul">
+        <ul>
+          <li>
+            <Link href="/#skills">
+              <a>
+                <span>SKILLS</span>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects">
+              <a>
+                <span>PROJECTS</span>
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <style jsx>{`
       .header {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        // width: 100vw;
+        display: flex;
+        justify-content: space-between;
         margin: 1rem 1rem 2rem 1rem;
       }
       .header > .name,
-      .header > ul {
+      .header > div {
         align-self: center;
       }
 
       ul {
         display: flex;
         justify-self: self-end;
+        align-items: center;
       }
       ul > li {
         position: relative;
@@ -60,7 +69,7 @@ const Header = () => (
         display: inline-flex;
         padding: 15px 20px;
       }
-      a:after {
+      .ul a:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
         content: "";
@@ -68,11 +77,11 @@ const Header = () => (
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #d6d6d6;
+        background: white;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
-      a:hover:after {
+      .ul a:hover:after {
         width: 100%;
         left: 0;
       }
