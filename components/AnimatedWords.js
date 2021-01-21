@@ -5,8 +5,8 @@ const animation = (node, animationPercentage) => {
 };
 
 const AnimatedWords = ({ text }) => {
-  const animationTime = 1500;
-  const staggerTime = 150;
+  const animationDuration = 1500;
+  const staggerDelay = 150;
 
   const words = (text || "").split(" ");
   const wordsRef = useRef(words.map(() => createRef()));
@@ -21,26 +21,29 @@ const AnimatedWords = ({ text }) => {
     if (previousTimeRef.current === undefined) {
       startTimeRef.current = time;
     } else {
-      const deltaTime = time - previousTimeRef.current;
-
-      // Pass on a function to the setter of the state
-      // to make sure we always have the latest state
       wordsRef.current.forEach((ref, index) =>
         animation(
           ref.current,
+          // On s'assure que le pourcentage ne soit pas au dessos de 100%
           Math.min(
             1,
+            // On s'assure que le pourcentage ne soit pas en dessous de 0%
             Math.max(
               0,
-              (time - startTimeRef.current - index * staggerTime) /
-                animationTime
+              // On prend le temps courant, on y soustrait le temps de début de l'animation.
+              // A ça, on y soustrait le décalage du mot
+              // On divise le tout par la durée de l'animation
+              (time - startTimeRef.current - index * staggerDelay) /
+                animationDuration
             )
           )
         )
       );
     }
     if (
-      startTimeRef.current + animationTime + (words.length - 1) * staggerTime >
+      startTimeRef.current +
+        animationDuration +
+        (words.length - 1) * staggerDelay >
       time
     ) {
       previousTimeRef.current = time;
