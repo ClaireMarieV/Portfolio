@@ -5,7 +5,7 @@ import Header from "./Header";
 const Layout = ({ children }) => (
   <div className="layout">
     <Header />
-    <link rel="stylesheet" href="https://use.typekit.net/wos4eoq.css"></link>
+    <link rel="stylesheet" href="https://use.typekit.net/tpi2jhe.css"></link>
     <div
       style={{
         margin: `0 auto`,
@@ -14,15 +14,6 @@ const Layout = ({ children }) => (
     >
       <main>{children}</main>
     </div>
-    {process.env.FATHOM && (
-      <script
-        src="https://cdn.usefathom.com/script.js"
-        site={process.env.FATHOM}
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"
-        src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"
-      ></script>
-    )}
     <style jsx global>
       {`
         html {
@@ -30,7 +21,7 @@ const Layout = ({ children }) => (
           height: 100%;
         }
         main {
-          perspective: 2px;
+          height: 100vh;
         }
         html,
         body {
@@ -40,14 +31,14 @@ const Layout = ({ children }) => (
           color: #26332e;
         }
         body {
-          margin: 0;
+          width: 100%;
+          height: 100%;
           overflow-x: hidden;
           overflow-y: auto;
           height: 100%;
-          perspective: 1px;
-          color: #f2f2f2;
-          background-color: #111111;
-          font-family: novecento-sans-wide, sans-serif;
+          color: #1d201f;
+          background-color: #efe4f2;
+          font-family: proxima-nova, sans-serif;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -69,28 +60,43 @@ const Layout = ({ children }) => (
           text-decoration: none;
         }
         h1 {
-          font-size: 7rem;
-        }
-        h1,
-        h2 {
-          font-family: fino-sans, sans-serif;
+          margin: 0;
           font-weight: 400;
           font-style: normal;
-          margin-bottom: 0.5rem;
-        }
-        h2 {
-          font-size: 3rem;
-          color: #d5b4fe;
-        }
-        h3 {
-          font-family: novecento-sans-wide, sans-serif;
-          font-style: normal;
           font-size: 2rem;
-          font-weight: 300;
         }
 
-        h4,
-        button {
+        h2 {
+          font-family: graphie, sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          margin-bottom: 0.5rem;
+          font-size: 2.5rem;
+          letter-spacing: 0.05em;
+          transform: translate3d(0, 0, 0);
+          transition: transform 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+        h2::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          width: 55%;
+          height: 0.8rem;
+          left: 0.05em;
+          top: 1.25em;
+          background: white;
+          transform: scale3d(1, 1, 1);
+          transform-origin: 100% 50%;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+        h3 {
+          font-weight: 800;
+          font-style: normal;
+          padding: 1rem;
+          margin: 0;
+        }
+        h4 {
           font-family: graphie, sans-serif;
           font-style: normal;
           font-weight: 500;
@@ -99,15 +105,12 @@ const Layout = ({ children }) => (
         h4 {
           font-size: 1rem;
           font-weight: 500;
-          margin: 0.5em;
         }
         p {
-          font-size: 1.1rem;
-          padding: 1.5em;
-          text-align: justify;
-          line-height: 1.7rem;
-          font-family: graphie, sans-serif;
           font-weight: 300;
+          font-size: 1.5rem;
+          text-align: justify;
+          line-height: 2rem;
         }
         ul {
           list-style: none;
@@ -116,17 +119,20 @@ const Layout = ({ children }) => (
         }
         span {
           font-weight: 800;
-          font-weight: 300;
+          font-family: graphie, sans-serif;
         }
         button {
-          width: 15rem;
-          border-radius: 50px;
+          font-size: 1.3rem;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
           padding: 1.5rem;
-          color: #554a58;
-          border: none;
-          background-color: #fed6b6;
+          border: 2px solid #f9f5fa;
+          background-color: transparent;
           letter-spacing: 0.1rem;
-          margin: auto;
+          margin: 0;
+          color: #1d201f;
+          justify-self: right;
         }
       `}
     </style>
