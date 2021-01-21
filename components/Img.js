@@ -15,6 +15,7 @@ const Img = ({ children }) => {
 
   return (
     <motion.div
+      id="img"
       ref={ref}
       animate={controls}
       initial="hidden"
