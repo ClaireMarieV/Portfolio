@@ -1,113 +1,78 @@
 import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
-import Picture from "../components/Picture.js";
+
+import Content from "../components/Content.js";
+import ContentFlex from "../components/ContentFlex.js";
 import Icon from "../components/Icon.js";
 import Img from "../components/Img.js";
+import Move from "../components/Move.js";
+import Picture from "../components/Picture.js";
+import AnimatedWords from "../components/AnimatedWords";
+
 import TranslateRight from "../components/TranslateRight.js";
-import TranslateLeft from "../components/TranslateLeft.js";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="content-grid">
-      <div id="name">
-        <h2>Hello, i'm claire marie Vaney</h2>
-        <h2>Freelance front- end developer </h2>
-        <h2>and UX/UI designer</h2>
+
+    <Content>
+      <AnimatedWords text="HELLO, I'M FREELANCE DEVELOPER"></AnimatedWords>
+      <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
+      <div className="img">
+        <img src="pictures/FaceTres.png" />
       </div>
-
-      <Img>
-        <div className="face">
-          <Picture picture="pictures/FaceTres.png" />
+      <ContentFlex>
+        <div id="title">
+          <h1>For several years, I love design.</h1>
+          <h1>
+            I like the design whether it is fashion, product, space or web.
+          </h1>
         </div>
-      </Img>
-
-      <h3>What I like</h3>
-      <TranslateRight id="translate-right">
-        <p>
-          For release me, I pratice sport (dance, workout or boxe). For several
-          years, I love design. I like the design whether it is fashion,
-          product, space or web. This is why I love web development so much.
-        </p>
+      </ContentFlex>
+      <div className="content-button">
+        <Move>
+          <button>
+            <span>Download my CV</span>
+          </button>
+        </Move>
+      </div>
+      <div className="h2">
         <h2>I choose front-development and UX/UI.</h2>
         <h2>Mix the both is to mix logic and creation.</h2>
-      </TranslateRight>
-
-      <h3>Why I became a developer</h3>
-      <TranslateRight id="translate-right">
-        <p>
-          Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
-          me the designer's methodology and the different processes. More than
-          two years ago, i'm retraining in web development after learned Java
-          alone. After traineeship where i worked with Symfony and first job in
-          web development Fullstack, i learned React independently .
-        </p>
-      </TranslateRight>
-      <h3 id="skills">My main advantages</h3>
-
-      <button download="CV">Download my CV</button>
-    </div>
-
-    <TranslateLeft>
-      <Icon picture="svg/computerBis.svg" title="WEB DEVELOPMENT" />
-      <Icon picture="svg/responsiveBis.svg" title="RESPONSIVE" />
-      <Icon picture="svg/UX.svg" title="UX/UI" />
-    </TranslateLeft>
+      </div>
+      <p>
+        Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
+        me the designer's methodology and the different processes. More than two
+        years ago, i'm retraining in web development after learned Java alone.
+      </p>
+      <p>
+        After traineeship where i worked with Symfony and first job in web
+        development Fullstack, i learned React independently .
+      </p>
+    </Content>
     <style jsx>{`
-      .content-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-template-rows: auto;
-        grid-gap: 3rem;
-        margin: 2rem;
-      }
-      .content-grid h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .content-grid:nth-child(1) {
+        grid-gap: 5rem;
       }
 
-      #name h2 {
-        font-size: 2rem;
-      }
-      #name {
-        justify-self: center;
-        align-self: center;
-      }
       .img {
-        max-width: 50vh;
-      }
-
-      .face {
-        box-shadow: -1px -1px 18px 2px rgba(0, 0, 0, 0.1);
-      }
-
-      .arrow {
-        max-width: 57vh !important;
-      }
-      #skills {
+        width: 40vw;
         display: flex;
-        justify-content: space-evenly;
+        margin: auto;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
       }
-      .content-grid h2 {
-        letter-spacing: 0.05em;
-        transform: translate3d(-0.5em, 0, 0);
-        transition: transform 0.5s;
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      .content-button {
+        justify-self: self-end;
       }
-      .content-grid h2::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 55%;
-        height: 0.5rem;
-        left: 0.05em;
-        top: 1.25em;
-        background: #f6e056;
-        transform: scale3d(1, 1, 1);
-        transform-origin: 100% 50%;
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      h2 {
+        margin-bottom: 5rem;
+        font-weight: 600 !important;
+      }
+      #title {
+        margin: 0 auto;
+        width: 24vw;
       }
 
       @media (max-width: 700px) {
@@ -118,4 +83,5 @@ const IndexPage = () => (
     `}</style>
   </Layout>
 );
+
 export default IndexPage;
