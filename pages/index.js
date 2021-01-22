@@ -17,8 +17,8 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <Content>
-      <AnimatedWords text="HELLO, I'M FREELANCE DEVELOPER"></AnimatedWords>
-      <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
+      <AnimatedWords text="HELLO, I'M FREELANCE DEVELOPER AND"></AnimatedWords>
+      <AnimatedWords text="UX/UI DESIGNER"></AnimatedWords>
       <div className="img">
         <img src="pictures/FaceTres.png" />
       </div>
@@ -26,20 +26,25 @@ const IndexPage = () => (
         <div id="title">
           <h1>For several years, I love design.</h1>
           <h1>
-            I like the design whether it is fashion, product, space or web.
+            I love the design whether it's fashion, product or web. Creating,
+            modeling and composing a design that will convey an emotion.
           </h1>
         </div>
       </ContentFlex>
       <div className="content-button">
         <Move>
-          <button>
-            <span>Download my CV</span>
-          </button>
+          <a download="CV.pdf" href="CV.pdf">
+            <button>
+              <span>Download my CV</span>
+            </button>
+          </a>
         </Move>
       </div>
-      <div className="h2">
+
+      <div className="titles">
         <h2>I choose front-development and UX/UI.</h2>
         <h2>Mix the both is to mix logic and creation.</h2>
+        <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
       </div>
       <p>
         Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
@@ -69,6 +74,29 @@ const IndexPage = () => (
       h2 {
         margin-bottom: 5rem;
         font-weight: 600 !important;
+      }
+      h2 {
+        letter-spacing: 0.05em;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.5s;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      h2::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 55%;
+        height: 0.8rem;
+        left: 0.05em;
+        top: 1.25em;
+        background: white;
+        transform: scale3d(1, 1, 1);
+        transform-origin: 100% 50%;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      .titles h1 {
+        font-size: 4rem;
+        font-weight: 700;
       }
       #title {
         margin: 0 auto;
