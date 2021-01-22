@@ -71,25 +71,9 @@ const Layout = ({ children }) => (
           font-weight: 300;
           font-style: normal;
           margin-bottom: 0.5rem;
-          font-size: 2.5rem;
-          letter-spacing: 0.05em;
-          transform: translate3d(0, 0, 0);
-          transition: transform 0.5s;
-          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          font-size: 2rem;
         }
-        h2::before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          width: 55%;
-          height: 0.8rem;
-          left: 0.05em;
-          top: 1.25em;
-          background: white;
-          transform: scale3d(1, 1, 1);
-          transform-origin: 100% 50%;
-          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-        }
+
         h3 {
           font-weight: 800;
           font-style: normal;
