@@ -10,7 +10,6 @@ const Content = ({ children }) => (
         grid-template-rows: auto;
         margin: auto;
         width: 80vw;
-        visibility: visible;
       }
     `}</style>
   </div>

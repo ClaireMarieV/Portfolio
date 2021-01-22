@@ -13,7 +13,6 @@ const Parallax = ({ children }) => (
         left: 0;
         z-index: -3;
         position: relative;
-        visibility: hidden;
       }
 
       // .parallax::before {
