@@ -32,7 +32,7 @@ const BlogPage = () => (
       .content .colors #line::before {
         content: "";
         position: absolute;
-        z-index: -1;
+        z-index: -2;
         width: 100%;
         height: 2rem;
         left: 0.05em;
