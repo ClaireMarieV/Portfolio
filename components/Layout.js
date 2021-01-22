@@ -17,7 +17,7 @@ const Layout = ({ children }) => (
     <style jsx global>
       {`
         html {
-          overflow: auto;
+          overflow: hidden;
           height: 100%;
         }
         main {
@@ -33,12 +33,16 @@ const Layout = ({ children }) => (
         body {
           width: 100%;
           height: 100%;
+          overflow-y: scroll;
           overflow-x: hidden;
-          overflow-y: auto;
           height: 100%;
           color: #1d201f;
           background-color: #efe4f2;
           font-family: proxima-nova, sans-serif;
+          margin: 0;
+          overscroll-behavior: none;
+          perspective: 1px;
+          transform-style: preserve-3d;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;

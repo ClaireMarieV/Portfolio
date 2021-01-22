@@ -7,55 +7,61 @@ import ContentFlex from "../components/ContentFlex.js";
 import Icon from "../components/Icon.js";
 import Img from "../components/Img.js";
 import Move from "../components/Move.js";
+import Parallax from "../components/Parallax.js";
 import Picture from "../components/Picture.js";
 import AnimatedWords from "../components/AnimatedWords";
-
-import TranslateRight from "../components/TranslateRight.js";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
-    <Content>
-      <AnimatedWords text="HELLO, I'M FREELANCE DEVELOPER AND"></AnimatedWords>
-      <AnimatedWords text="UX/UI DESIGNER"></AnimatedWords>
-      <div className="img">
-        <img src="pictures/FaceTres.png" />
-      </div>
-      <ContentFlex>
-        <div id="title">
-          <h1>For several years, I love design.</h1>
-          <h1>
-            I love the design whether it's fashion, product or web. Creating,
-            modeling and composing a design that will convey an emotion.
-          </h1>
+    <Parallax>
+      <Content>
+        <AnimatedWords text="HELLO, I'M FREELANCE DEVELOPER AND"></AnimatedWords>
+        <AnimatedWords text="UX/UI DESIGNER"></AnimatedWords>
+        <div className="img">
+          <Move>
+            <img src="pictures/FaceTres.png" />
+          </Move>
         </div>
-      </ContentFlex>
-      <div className="content-button">
-        <Move>
-          <a download="CV.pdf" href="CV.pdf">
-            <button>
-              <span>Download my CV</span>
-            </button>
-          </a>
-        </Move>
-      </div>
 
-      <div className="titles">
-        <h2>I choose front-development and UX/UI.</h2>
-        <h2>Mix the both is to mix logic and creation.</h2>
-        <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
-      </div>
-      <p>
-        Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
-        me the designer's methodology and the different processes. More than two
-        years ago, i'm retraining in web development after learned Java alone.
-      </p>
-      <p>
-        After traineeship where i worked with Symfony and first job in web
-        development Fullstack, i learned React independently .
-      </p>
-    </Content>
+        <ContentFlex>
+          <div id="title">
+            <h1>For several years, I love design.</h1>
+            <h1>
+              I love the design whether it's fashion, product or web. Creating,
+              modeling and composing a design that will convey an emotion.Living
+              in Nancy, France; I'll glad to tell you more.
+            </h1>
+          </div>
+        </ContentFlex>
+        <div className="content-button">
+          <Move>
+            <a download="CV.pdf" href="CV.pdf">
+              <button>
+                <span>Download my CV</span>
+              </button>
+            </a>
+          </Move>
+        </div>
+        <div className="titles">
+          <h2>I choose front-development and UX/UI.</h2>
+          <h2>Mix the both is to mix logic and creation.</h2>
+          <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
+        </div>
+
+        <p>
+          Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
+          me the designer's methodology and the different processes. More than
+          two years ago, i'm retraining in web development after learned Java
+          alone.
+        </p>
+        <p>
+          After traineeship where i worked with Symfony and first job in web
+          development Fullstack, i learned React independently .
+        </p>
+      </Content>
+    </Parallax>
+
     <style jsx>{`
       .content-grid:nth-child(1) {
         grid-gap: 5rem;
@@ -67,6 +73,9 @@ const IndexPage = () => (
         margin: auto;
         margin-bottom: 4rem;
         margin-top: 4rem;
+        transform: matrix(1, 0, 0, 1, 0);
+        visibility: visible;
+        will-change: transform;
       }
       .content-button {
         justify-self: self-end;
