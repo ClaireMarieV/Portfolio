@@ -25,28 +25,16 @@ const Header = () => (
         </ul>
       </div>
       <div className="ul">
-        <ul>
-          <li>
-            <Link href="/#skills">
-              <a>
-                <span>SKILLS</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects">
-              <a>
-                <span>PROJECTS</span>
-              </a>
-            </Link>
-          </li>
-        </ul>
+        <Link href="/projects">
+          <a>
+            <span>PROJECTS</span>
+          </a>
+        </Link>
       </div>
     </div>
 
     <style jsx>{`
       .header {
-        // width: 100vw;
         display: flex;
         justify-content: space-between;
         margin: 1rem 1rem 2rem 1rem;
@@ -69,7 +57,7 @@ const Header = () => (
         display: inline-flex;
         padding: 15px 20px;
       }
-      .ul a:after {
+      .ul > a > span:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
         content: "";
