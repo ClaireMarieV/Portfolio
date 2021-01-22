@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContentGrid = ({ children }) => (
+const ContentFlex = ({ children }) => (
   <div className="content-flex">
     {children}
     <style jsx>{`
@@ -14,4 +14,4 @@ const ContentGrid = ({ children }) => (
   </div>
 );
 
-export default ContentGrid;
+export default ContentFlex;
