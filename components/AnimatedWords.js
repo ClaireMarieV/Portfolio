@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef, createRef } from "react";
 
 const animation = (node, animationPercentage) => {
   // node.style.transform = `translate(0px, ${(1 - animationPercentage) * 100}%)`;
-  node.style.transform = `matrix(1, 0, 0, ${animationPercentage}, -${animationPercentage}, -10)`;
+  node.style.transform = `matrix(1, 0, 0,${animationPercentage}, -${animationPercentage}, -1)`;
 };
 
 const AnimatedWords = ({ text }) => {
-  const animationDuration = 900;
+  const animationDuration = 800;
   const staggerDelay = 50;
 
   const words = (text || "").split(" ");
@@ -84,7 +84,7 @@ const AnimatedWords = ({ text }) => {
           h2 {
             overflow: hidden;
             display: block;
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             margin: 0;
           }
           span {
