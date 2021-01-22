@@ -27,8 +27,8 @@ const Svg = () => (
         path {
           fill: none;
           height: 5rem;
-          stroke: #1d201f;
-          stroke-width: 0.5;
+          stroke: #E1CDE7;
+          stroke-width: 2;
           transition: all 0.35s easeOut;
         }
       `}</style>
