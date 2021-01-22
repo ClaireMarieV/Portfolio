@@ -59,7 +59,7 @@ const AnimatedWords = ({ text }) => {
 
   return (
     <div className="split">
-      <h2>
+      <h1>
         {words
           .map((word, wordIndex) => (
             <span key={wordIndex} ref={wordsRef.current[wordIndex]}>
@@ -75,22 +75,23 @@ const AnimatedWords = ({ text }) => {
               ),
             []
           )}
-      </h2>
+      </h1>
       <style jsx>
         {`
           .split {
             display: flex;
           }
-          h2 {
+          h1 {
             overflow: hidden;
             display: block;
-            font-size: 3.8rem;
+            font-size: 4rem;
             margin: 0;
+            transition: 0.7s;
           }
           span {
             display: inline-block;
           }
-          h2 > span.whitespace {
+          h1 > span.whitespace {
             width: 0.5rem;
           }
         `}
