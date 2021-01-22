@@ -16,6 +16,7 @@ const Icon = ({ font, letters, sentence, className, id }) => (
         grid-gap: 3rem;
         width: 70vw;
         margin: auto;
+        z-index: 2;
       }
 
       #font span {
