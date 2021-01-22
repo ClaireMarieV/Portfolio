@@ -47,7 +47,7 @@ const Picture = ({ picture, alt, colorHex }) => {
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 46%;
+            width: 100%;
           }
           img {
             width: 100%;
