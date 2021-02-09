@@ -1,62 +1,26 @@
 import { useState, useEffect } from "react";
 
-const Picture = ({ picture, alt, colorHex }) => {
-  const [pictureLoaded, setPictureLoaded] = useState(false);
-  let imageElement = null;
+const Colors = ({ color, hex }) => (
+  <div className="colors">
+    <div className="color"></div>
+    <div className="hex">{hex}</div>
 
-  const imageRefUpdated = (image) => {
-    if (image) {
-      imageElement = image;
-      if (image.complete) {
-        setPictureLoaded(true);
+    <style jsx>{`
+      .colors {
+        display: grid;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        width: 25rem;
+        justify-items: center;
+        align-self: center;
       }
-    }
-  };
+      .color {
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: 10px;
+      }
+    `}</style>
+  </div>
+);
 
-  useEffect(() => {
-    imageRefUpdated(imageElement);
-  });
-
-  if (typeof picture === "string") {
-    return <img src={picture} />;
-  } else {
-    return (
-      <>
-        <div className="color">
-          <figure>
-            <img
-              alt={alt}
-              src={picture.picture.src || picture.picture}
-              srcSet={picture.picture.srcSet}
-              ref={imageRefUpdated}
-              onLoad={() => setPictureLoaded(true)}
-              hidden={!pictureLoaded}
-            />
-            <span>{colorHex}</span>
-          </figure>
-        </div>
-        <style jsx>{`
-          .color {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            max-width: 15rem;
-            width: 100%;
-          }
-          figure {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-          }
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        `}</style>
-      </>
-    );
-  }
-};
-
-export default Picture;
+export default Colors;

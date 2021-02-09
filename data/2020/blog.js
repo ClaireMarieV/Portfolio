@@ -23,8 +23,12 @@ export default {
           sentence3="A B C D E F G H I J K L M N O P G R S T U V W X Y Z"
           sentence4="a b c d e f g h i j k l m n o p q r s t u v w x y z"
         />
-
-        <Colors />
+        <h2>Colors</h2>
+        <div id="colors">
+          <Colors className="color" hex="#262525" />
+          <Colors className="color" hex="#f7c289" />
+          <Colors className="color" hex="#ece0d5" />
+        </div>
       </Content>
     </>
   ),
