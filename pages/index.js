@@ -2,36 +2,41 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 
-import Content from "../components/Content.js";
-import ContentFlex from "../components/ContentFlex.js";
-import Icon from "../components/Icon.js";
-import Img from "../components/Img.js";
-import Move from "../components/Move.js";
-import Parallax from "../components/Parallax.js";
-import Picture from "../components/Picture.js";
 import AnimatedWords from "../components/AnimatedWords";
+import Content from "../components/Content";
+import ContentFlex from "../components/ContentFlex";
+import Icon from "../components/Icon";
+import Img from "../components/Img";
+import Move from "../components/Move";
+import Parallax from "../components/Parallax";
+import Picture from "../components/Picture";
+import Svg from "../components/Svg";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Parallax>
       <Content>
-        <AnimatedWords text="HELLO, I'M FREELANCE DEVELOPER AND"></AnimatedWords>
-        <AnimatedWords text="UX/UI DESIGNER"></AnimatedWords>
-        <div className="img">
-          <Move>
+        <AnimatedWords text="HELLO,"></AnimatedWords>
+        <AnimatedWords text="I'M FREELANCE DEVELOPER"></AnimatedWords>
+        <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
+
+        <Move>
+          <div className="img">
             <img src="pictures/FaceTres.png" />
-          </Move>
-        </div>
+          </div>
+        </Move>
 
         <ContentFlex>
           <div id="title">
-            <h1>For several years, I love design.</h1>
-            <h1>
-              I love the design whether it's fashion, product or web. Creating,
-              modeling and composing a design that will convey an emotion.Living
-              in Nancy, France; I'll glad to tell you more.
-            </h1>
+            <h2>
+              For several years, I love design whether it's fashion, product or
+              web.
+            </h2>
+            <h2>
+              Creating, modeling and composing a design that will convey an
+              emotion.Living in Nancy, France; I'll glad to tell you more.
+            </h2>
           </div>
         </ContentFlex>
         <div className="content-button">
@@ -48,7 +53,7 @@ const IndexPage = () => (
           <h2>Mix the both is to mix logic and creation.</h2>
           <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
         </div>
-
+        <Svg />
         <p>
           Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
           me the designer's methodology and the different processes. More than
@@ -74,9 +79,9 @@ const IndexPage = () => (
         margin-bottom: 4rem;
         margin-top: 4rem;
         transform: matrix(1, 0, 0, 1, 0);
-        visibility: visible;
         will-change: transform;
       }
+
       .content-button {
         justify-self: self-end;
       }
@@ -98,18 +103,18 @@ const IndexPage = () => (
         height: 0.8rem;
         left: 0.05em;
         top: 1.25em;
-        background: white;
+        background: #eff2f5;
         transform: scale3d(1, 1, 1);
         transform-origin: 100% 50%;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
-      .titles h1 {
-        font-size: 4rem;
+      .titles h2 {
         font-weight: 700;
       }
       #title {
         margin: 0 auto;
         width: 24vw;
+        text-transform: uppercase;
       }
 
       @media (max-width: 700px) {
