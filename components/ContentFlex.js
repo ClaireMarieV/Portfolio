@@ -9,6 +9,7 @@ const ContentFlex = ({ children }) => (
         margin: 0 auto;
         margin-top: 3rem;
         line-height: 3rem;
+        justify-content: space-around;
       }
     `}</style>
   </div>
