@@ -18,9 +18,7 @@ const BlogPage = () => (
       .content-font:nth-child(1) .sentence > span {
         font-family: gravesend, sans-serif !important;
       }
-      // #font .content-font:nth-child(2) > span {
-      //   font-family: arboria, sans-serif !important;
-      // }
+
       #colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -33,6 +31,9 @@ const BlogPage = () => (
       }
       .colors:nth-child(3) .color {
         background: #ece0d5;
+      }
+      .under-content h2 {
+        margin-bottom: 3rem;
       }
     `}</style>
   </Layout>
