@@ -92,7 +92,7 @@ const AnimatedWords = ({ text }) => {
             display: inline-block;
           }
           h1 > span.whitespace {
-            width: 0.5rem;
+            width: 1rem;
           }
         `}
       </style>
