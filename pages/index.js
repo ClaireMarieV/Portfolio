@@ -8,70 +8,68 @@ import ContentFlex from "../components/ContentFlex";
 import Icon from "../components/Icon";
 import Img from "../components/Img";
 import Move from "../components/Move";
-import Parallax from "../components/Parallax";
 import Picture from "../components/Picture";
 import Svg from "../components/Svg";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Parallax>
-      <Content>
-        <AnimatedWords text="HELLO,"></AnimatedWords>
-        <AnimatedWords text="I'M FREELANCE DEVELOPER"></AnimatedWords>
-        <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
+    <Content>
+      <AnimatedWords text="HELLO,"></AnimatedWords>
+      <AnimatedWords text="I'M FREELANCE DEVELOPER"></AnimatedWords>
+      <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
 
+      <Move>
+        <div className="img">
+          <img src="pictures/FaceTres.png" />
+        </div>
+      </Move>
+
+      <ContentFlex>
+        <div id="title">
+          <h2>
+            For several years, I love design whether it's fashion, product or
+            web.
+          </h2>
+          <h2>
+            Creating, modeling and composing a design that will convey an
+            emotion.Living in Nancy, France; I'll glad to tell you more.
+          </h2>
+        </div>
+      </ContentFlex>
+      <div className="content-button">
         <Move>
-          <div className="img">
-            <img src="pictures/FaceTres.png" />
-          </div>
+          <a download="CV.pdf" href="CV.pdf">
+            <button>
+              <span>Download my CV</span>
+            </button>
+          </a>
         </Move>
-
-        <ContentFlex>
-          <div id="title">
-            <h2>
-              For several years, I love design whether it's fashion, product or
-              web.
-            </h2>
-            <h2>
-              Creating, modeling and composing a design that will convey an
-              emotion.Living in Nancy, France; I'll glad to tell you more.
-            </h2>
-          </div>
-        </ContentFlex>
-        <div className="content-button">
-          <Move>
-            <a download="CV.pdf" href="CV.pdf">
-              <button>
-                <span>Download my CV</span>
-              </button>
-            </a>
-          </Move>
-        </div>
-        <div className="titles">
-          <h2>I choose front-development and UX/UI.</h2>
-          <h2>Mix the both is to mix logic and creation.</h2>
-          <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
-        </div>
-        <Svg />
-        <p>
-          Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
-          me the designer's methodology and the different processes. More than
-          two years ago, i'm retraining in web development after learned Java
-          alone.
-        </p>
-        <p>
-          After traineeship where i worked with Symfony and first job in web
-          development Fullstack, i learned React independently .
-        </p>
-      </Content>
-    </Parallax>
+      </div>
+      <div className="titles">
+        <h2>I choose front-development and UX/UI.</h2>
+        <h2>Mix the both is to mix logic and creation.</h2>
+        <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
+      </div>
+      <Svg />
+      <p>
+        Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
+        me the designer's methodology and the different processes. More than two
+        years ago, i'm retraining in web development after learned Java alone.
+      </p>
+      <p>
+        After traineeship where i worked with Symfony and first job in web
+        development Fullstack, i learned React independently .
+      </p>
+    </Content>
 
     <style jsx>{`
       .content-grid:nth-child(1) {
         grid-gap: 5rem;
       }
-
+      .content-button span {
+        font-weight: 600;
+      }
       .img {
         width: 40vw;
         display: flex;
