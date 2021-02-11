@@ -15,10 +15,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Content>
-      <AnimatedWords text="HELLO,"></AnimatedWords>
-      <AnimatedWords text="I'M FREELANCE DEVELOPER"></AnimatedWords>
-      <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
-
+      <div>
+        <AnimatedWords text="HELLO,"></AnimatedWords>
+        <AnimatedWords text="I'M FREELANCE DEVELOPER"></AnimatedWords>
+        <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
+      </div>
       <Move>
         <div className="img">
           <img src="pictures/FaceTres.png" />
@@ -85,7 +86,6 @@ const IndexPage = () => (
       }
       h2 {
         margin-bottom: 5rem;
-        font-weight: 600 !important;
       }
       h2 {
         letter-spacing: 0.05em;
