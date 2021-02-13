@@ -28,16 +28,15 @@ const Layout = ({ children }) => (
           margin: 0;
           padding: 0;
           border: 0;
-          color: #26332e;
+          color: #eff0f5;
         }
         body {
-          width: 100%;
           height: 100%;
           overflow-y: scroll;
-          overflow-x: hidden;
+          overflow-x: auto;
           height: 100%;
           color: #1d201f;
-          background-color: #efe4f2;
+          background-color: #e4eaf1;
           font-family: proxima-nova, sans-serif;
           margin: 0;
           overscroll-behavior: none;
@@ -64,10 +63,11 @@ const Layout = ({ children }) => (
           text-decoration: none;
         }
         h1 {
+          font-family: neue-haas-grotesk-display, sans-serif;
           margin: 0;
           font-weight: 400;
           font-style: normal;
-          font-size: 2rem;
+          font-size: 6rem;
         }
 
         h2 {
@@ -106,7 +106,6 @@ const Layout = ({ children }) => (
           font-weight: 800;
         }
         span {
-          font-weight: 800;
           font-family: graphie, sans-serif;
         }
         button {
@@ -115,12 +114,17 @@ const Layout = ({ children }) => (
           height: 10rem;
           border-radius: 50%;
           padding: 1.5rem;
-          border: 2px solid #f9f5fa;
+          border: 2px solid #eff2f5;
           background-color: transparent;
           letter-spacing: 0.1rem;
           margin: 0;
           color: #1d201f;
           justify-self: right;
+          transition: all 0.3s ease;
+        }
+        button:hover {
+          transform: rotate(15deg);
+          transition: all 0.3s ease;
         }
       `}
     </style>
