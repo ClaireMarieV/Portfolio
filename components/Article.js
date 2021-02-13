@@ -7,16 +7,14 @@ const Article = ({ children, title, className, id }) => (
       <div>{children}</div>
 
       <style jsx global>{`
-        // .article {
-        //   display: grid;
-        //   grid-template-columns: repeat(1, minmax(0, 1fr));
-        //   margin: auto;
-        // }
-        // @media (max-width: 700px) {
-        //   .article {
-        //     width: auto;
-        //   }
-        // }
+        .article {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          grid-template-rows: auto;
+          margin: auto;
+          width: 80vw;
+          grid-gap: 4rem;
+        }
       `}</style>
     </div>
   </>
