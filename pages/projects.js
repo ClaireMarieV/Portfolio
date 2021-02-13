@@ -1,15 +1,16 @@
 import React from "react";
 import Link from "next/link";
-
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
+
 import ArticleProject from "../components/ArticleProject";
+import ContentFlex from "../components/ContentFlex";
 import blog from "../data/2020/blog";
 
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="content">
+    <ContentFlex className="content">
       <h1>Projects</h1>
       <div id="span">
         <ArticleProject title={blog.title} />
@@ -18,13 +19,12 @@ const ProjectsPage = () => (
         <span>Kiru</span>
         <span>Children to young Adults</span>
       </div>
-    </div>
+    </ContentFlex>
     <style jsx>{`
       .content {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        align-self: auto;
-        justify-self: center;
+        justify-items: center;
+        flex-direction: row;
+        gap: 2rem;
       }
       h1 {
         justify-self: center;
