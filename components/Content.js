@@ -12,6 +12,9 @@ const Content = ({ children }) => (
         width: 80vw;
         grid-gap: 7rem;
       }
+      @media (max-width: 500px) {
+        grid-gap: 3rem;
+      }
     `}</style>
   </div>
 );

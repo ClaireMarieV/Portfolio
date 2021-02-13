@@ -115,9 +115,18 @@ const IndexPage = () => (
         text-transform: uppercase;
       }
 
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         .content-grid {
           grid-template-columns: auto;
+        }
+        #title {
+          width: 100%;
+        }
+      }
+      @media (max-width: 500px) {
+        .img {
+          width: 100%;
+          margin: 0;
         }
       }
     `}</style>

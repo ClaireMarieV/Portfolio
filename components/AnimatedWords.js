@@ -94,6 +94,9 @@ const AnimatedWords = ({ text }) => {
           h1 > span.whitespace {
             width: 1rem;
           }
+          @media (max-width: 500px) {
+            font-size: 2rem;
+          }
         `}
       </style>
     </div>
