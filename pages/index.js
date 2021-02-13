@@ -40,7 +40,7 @@ const IndexPage = () => (
       </ContentFlex>
       <div className="content-button">
         <Move>
-          <a download="CV.pdf" href="CV.pdf">
+          <a download="CVclaireMarieVaney" href="CV02.2021.pdf">
             <button>
               <span>Download my CV</span>
             </button>
