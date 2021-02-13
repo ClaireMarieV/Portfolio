@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-const Colors = ({ color, hex }) => (
+const Colors = ({ hex, className }) => (
   <div className="colorHex">
-    <div className="color"></div>
+    <div className={className}></div>
     <div className="hex">{hex}</div>
 
     <style jsx>{`
