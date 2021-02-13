@@ -19,17 +19,17 @@ const BlogPage = () => (
         font-family: gravesend, sans-serif !important;
       }
 
-      #colors {
+      .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
       }
-      .colors:nth-child(1) .color {
+      .colors .grey {
         background: #262525;
       }
-      .colors:nth-child(2) .color {
+      .colors .salmon {
         background: #f7c289;
       }
-      .colors:nth-child(3) .color {
+      .colors .white-pink {
         background: #ece0d5;
       }
       .under-content h2 {
