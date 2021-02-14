@@ -6,7 +6,7 @@ import SEO from "../components/Seo";
 import ArticleProject from "../components/ArticleProject";
 import ContentFlex from "../components/ContentFlex";
 import blog from "../data/2020/blog";
-
+import blob from "../data/2020/blob";
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -14,10 +14,10 @@ const ProjectsPage = () => (
       <h1>Projects</h1>
       <div id="span">
         <ArticleProject title={blog.title} />
-        <span>Pantone et la Haute couture</span>
-        <span>Organic blob</span>
+        <ArticleProject title={blob.title} />
         <span>Kiru</span>
         <span>Children to young Adults</span>
+        <span>FelicityLab</span>
       </div>
     </ContentFlex>
     <style jsx>{`
