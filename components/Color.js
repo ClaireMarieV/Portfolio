@@ -18,6 +18,9 @@ const Colors = ({ hex, className }) => (
         height: 2.5rem;
         border-radius: 10px;
       }
+      .hex {
+        margin: auto;
+      }
     `}</style>
   </div>
 );
