@@ -7,6 +7,8 @@ import ArticleProject from "../components/ArticleProject";
 import ContentFlex from "../components/ContentFlex";
 import blog from "../data/2020/blog";
 import blob from "../data/2020/blob";
+import alice from "../data/2020/alice";
+
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -16,7 +18,7 @@ const ProjectsPage = () => (
         <ArticleProject title={blog.title} />
         <ArticleProject title={blob.title} />
         <span>Kiru</span>
-        <span>Children to young Adults</span>
+        <ArticleProject title={alice.title} />
         <span>FelicityLab</span>
       </div>
     </ContentFlex>
