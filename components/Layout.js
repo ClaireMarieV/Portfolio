@@ -69,31 +69,29 @@ const Layout = ({ children }) => (
           font-style: normal;
           font-size: 6rem;
         }
-
-        h2 {
+        h2,
+        h3,
+        h4 {
           font-family: graphie, sans-serif;
-          font-weight: 300;
           font-style: normal;
+        }
+        h2 {
+          font-weight: 300;
           margin-bottom: 0.5rem;
           font-size: 2rem;
         }
 
         h3 {
           font-weight: 800;
-          font-style: normal;
           padding: 1rem;
           margin: 0;
         }
-        h4 {
-          font-family: graphie, sans-serif;
-          font-style: normal;
-          font-weight: 500;
-        }
 
         h4 {
-          font-size: 1rem;
           font-weight: 500;
+          font-size: 1rem;
         }
+
         p {
           font-weight: 300;
           font-size: 1.5rem;
