@@ -3,7 +3,7 @@ import React from "react";
 const Article = ({ children, title, className, id }) => (
   <>
     <div className={"article" + (className || "")} id={id}>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <div>{children}</div>
 
       <style jsx global>{`
