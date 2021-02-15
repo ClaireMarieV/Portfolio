@@ -8,15 +8,13 @@ import article from "../data/2020/blob.js";
 const BlobPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Article title={article.title}>{article.content}</Article>
+    <Article title={article.title} img={article.img}>
+      {article.content}
+    </Article>
     <style jsx global>{`
       .content {
         display: flex;
         padding: 2rem;
-      }
-
-      .content-font:nth-child(1) .sentence > span {
-        font-family: gravesend, sans-serif !important;
       }
 
       .colors {

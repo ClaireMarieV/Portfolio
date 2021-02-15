@@ -8,7 +8,9 @@ import article from "../data/2020/alice.js";
 const AlicePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Article title={article.title}>{article.content}</Article>
+    <Article title={article.title} img={article.img}>
+      {article.content}
+    </Article>
     <style jsx global>{`
       .content {
         display: flex;

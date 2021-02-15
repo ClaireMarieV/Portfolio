@@ -1,9 +1,12 @@
 import React from "react";
 
-const Article = ({ children, title, className, id }) => (
+const Article = ({ children, img, title, className, id }) => (
   <>
     <div className={"article" + (className || "")} id={id}>
-      <h2>{title}</h2>
+      <div className="logo">
+        <img src={img} />
+        <h2>{title}</h2>
+      </div>
       <div>{children}</div>
 
       <style jsx global>{`
@@ -14,6 +17,15 @@ const Article = ({ children, title, className, id }) => (
           margin: auto;
           width: 80vw;
           grid-gap: 4rem;
+        }
+        .logo {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+          align-items: flex-end;
+        }
+        .logo img {
+          width: 10rem;
         }
       `}</style>
     </div>

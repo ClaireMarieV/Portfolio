@@ -2,10 +2,10 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Line from "../../components/LineEffect";
-
+import pivoine from "../../public/logos/pivoine.svg";
 export default {
   title: "Il etait une fois",
-
+  img: pivoine,
   content: (
     <>
       <Content>

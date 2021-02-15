@@ -2,10 +2,11 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Line from "../../components/LineEffect";
+import blob from "../../public/logos/blobGrey.svg";
 
 export default {
   title: "Organic blob",
-
+  img: blob,
   content: (
     <>
       <Content>
@@ -27,13 +28,16 @@ export default {
           />
         </div>
         <div className="under-content">
-          <h2>Colors</h2>
-          <div className="colors">
-            <Color className="salmon" hex="#A7D4B7" />
-            <Color className="green" hex="#a7d4b7" />
-            <Color className="white" hex="#fafafa" />
+          <div>
+            <h2>Colors</h2>
+            <div className="colors">
+              <Color className="salmon" hex="#A7D4B7" />
+              <Color className="green" hex="#a7d4b7" />
+              <Color className="white" hex="#fafafa" />
+            </div>
           </div>
         </div>
+
         <h2>UsersFlow</h2>
       </Content>
     </>

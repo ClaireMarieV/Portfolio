@@ -2,10 +2,11 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Line from "../../components/LineEffect";
+import felicity from "../../public/logos/felicity.svg";
 
 export default {
   title: "FelicityLab",
-
+  img: felicity,
   content: (
     <>
       <Content>
@@ -26,7 +27,7 @@ export default {
               {
                 family: "Open-sans,sans-serif",
                 weight: "Regular",
-                label: "Third",
+                label: "Tertiary",
               },
             ]}
           />
@@ -38,6 +39,12 @@ export default {
             <Color className="yellow" hex="#fff952" />
             <Color className="grey" hex="#EDEDF2" />
             <Color className="white" hex="#fbf6f6" />
+          </div>
+        </div>
+        <div className="under-content">
+          <h2>Logo</h2>
+          <div className="colors">
+            <img src="" />
           </div>
         </div>
         <h2>UsersFlow</h2>

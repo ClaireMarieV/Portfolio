@@ -2,10 +2,10 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Line from "../../components/LineEffect";
-
+import papillon from "../../public/logos/papillonBis.svg";
 export default {
   title: "Children to young adults",
-
+  img: papillon,
   content: (
     <>
       <Content>
@@ -26,7 +26,7 @@ export default {
               {
                 family: "Graphie,sans-serif",
                 weight: "Regular",
-                label: "Third",
+                label: "Tertiary",
               },
             ]}
           />
