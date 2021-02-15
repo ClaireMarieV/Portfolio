@@ -42,12 +42,8 @@ export default {
           </div>
         </div>
         <div className="under-content">
-          <h2>Logo</h2>
-          <div className="colors">
-            <img src="" />
-          </div>
+          <h2>UsersFlow</h2>
         </div>
-        <h2>UsersFlow</h2>
       </Content>
     </>
   ),

@@ -3,9 +3,9 @@ import React from "react";
 const Article = ({ children, img, title, className, id }) => (
   <>
     <div className={"article" + (className || "")} id={id}>
-      <div className="logo">
-        <img src={img} />
-        <h2>{title}</h2>
+      <div className="title-project">
+        <img className="logo" src={img} />
+        <h1>{title}</h1>
       </div>
       <div>{children}</div>
 
@@ -18,13 +18,17 @@ const Article = ({ children, img, title, className, id }) => (
           width: 80vw;
           grid-gap: 4rem;
         }
-        .logo {
+        .article h1 {
+          font-size: 2rem;
+        }
+        .title-project {
           display: flex;
           flex-direction: row;
           gap: 2rem;
-          align-items: flex-end;
+          align-items: baseline;
         }
-        .logo img {
+
+        img.logo {
           width: 10rem;
         }
       `}</style>
