@@ -12,6 +12,7 @@ const Colors = ({ hex, className }) => (
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
         align-self: center;
+        margin-top: 2rem;
       }
       .color {
         width: 20vw;

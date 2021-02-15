@@ -8,6 +8,7 @@ import ContentFlex from "../components/ContentFlex";
 import blog from "../data/2020/blog";
 import blob from "../data/2020/blob";
 import alice from "../data/2020/alice";
+import felicity from "../data/2021/felicity";
 
 const ProjectsPage = () => (
   <Layout>
@@ -19,7 +20,7 @@ const ProjectsPage = () => (
         <ArticleProject title={blob.title} />
         <span>Kiru</span>
         <ArticleProject title={alice.title} />
-        <span>FelicityLab</span>
+        <ArticleProject title={felicity.title} />
       </div>
     </ContentFlex>
     <style jsx>{`
