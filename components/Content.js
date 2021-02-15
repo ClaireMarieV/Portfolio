@@ -9,7 +9,7 @@ const Content = ({ children }) => (
         grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-template-rows: auto;
         margin: auto;
-        width: 80vw;
+        width: 70vw;
         grid-gap: 7rem;
       }
       @media (max-width: 500px) {
