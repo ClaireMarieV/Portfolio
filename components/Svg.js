@@ -3,9 +3,9 @@ import React from "react";
 const Svg = () => (
   <div className="line">
     <svg
-      width="1000"
+      width="850"
       height="100"
-      viewBox="0 300 150"
+      viewBox="0 850 100"
       xmlns="http://www.w3.org/1999/xlink"
     >
       <path d="M8.2,52.3c0-0.1,854,0,854,0">
