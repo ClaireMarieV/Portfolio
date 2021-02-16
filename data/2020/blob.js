@@ -3,7 +3,7 @@ import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Line from "../../components/LineEffect";
 import blob from "../../public/logos/blobGrey.svg";
-
+import Move from "../../components/Move";
 export default {
   title: "Organic blob",
   img: blob,
@@ -31,7 +31,9 @@ export default {
           <div>
             <h2>Colors</h2>
             <div className="colors">
-              <Color className="salmon" hex="#A7D4B7" />
+              <Move>
+                <Color className="salmon" hex="#A7D4B7" />
+              </Move>
               <Color className="green" hex="#a7d4b7" />
               <Color className="white" hex="#fafafa" />
             </div>

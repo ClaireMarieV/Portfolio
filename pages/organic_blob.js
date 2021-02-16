@@ -12,14 +12,10 @@ const BlobPage = () => (
       {article.content}
     </Article>
     <style jsx global>{`
-      .content {
-        display: flex;
-        padding: 2rem;
-      }
-
       .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
       }
       .colors .salmon {
         background: #a7d4b7;

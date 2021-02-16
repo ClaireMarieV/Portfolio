@@ -30,9 +30,7 @@ export default {
           <h2>Colors</h2>
           <div className="colors">
             <Color className="grey" hex="#262525" />
-
             <Color className="salmon" hex="#f7c289" />
-
             <Color className="white-pink" hex="#ece0d5" />
           </div>
         </div>

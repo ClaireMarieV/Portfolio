@@ -1,26 +1,23 @@
-import { useState, useEffect } from "react";
+import React from "react";
 
 const Colors = ({ hex, className }) => (
   <div className="colorHex">
     <div className={className}></div>
-    <div className="hex">{hex}</div>
-
+    <span className="hex">{hex}</span>
     <style jsx>{`
       .colorHex {
         display: grid;
-        display: grid;
         grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
         align-self: center;
-        margin-top: 2rem;
       }
-      .color {
-        width: 20vw;
-        height: 2.5rem;
-        border-radius: 10px;
+      .colorHex div:nth-child(1) {
+        width: 25rem;
+        height: 2rem;
+        border-radius: 5px;
       }
       .hex {
         margin: auto;
+        font-weight: 600;
       }
     `}</style>
   </div>

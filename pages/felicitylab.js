@@ -12,18 +12,10 @@ const FelicityPage = () => (
       {article.content}
     </Article>
     <style jsx global>{`
-      .content {
-        display: flex;
-        padding: 2rem;
-      }
-
-      .content-font:nth-child(1) .sentence > span {
-        font-family: gravesend, sans-serif !important;
-      }
-
       .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
       }
       .colors .dark-blue {
         background: #1e1d28;

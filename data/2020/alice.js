@@ -3,6 +3,7 @@ import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Line from "../../components/LineEffect";
 import papillon from "../../public/logos/papillonBis.svg";
+
 export default {
   title: "Children to young adults",
   img: papillon,

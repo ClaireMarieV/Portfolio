@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 
 import ArticleProject from "../components/ArticleProject";
-import ContentFlex from "../components/ContentFlex";
+import Content from "../components/Content";
 import blog from "../data/2020/blog";
 import blob from "../data/2020/blob";
 import alice from "../data/2020/alice";
@@ -13,8 +13,7 @@ import felicity from "../data/2021/felicity";
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ContentFlex className="content">
-      <h1>Projects</h1>
+    <Content className="content">
       <div id="span">
         <ArticleProject title={blog.title} />
         <ArticleProject title={blob.title} />
@@ -22,22 +21,17 @@ const ProjectsPage = () => (
         <ArticleProject title={alice.title} />
         <ArticleProject title={felicity.title} />
       </div>
-    </ContentFlex>
+    </Content>
     <style jsx>{`
-      .content {
-        justify-items: center;
-        flex-direction: row;
-        gap: 2rem;
-      }
-      h1 {
-        justify-self: center;
-      }
       #span {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10rem;
+        justify-items: center;
       }
       #span span {
+        margin: auto;
         font-size: 2rem;
         padding: 1rem;
       }
