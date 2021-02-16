@@ -11,6 +11,11 @@ const ContentGrid = ({ children }) => (
         margin-top: 3rem;
         line-height: 3rem;
       }
+      @media (max-width: 800px) {
+        .content-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
     `}</style>
   </div>
 );

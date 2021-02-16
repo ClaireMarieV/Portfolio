@@ -10,7 +10,7 @@ const Content = ({ children }) => (
         grid-template-rows: auto;
         margin: auto;
         width: 70vw;
-        grid-gap: 7rem;
+        grid-gap: 5rem;
       }
       @media (max-width: 500px) {
         grid-gap: 3rem;

@@ -60,9 +60,6 @@ const IndexPage = () => (
     </Content>
 
     <style jsx>{`
-      .content-grid:nth-child(1) {
-        grid-gap: 5rem;
-      }
       .content-button {
         justify-self: self-end;
         align-self: end;
@@ -103,7 +100,7 @@ const IndexPage = () => (
       }
       .titles {
         display: grid;
-        grid-template-columns: 1fr 500px;
+        grid-template-columns: 1fr 600px;
         grid-gap: 2rem;
       }
       .titles h2 {
@@ -116,11 +113,11 @@ const IndexPage = () => (
       }
 
       @media (max-width: 800px) {
-        .content-grid {
-          grid-template-columns: auto;
-        }
         #title {
           width: 100%;
+        }
+        .titles {
+          grid-template-columns: 1fr;
         }
       }
       @media (max-width: 500px) {
