@@ -4,7 +4,7 @@ import SEO from "../components/Seo";
 
 import AnimatedWords from "../components/AnimatedWords";
 import Content from "../components/Content";
-import ContentFlex from "../components/ContentFlex";
+import ContentGrid from "../components/ContentGrid";
 import Icon from "../components/Icon";
 import Img from "../components/Img";
 import Move from "../components/Move";
@@ -26,7 +26,7 @@ const IndexPage = () => (
         </div>
       </Move>
 
-      <ContentFlex>
+      <ContentGrid>
         <div id="title">
           <h2>
             For several years, I love design whether it's fashion, product or
@@ -37,36 +37,35 @@ const IndexPage = () => (
             emotion.Living in Nancy, France; I'll glad to tell you more.
           </h2>
         </div>
-      </ContentFlex>
-      <div className="content-button">
-        <Move>
-          <a download="CVclaireMarieVaney" href="CV02.2021.pdf">
-            <button>
-              <span>Download my CV</span>
-            </button>
-          </a>
-        </Move>
-      </div>
-      <div className="titles">
-        <h2>I choose front-development and UX/UI.</h2>
-        <h2>Mix the both is to mix logic and creation.</h2>
-        <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
-      </div>
+        <div className="content-button">
+          <Move>
+            <a download="CVclaireMarieVaney" href="CV02.2021.pdf">
+              <button>
+                <span>Download my CV</span>
+              </button>
+            </a>
+          </Move>
+        </div>
+      </ContentGrid>
       <Svg />
-      <p>
-        Few years ago, i did Mise à Niveau en Arts Appliqués. This year taught
-        me the designer's methodology and the different processes. More than two
-        years ago, i'm retraining in web development after learned Java alone.
-      </p>
-      <p>
-        After traineeship where i worked with Symfony and first job in web
-        development Fullstack, i learned React independently .
-      </p>
+      <div className="titles">
+        <div>
+          <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
+        </div>
+        <div>
+          <h2>I choose front-development and UX/UI.</h2>
+          <h2>Mix the both is to mix logic and creation.</h2>
+        </div>
+      </div>
     </Content>
 
     <style jsx>{`
       .content-grid:nth-child(1) {
         grid-gap: 5rem;
+      }
+      .content-button {
+        justify-self: self-end;
+        align-self: end;
       }
       .content-button span {
         font-weight: 600;
@@ -79,10 +78,6 @@ const IndexPage = () => (
         margin-top: 4rem;
         transform: matrix(1, 0, 0, 1, 0);
         will-change: transform;
-      }
-
-      .content-button {
-        justify-self: self-end;
       }
       h2 {
         margin-bottom: 5rem;
@@ -105,6 +100,11 @@ const IndexPage = () => (
         transform: scale3d(1, 1, 1);
         transform-origin: 100% 50%;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      .titles {
+        display: grid;
+        grid-template-columns: 1fr 500px;
+        grid-gap: 2rem;
       }
       .titles h2 {
         font-weight: 700;
