@@ -17,14 +17,16 @@
 					<g>
 						<g>
 							<g>
-								<defs>
-									<rect id="SVGID_1_" y="3" width="247.3" height="22.3"/>
-								</defs>
-								<clipPath id="SVGID_2_">
-									<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-								</clipPath>
-								<g class="st0">
-									<path class="st1" d="M0-111.9h247.3V140H0V-111.9z"/>
+								<g>
+									<defs>
+										<rect id="SVGID_1_" y="3" width="247.3" height="22.3"/>
+									</defs>
+									<clipPath id="SVGID_2_">
+										<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+									</clipPath>
+									<g class="st0">
+										<path class="st1" d="M0-111.9h247.3V140H0V-111.9z"/>
+									</g>
 								</g>
 							</g>
 						</g>
