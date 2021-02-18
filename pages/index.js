@@ -17,8 +17,8 @@ const IndexPage = () => (
     <Content>
       <div>
         <AnimatedWords text="HELLO,"></AnimatedWords>
-        <AnimatedWords text="I'M FREELANCE DEVELOPER"></AnimatedWords>
-        <AnimatedWords text="AND UX/UI DESIGNER"></AnimatedWords>
+        <AnimatedWords text="I'M FREELANCE DEVELOPER "></AnimatedWords>
+        <AnimatedWords text="FRONT AND UI DESIGNER"></AnimatedWords>
       </div>
       <Move>
         <div className="img">
@@ -68,7 +68,7 @@ const IndexPage = () => (
         font-weight: 600;
       }
       .img {
-        width: 40vw;
+        width: 35vw;
         display: flex;
         margin: auto;
         margin-bottom: 4rem;
@@ -100,8 +100,8 @@ const IndexPage = () => (
       }
       .titles {
         display: grid;
-        grid-template-columns: 1fr 600px;
-        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
       }
       .titles h2 {
         font-weight: 700;
