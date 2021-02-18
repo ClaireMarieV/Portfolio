@@ -11,7 +11,7 @@ const Svg = () => (
       <path d="M8.2,52.3c0-0.1,854,0,854,0">
         <animate
           attributeName="d"
-          dur="1s"
+          dur="0.9s"
           begin="mouseover"
           values="M11,54c612.7-10.1,558.6-101.6,847,0.6;
             M8,80.5c279.6-4.7,338.8-167.5,847.6,0;
@@ -29,7 +29,8 @@ const Svg = () => (
         justify-self: center;
       }
       svg {
-        min-width: fit-content;
+        max-width: fit-content;
+        width: 100%;
       }
       path {
         fill: none;
