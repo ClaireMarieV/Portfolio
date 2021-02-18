@@ -1,20 +1,46 @@
 import React from "react";
 import Picture from "./picture";
 import Link from "next/link";
+
+import Parallax from "../components/Parallax";
 import { fromArticle } from "../lib/link";
 
-const ArticleProject = ({ title }) => (
-  <div className="article-project">
+const ArticleProject = ({ title, category, className }) => (
+  <div id="article-project" className={"article-project-" + (className || "")}>
     <Link href={fromArticle({ title })}>
       <a>
         <div className="title">
-          <h2>{title}</h2>
+          <Parallax>
+            <span>{category}</span>
+            <h2>{title}</h2>
+          </Parallax>
         </div>
       </a>
     </Link>
-    <style jsx>{`
-      .title h3 {
-        font-size: 2rem;
+
+    <style jsx global>{`
+      #article-project {
+        width: 23vw;
+        transition: all 0.5s;
+      }
+      #article-project:hover {
+        transition: all 0.5s;
+        tranform : translate: (0, -70);
+      }
+      .title {
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+      }
+      #article-project:hover .title {
+        background: rgba(228, 234, 241, 0.5);
+      }
+
+      .title h2 {
+        font-size: 3rem;
+        font-weight: 400;
         padding: 1rem;
         margin: 0;
       }
