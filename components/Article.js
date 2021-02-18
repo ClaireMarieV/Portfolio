@@ -19,7 +19,7 @@ const Article = ({ children, img, title, className, id }) => (
           grid-gap: 4rem;
         }
         .article h1 {
-          font-size: 2rem;
+          font-size: 4rem;
         }
         .title-project {
           display: flex;
