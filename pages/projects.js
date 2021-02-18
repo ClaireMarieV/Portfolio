@@ -23,6 +23,8 @@ const ProjectsPage = () => (
         <ArticleProject className="blob" title={blob.title} category="DESIGN" />
         <Svg />
         <span>Kiru</span>
+        <Svg />
+
         <ArticleProject
           className="alice"
           title={alice.title}

@@ -11,7 +11,7 @@ const ArticleProject = ({ title, category, className }) => (
       <a>
         <div className="title">
           <Parallax>
-            <span>{category}</span>
+            <h3>{category}</h3>
             <h2>{title}</h2>
           </Parallax>
         </div>
@@ -21,11 +21,10 @@ const ArticleProject = ({ title, category, className }) => (
     <style jsx global>{`
       #article-project {
         width: 23vw;
-        transition: all 0.5s;
+        transition: all 0.2s;
       }
       #article-project:hover {
-        transition: all 0.5s;
-        tranform : translate: (0, -70);
+        transition: all 0.2s;
       }
       .title {
         top: 0;
@@ -34,10 +33,12 @@ const ArticleProject = ({ title, category, className }) => (
         width: 100%;
         height: 100%;
       }
-      #article-project:hover .title {
-        background: rgba(228, 234, 241, 0.5);
-      }
 
+      .title h3 {
+        color: #cfaca2;
+        font-weight: bolder;
+        font-size: 1.5rem;
+      }
       .title h2 {
         font-size: 3rem;
         font-weight: 400;
