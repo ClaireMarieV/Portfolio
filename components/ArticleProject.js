@@ -21,11 +21,8 @@ const ArticleProject = ({ title, category, className }) => (
     <style jsx global>{`
       #article-project {
         width: 23vw;
-        transition: all 0.2s;
       }
-      #article-project:hover {
-        transition: all 0.2s;
-      }
+
       .title {
         top: 0;
         left: 0;
