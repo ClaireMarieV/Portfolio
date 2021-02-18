@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         body {
           height: 100%;
           overflow-y: scroll;
-          overflow-x: auto;
+          overflow-x: hidden;
           height: 100%;
           color: #1d201f;
           background-color: #e4eaf1;
