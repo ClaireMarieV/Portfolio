@@ -31,9 +31,7 @@ export default {
           <div>
             <h2>Colors</h2>
             <div className="colors">
-              <Move>
-                <Color className="salmon" hex="#A7D4B7" />
-              </Move>
+              <Color className="salmon" hex="#A7D4B7" />
               <Color className="green" hex="#a7d4b7" />
               <Color className="white" hex="#fafafa" />
             </div>
