@@ -21,8 +21,8 @@ const Parallax = ({ children }) => {
         ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ duration: 0.7 }}
-        whileHover={{ translateY: 30 }}
+        transition={{ duration: 0.6 }}
+        whileHover={{ translateY: 30, transition: { duration: 0.4 } }}
         variants={{
           visible: { y: -25, opacity: 1 },
           hidden: { y: -70, opacity: 0.5 },
