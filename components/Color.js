@@ -9,11 +9,12 @@ const Colors = ({ hex, className }) => (
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         align-self: center;
+        width: 100%;
       }
       .colorHex div:nth-child(1) {
         width: 25rem;
         height: 2rem;
-        border-radius: 5px;
+        width: 100%;
       }
       .hex {
         margin: auto;
