@@ -86,7 +86,7 @@ const AnimatedWords = ({ text }) => {
             display: block;
             font-size: 4rem;
             margin: 0;
-            transition: 0.7s;
+            transition: 0.5s;
           }
           span {
             display: inline-block;
