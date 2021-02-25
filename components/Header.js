@@ -10,7 +10,7 @@ const Header = () => (
           <li>
             <Link href="/">
               <a>
-                <h3>claire marie vaney</h3>
+                <span>claire marie vaney</span>
               </a>
             </Link>
           </li>
@@ -18,7 +18,7 @@ const Header = () => (
           <li>
             <Link href="/contact">
               <a>
-                <h3>contact </h3>
+                <span>contact </span>
               </a>
             </Link>
           </li>
@@ -48,9 +48,6 @@ const Header = () => (
         display: flex;
         justify-self: self-end;
         align-items: center;
-      }
-      ul > li {
-        position: relative;
       }
 
       a {
