@@ -10,12 +10,12 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
     <div className="title">
       <div>
         <h2>{title}</h2>
-        <h3>{category}</h3>
+        <span>{category}</span>
       </div>
       <div className="link-view">
         <Link href={fromArticle({ title })}>
           <a>
-            <span>View project </span>
+            <h3>View project </h3>
           </a>
         </Link>
       </div>
@@ -37,12 +37,12 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         transform-origin: 100% 50%;
         margin: 3rem;
       }
-      .link-view a span {
+      .link-view a h3 {
         line-height: 1.4;
         transition: all 1s;
         transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
       }
-      .link-view a span::before {
+      .link-view a h3::before {
         content: "";
         position: absolute;
         left: -20px;
@@ -58,8 +58,8 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         transition: transform 1s;
         transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
       }
-      .link-view a span:hover::before,
-      .link-view a span:focus::before {
+      .link-view a h3:hover::before,
+      .link-view a h3:focus::before {
         transform: scale3d(1, 1, 1);
         width: 15rem;
         border-radius: 30px;
@@ -71,8 +71,6 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
 
       .title h2 {
         font-size: 3rem;
-        font-weight: 400;
-        padding: 1rem;
         margin: 0;
         text-transform: uppercase;
       }
