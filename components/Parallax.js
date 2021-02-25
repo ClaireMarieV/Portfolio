@@ -14,7 +14,7 @@ const Parallax = ({ children }) => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref} className="image-container">
+    <div ref={ref} className="parallax-container">
       <motion.div
         className="overlay"
         animate={{ y: 0 }}
@@ -30,11 +30,7 @@ const Parallax = ({ children }) => {
       >
         {children}
       </motion.div>
-      <style jsx>{`
-        .image-container {
-          z-index: 1;
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </div>
   );
 };
