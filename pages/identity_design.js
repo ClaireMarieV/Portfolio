@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import Article from "../components/Article.js";
-import article from "../data/2020/blog.js";
+import article from "../data/2020/identity.js";
 
 const BlogPage = () => (
   <Layout>
@@ -16,33 +16,38 @@ const BlogPage = () => (
       {article.content}
     </Article>
     <style jsx global>{`
+      .sketch {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2rem;
+      }
       .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
       }
-      .colors .grey {
-        background: #262525;
+      .colors .green {
+        background: #b3d1c6;
       }
-      .colors .salmon {
-        background: #f7c289;
+      .colors .black {
+        background: #000000;
       }
-      .colors .white-pink {
-        background: #ece0d5;
+      .colors .white-green {
+        background: #eff5f3;
       }
       .under-content h2 {
         margin-bottom: 3rem;
       }
-      .viewport-phone .viewport:nth-child(1) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        z-index: 1;
+      .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2rem;
+        background: #fffff;
       }
-      .viewport-phone .viewport:nth-child(2) {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
+      .card img {
+        box-shadow: 10px 7px 33px 2px #dddddd;
       }
     `}</style>
   </Layout>

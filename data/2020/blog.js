@@ -1,14 +1,30 @@
+//Comnposants
 import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
+import ContentGrid from "../../components/ContentGrid";
 import Line from "../../components/LineEffect";
+import Viewports from "../../components/Viewports";
+
+//Images
 import pivoine from "../../public/logos/pivoine.svg";
+import blogDesktop from "../../public/pictures/blog/blogDesktop.png";
+import tablettePortrait from "../../public/pictures/blog/blogTablettePortrait.png";
+import tablettePaysage from "../../public/pictures/blog/blogTablettePaysage.png";
+import phonePortrait from "../../public/pictures/blog/blogPortraitSmartphone.png";
+import phonePaysage from "../../public/pictures/blog/blogPaysageSmartphone.png";
+
 export default {
   title: "Il etait une fois",
+  category: "BLOG",
   img: pivoine,
   content: (
     <>
       <Content>
+        <div className="under-content">
+          <h2>About the project</h2>
+          <p></p>
+        </div>
         <div className="under-content">
           <h2>Typography</h2>
           <Fonts
@@ -34,7 +50,9 @@ export default {
             <Color className="white-pink" hex="#ece0d5" />
           </div>
         </div>
-        <h2>UsersFlow</h2>
+        <div className="under-content">
+          <h2>Viewports</h2>
+        </div>
       </Content>
     </>
   ),

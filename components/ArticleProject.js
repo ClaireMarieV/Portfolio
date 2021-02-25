@@ -51,7 +51,7 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         margin: auto;
         width: 50px;
         height: 50px;
-        background: #e4eaf1;
+        background: #d1d8e7;
         border-radius: 50%;
         z-index: -1;
         transform-origin: 0% 50%;
@@ -85,12 +85,12 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
       .article-project > .img > img {
         width: 20rem;
       }
-      .article-project > .img img {
-        filter: blur(2px);
-      }
-      .article-project > .img:hover img {
-        filter: blur(0);
-      }
+      // .article-project > .img img {
+      //   filter: blur(2px);
+      // }
+      // .article-project > .img:hover img {
+      //   filter: blur(0);
+      // }
     `}</style>
 
     <style jsx>{`

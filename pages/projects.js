@@ -12,44 +12,53 @@ import blog from "../data/2020/blog";
 import blob from "../data/2020/blob";
 import alice from "../data/2020/alice";
 import felicity from "../data/2021/felicity";
+import identity from "../data/2020/identity";
 
 //Images
 import logoAE from "../public/logos/logoDef.svg";
 import blobImg from "../public/logos/blobGrey.svg";
+import papillon from "../public/logos/papillon.svg";
+import felicityImg from "../public/logos/felicity.svg";
 
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
     <Content className="content">
-      <h2>My projects</h2>
+      <h2>My works</h2>
       <div id="projects">
         <ArticleProject
           className="identity"
-          title={blog.title}
+          title={identity.title}
           category="Graphic Design"
           img={logoAE}
         />
+        <Svg />
         <ArticleProject
           className="blog"
           title={blog.title}
           category="ReactJs"
           img={logoAE}
         />
+        <Svg />
         <ArticleProject
           className="blob"
           title={blob.title}
           category="ReactJs"
           img={blobImg}
         />
+        <Svg />
         <ArticleProject
           className="alice"
           title={alice.title}
           category="UI/UX Design"
+          img={papillon}
         />
+        <Svg />
         <ArticleProject
           className="felicity"
           title={felicity.title}
           category="Wordpress"
+          img={felicityImg}
         />
       </div>
     </Content>
@@ -59,7 +68,7 @@ const ProjectsPage = () => (
         flex-direction: column;
       }
 
-      #projects .article-project:nth-child(2n + 1) {
+      #projects .article-project:nth-child(3n + 1) {
         flex-direction: row-reverse;
       }
 
