@@ -5,42 +5,93 @@ import Link from "next/link";
 import Parallax from "../components/Parallax";
 import { fromArticle } from "../lib/link";
 
-const ArticleProject = ({ title, category, className }) => (
-  <div id="article-project" className={"article-project-" + (className || "")}>
-    <Link href={fromArticle({ title })}>
-      <a>
-        <div className="title">
-          <Parallax>
-            <h3>{category}</h3>
-            <h2>{title}</h2>
-          </Parallax>
-        </div>
-      </a>
-    </Link>
+const ArticleProject = ({ title, category, img, imgHover, className }) => (
+  <div className={"article-project"}>
+    <div className="title">
+      <div>
+        <h2>{title}</h2>
+        <h3>{category}</h3>
+      </div>
+      <div className="link-view">
+        <Link href={fromArticle({ title })}>
+          <a>
+            <span>View project </span>
+          </a>
+        </Link>
+      </div>
+    </div>
+
+    <div className="img">
+      <img src={img} />
+    </div>
 
     <style jsx global>{`
-      #article-project {
-        width: 23vw;
-      }
-
-      .title {
-        top: 0;
-        left: 0;
-        padding: 1rem;
+      .article-project {
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0 2rem 0;
         width: 100%;
-        height: 100%;
+      }
+      .link-view {
+        transform: translate(0px, 0px);
+        transform-origin: 100% 50%;
+        margin: 3rem;
+      }
+      .link-view a span {
+        line-height: 1.4;
+        transition: all 1s;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      .link-view a span::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        background: #e4eaf1;
+        border-radius: 50%;
+        z-index: -1;
+        transform-origin: 0% 50%;
+        transition: transform 1s;
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      .link-view a span:hover::before,
+      .link-view a span:focus::before {
+        transform: scale3d(1, 1, 1);
+        width: 15rem;
+        border-radius: 30px;
+      }
+      .title {
+        padding: 1rem;
+        gap: 3rem;
       }
 
-      .title h3 {
-        color: #cfaca2;
-        font-weight: bolder;
-        font-size: 1.5rem;
-      }
       .title h2 {
         font-size: 3rem;
         font-weight: 400;
         padding: 1rem;
         margin: 0;
+        text-transform: uppercase;
+      }
+      .title div .line {
+        width: 40px;
+        height: 1px;
+        position: relative;
+        background: #000;
+        margin-left: 10px;
+      }
+
+      .article-project > .img > img {
+        width: 20rem;
+      }
+      .article-project > .img img {
+        filter: blur(2px);
+      }
+      .article-project > .img:hover img {
+        filter: blur(0);
       }
     `}</style>
 

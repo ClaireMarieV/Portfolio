@@ -13,61 +13,60 @@ import blob from "../data/2020/blob";
 import alice from "../data/2020/alice";
 import felicity from "../data/2021/felicity";
 
+//Images
+import logoAE from "../public/logos/logoDef.svg";
+import blobImg from "../public/logos/blobGrey.svg";
+
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
     <Content className="content">
-      <div id="span">
-        <ArticleProject className="blog" title={blog.title} category="BLOG" />
-        <Svg />
-        <ArticleProject className="blob" title={blob.title} category="DESIGN" />
-        <Svg />
-        <span>Kiru</span>
-        <Svg />
-
+      <h2>My projects</h2>
+      <div id="projects">
+        <ArticleProject
+          className="identity"
+          title={blog.title}
+          category="Graphic Design"
+          img={logoAE}
+        />
+        <ArticleProject
+          className="blog"
+          title={blog.title}
+          category="ReactJs"
+          img={logoAE}
+        />
+        <ArticleProject
+          className="blob"
+          title={blob.title}
+          category="ReactJs"
+          img={blobImg}
+        />
         <ArticleProject
           className="alice"
           title={alice.title}
-          category="PSYCHOLOGY"
+          category="UI/UX Design"
         />
         <ArticleProject
           className="felicity"
           title={felicity.title}
-          category="PODCAST"
+          category="Wordpress"
         />
       </div>
     </Content>
     <style jsx global>{`
-      #span {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        justify-items: center;
-        gap: 9rem;
+      #projects {
+        display: flex;
+        flex-direction: column;
       }
-      .article-project-blog {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 1;
+
+      #projects .article-project:nth-child(2n + 1) {
+        flex-direction: row-reverse;
       }
-      .article-project-blob {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 2;
-      }
-      .article-project-alice {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 3;
-      }
-      .article-project-felicity {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 4;
+
+      @media (max-width: 700px) {
+        #project {
+          grid-template-columns: auto;
+        }
       }
     `}</style>
   </Layout>
