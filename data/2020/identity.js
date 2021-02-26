@@ -9,8 +9,7 @@ import Viewports from "../../components/Viewports";
 //Images
 import logo from "../../public/logos/logoDef.svg";
 import logoGreen from "../../public/logos/logo.svg";
-import sketches from "../../public/pictures/identity/sketchesBis.jpg";
-import sketch from "../../public/pictures/identity/sketchDef.jpg";
+import sketches from "../../public/pictures/identity/sketchs.jpg";
 import logoWhite from "../../public/pictures/identity/logoSerieWhite.svg";
 import logoBlack from "../../public/pictures/identity/logoSerieBlack.svg";
 import frontCard from "../../public/pictures/identity/frontVisitCard.png";
@@ -36,8 +35,16 @@ export default {
           <h2>Sketchs</h2>
           <div className="sketch">
             <img src={sketches} />
-            <img src={sketch} />
           </div>
+          <p>
+            I converted one of them to a vector with Adobe Illustrator. I was
+            looking for elegance but didn't want a black and white logo. It is
+            there unconsciously thanks to the global shape (diamond) repeated in
+            the middle. The shapes of the leaves are angular and at the same
+            time rounded. Although there has been a trend for thick strokes this
+            year 2021, the lines are fine and the asymmetry of the background
+            color brings smoothness and modernization.
+          </p>
         </div>
         <div className="under-content">
           <h2>Colors</h2>
@@ -49,20 +56,12 @@ export default {
         </div>
         <div className="under-content">
           <h2>Final logo</h2>
-          <div className="sketch">
+          <div className="logo">
             <img src={logo} />
             <img src={logoGreen} />
             <img src={logoWhite} />
             <img src={logoBlack} />
           </div>
-          <p>
-            I converted one of them into a vector. I was looking for an elegance
-            but I did not want a black and white logo where the unconscious
-            diamond in addition to the one in the middle. The shapes of the
-            leaves are angular and at the same time rounded. The lines are fine
-            and the asymmetry of the background color brings a softness and a
-            modernization.
-          </p>
         </div>
         <div className="under-content">
           <h2>Pattern</h2>
