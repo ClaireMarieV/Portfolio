@@ -25,18 +25,16 @@ const Svg = () => (
     <style jsx>{`
       .line {
         display: flex;
-        justify-content: center;
-        justify-self: center;
+        margin: auto;
       }
       svg {
-        max-width: fit-content;
         width: 100%;
       }
       path {
         fill: none;
-        height: 5rem;
-        stroke: #d1d8e7;
-        stroke-width: 0.3rem;
+        height: 3rem;
+        stroke: #e2e9f4;
+        stroke-width: 0.2rem;
       }
     `}</style>
   </div>
