@@ -12,6 +12,26 @@ const AlicePage = () => (
       {article.content}
     </Article>
     <style jsx global>{`
+      .content:nth-child(1) .under-content {
+        display: flex;
+        //   background-image: url(pictures/alice/background.svg);
+        //   background-repeat: no-repeat;
+      }
+      .viewports {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+      }
+      .viewports img {
+        border-radius: 15px;
+      }
+      .responsive {
+        max-width: 10vw;
+      }
+      .desktop {
+        width: 42rem;
+      }
+
       .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

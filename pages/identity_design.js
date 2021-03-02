@@ -16,12 +16,6 @@ const BlogPage = () => (
       {article.content}
     </Article>
     <style jsx global>{`
-      .sketch {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 2rem;
-      }
       .logo {
         display: grid;
         grid-template-columns: 1fr 1fr;

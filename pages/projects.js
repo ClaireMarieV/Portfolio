@@ -32,28 +32,24 @@ const ProjectsPage = () => (
           category="Graphic Design"
           img={logoAE}
         />
-        <Svg />
         <ArticleProject
           className="blog"
           title={blog.title}
           category="ReactJs"
           img={logoAE}
         />
-        <Svg />
         <ArticleProject
           className="blob"
           title={blob.title}
           category="ReactJs"
           img={blobImg}
         />
-        <Svg />
         <ArticleProject
           className="alice"
           title={alice.title}
           category="UI/UX Design"
           img={papillon}
         />
-        <Svg />
         <ArticleProject
           className="felicity"
           title={felicity.title}

@@ -22,7 +22,7 @@ const IndexPage = () => (
       </div>
       <Move>
         <div className="img">
-          <img src="pictures/FaceTres.png" />
+          <img src="pictures/photoAE.png" />
         </div>
       </Move>
 
@@ -93,7 +93,7 @@ const IndexPage = () => (
         height: 0.8rem;
         left: 0.05em;
         top: 1.25em;
-        background: #d1d8e7;
+        background: #e2e9f4;
         transform: scale3d(1, 1, 1);
         transform-origin: 100% 50%;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
