@@ -25,7 +25,7 @@ const AnimatedWords = ({ text }) => {
       wordsRef.current.forEach((ref, index) =>
         animation(
           ref.current,
-          // On s'assure que le pourcentage ne soit pas au dessos de 100%
+          // On s'assure que le pourcentage ne soit pas au dessus de 100%
           Math.min(
             1,
             // On s'assure que le pourcentage ne soit pas en dessous de 0%
@@ -86,7 +86,7 @@ const AnimatedWords = ({ text }) => {
             display: block;
             font-size: 4rem;
             margin: 0;
-            transition: 0.5s;
+            transition: 0.2s;
           }
           span {
             display: inline-block;
