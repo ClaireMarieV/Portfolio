@@ -18,7 +18,7 @@ import pattern from "../../public/pictures/identity/pattern.svg";
 
 export default {
   title: "identity design",
-  category: "BLOG",
+  category: "Graphic Design",
   img: logo,
   content: (
     <>
