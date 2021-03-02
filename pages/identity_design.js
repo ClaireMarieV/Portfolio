@@ -18,7 +18,13 @@ const BlogPage = () => (
     <style jsx global>{`
       .sketch {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 2rem;
+      }
+      .logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
         gap: 2rem;
       }
