@@ -62,6 +62,7 @@ const ProjectsPage = () => (
       #projects {
         display: flex;
         flex-direction: column;
+        gap: 4rem;
       }
 
       #projects .article-project:nth-child(3n + 1) {
