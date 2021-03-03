@@ -1,5 +1,4 @@
 import React from "react";
-import Picture from "./picture";
 
 const Fonts = ({ fonts }) => (
   <div className="fonts">
