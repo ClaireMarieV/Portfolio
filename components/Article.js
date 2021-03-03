@@ -15,7 +15,7 @@ const Article = ({ children, img, category, title, className, id }) => (
           display: grid;
           grid-template-columns: repeat(1, minmax(0, 1fr));
           grid-template-rows: auto;
-          margin: auto;
+          margin: 2rem;
         }
         .article h1 {
           font-size: 4rem;

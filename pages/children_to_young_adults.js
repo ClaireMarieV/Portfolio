@@ -33,6 +33,15 @@ const AlicePage = () => (
       .under-content h2 {
         margin-bottom: 3rem;
       }
+      @media (max-width: 800px) {
+        .colors {
+          grid-template-columns: auto;
+        }
+        .pictures {
+          grid-template-columns: auto;
+          justify-items: center;
+        }
+      }
     `}</style>
   </Layout>
 );

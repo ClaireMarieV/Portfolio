@@ -49,6 +49,11 @@ const BlogPage = () => (
       .card img {
         box-shadow: 10px 7px 33px 2px #dddddd;
       }
+      @media (max-width: 800px) {
+        .colors {
+          grid-template-columns: auto;
+        }
+      }
     `}</style>
   </Layout>
 );

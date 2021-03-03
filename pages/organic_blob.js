@@ -29,6 +29,11 @@ const BlobPage = () => (
       .under-content h2 {
         margin-bottom: 3rem;
       }
+      @media (max-width: 800px) {
+        .colors {
+          grid-template-columns: auto;
+        }
+      }
     `}</style>
   </Layout>
 );

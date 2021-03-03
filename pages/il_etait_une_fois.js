@@ -44,6 +44,11 @@ const BlogPage = () => (
         grid-column-end: 3;
         grid-row-start: 1;
       }
+      @media (max-width: 800px) {
+        .colors {
+          grid-template-columns: auto;
+        }
+      }
     `}</style>
   </Layout>
 );

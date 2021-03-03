@@ -59,6 +59,12 @@ const Fonts = ({ fonts }) => (
         display: flex;
         flex-direction: column;
       }
+      @media (max-width: 800px) {
+        .fonts {
+          display: grid;
+          grid-template-columns: auto;
+        }
+      }
     `}</style>
   </div>
 );

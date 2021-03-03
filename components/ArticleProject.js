@@ -73,9 +73,9 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
     <style jsx>{`
       //SMARTPHONE & TABLETTE
       @media (max-width: 800px) {
+      }
 
       @media (max-width: 400px) {
-
       }
     `}</style>
   </div>
