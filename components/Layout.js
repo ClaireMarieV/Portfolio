@@ -37,11 +37,8 @@ const Layout = ({ children }) => (
           height: 100%;
           color: #1d201f;
           background-color: #f2f4f8;
-          font-family: proxima-nova, sans-serif;
           margin: 0;
           overscroll-behavior: none;
-          perspective: 1px;
-          transform-style: preserve-3d;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -95,7 +92,7 @@ const Layout = ({ children }) => (
 
         p {
           font-weight: 300;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           text-align: justify;
           line-height: 2rem;
         }
@@ -113,7 +110,7 @@ const Layout = ({ children }) => (
           height: 10rem;
           border-radius: 50%;
           padding: 1.5rem;
-          border: 2px solid #d1d8e7;
+          border: 2px solid #e2e9f4;
           background-color: transparent;
           letter-spacing: 0.1rem;
           margin: 0;
