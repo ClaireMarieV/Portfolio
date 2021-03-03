@@ -70,9 +70,32 @@ const ProjectsPage = () => (
       .title h2 {
         font-size: 12rem;
       }
-      @media (max-width: 700px) {
-        #project {
-          grid-template-columns: auto;
+      @media (max-width: 850px) {
+        #projects {
+          grid-template-columns: 1fr 1fr;
+        }
+        .title h2 {
+          font-size: 2rem;
+        }
+        .title {
+          position: inherit;
+          z-index: 0;
+          margin: 0 auto;
+          color: inherit;
+        }
+      }
+      @media (max-width: 500px) {
+        #projects {
+          grid-template-columns: 1fr;
+        }
+        .title h2 {
+          font-size: 2rem;
+        }
+        .title {
+          position: inherit;
+          z-index: 0;
+          margin: 0 auto;
+          color: inherit;
         }
       }
     `}</style>

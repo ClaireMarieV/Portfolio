@@ -7,9 +7,6 @@ import { fromArticle } from "../lib/link";
 
 const ArticleProject = ({ title, category, img, imgHover, className }) => (
   <div className={"article-project"}>
-    <div className="img">
-      <img src={img} />
-    </div>
     <div className="title">
       <div>
         <h2>{title}</h2>
@@ -71,17 +68,6 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         margin: 0;
         text-transform: uppercase;
       }
-      .title div .line {
-        width: 40px;
-        height: 1px;
-        position: relative;
-        background: #000;
-        margin-left: 10px;
-      }
-
-      // .article-project > .img > img {
-      //   width: 20rem;
-      // }
     `}</style>
 
     <style jsx>{`
