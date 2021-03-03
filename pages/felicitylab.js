@@ -8,7 +8,7 @@ import article from "../data/2021/felicity.js";
 const FelicityPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Article title={article.title} img={article.img}>
+    <Article title={article.title} category={article.category}>
       {article.content}
     </Article>
     <style jsx global>{`
@@ -28,6 +28,10 @@ const FelicityPage = () => (
       }
       .colors .grey {
         background: #ededf2;
+      }
+      .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
       .under-content h2 {
         margin-bottom: 3rem;

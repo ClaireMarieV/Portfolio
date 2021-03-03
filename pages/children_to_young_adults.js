@@ -8,30 +8,10 @@ import article from "../data/2020/alice.js";
 const AlicePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Article title={article.title} img={article.img}>
+    <Article title={article.title} category={article.category}>
       {article.content}
     </Article>
     <style jsx global>{`
-      .content:nth-child(1) .under-content {
-        display: flex;
-        //   background-image: url(pictures/alice/background.svg);
-        //   background-repeat: no-repeat;
-      }
-      .viewports {
-        display: flex;
-        justify-content: space-around;
-        justify-items: center;
-      }
-      .viewports img {
-        border-radius: 15px;
-      }
-      .responsive {
-        max-width: 10vw;
-      }
-      .desktop {
-        width: 42rem;
-      }
-
       .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -45,6 +25,10 @@ const AlicePage = () => (
       }
       .colors .white {
         background: #ffffff;
+      }
+      .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
       .under-content h2 {
         margin-bottom: 3rem;
