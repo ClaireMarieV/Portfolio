@@ -1,17 +1,26 @@
 import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
-import Line from "../../components/LineEffect";
-import blob from "../../public/logos/blobGrey.svg";
+import Parallax from "../../components/Parallax";
 import Move from "../../components/Move";
+
+import blob from "../../public/logos/blobGrey.svg";
 export default {
   title: "Organic blob",
-  img: blob,
+  category: "UI/UX Design",
   content: (
     <>
       <Content>
         <div className="under-content">
-          <h2>Typography</h2>
+          <Parallax>
+            <h2>About the project</h2>
+          </Parallax>
+        </div>
+        <div className="under-content">
+          <Parallax>
+            <h2>Typography</h2>
+          </Parallax>
+
           <Fonts
             fonts={[
               {
@@ -28,17 +37,16 @@ export default {
           />
         </div>
         <div className="under-content">
-          <div>
+          <Parallax>
             <h2>Colors</h2>
-            <div className="colors">
-              <Color className="salmon" hex="#A7D4B7" />
-              <Color className="green" hex="#a7d4b7" />
-              <Color className="white" hex="#fafafa" />
-            </div>
+          </Parallax>
+
+          <div className="colors">
+            <Color className="salmon" hex="#A7D4B7" />
+            <Color className="green" hex="#a7d4b7" />
+            <Color className="white" hex="#fafafa" />
           </div>
         </div>
-
-        <h2>UsersFlow</h2>
       </Content>
     </>
   ),

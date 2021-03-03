@@ -3,30 +3,40 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import ContentGrid from "../../components/ContentGrid";
-import Line from "../../components/LineEffect";
 import Viewports from "../../components/Viewports";
+import Parallax from "../../components/Parallax";
 
 //Images
 import pivoine from "../../public/logos/pivoine.svg";
 import blogDesktop from "../../public/pictures/blog/blogDesktop.png";
 import tablettePortrait from "../../public/pictures/blog/blogTablettePortrait.png";
-import tablettePaysage from "../../public/pictures/blog/blogTablettePaysage.png";
 import phonePortrait from "../../public/pictures/blog/blogPortraitSmartphone.png";
-import phonePaysage from "../../public/pictures/blog/blogPaysageSmartphone.png";
 
 export default {
   title: "Il etait une fois",
-  category: "BLOG",
-  img: pivoine,
+  category: "ReactJs",
   content: (
     <>
       <Content>
         <div className="under-content">
-          <h2>About the project</h2>
-          <p></p>
+          <Parallax>
+            <h2>About the project</h2>
+          </Parallax>
+          <p>
+            "Il était une fois" is a blog originally created as a final project
+            of end intensive training . It was written in PHP then I wanted to
+            write it later to learn ReactJs.
+          </p>
+        </div>
+
+        <div className="under-content">
+          <h2>Plateform</h2>
+          <span></span>
         </div>
         <div className="under-content">
-          <h2>Typography</h2>
+          <Parallax>
+            <h2>Typography</h2>
+          </Parallax>
           <Fonts
             fonts={[
               {

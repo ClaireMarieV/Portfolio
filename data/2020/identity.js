@@ -3,8 +3,8 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import ContentGrid from "../../components/ContentGrid";
-import Line from "../../components/LineEffect";
 import Viewports from "../../components/Viewports";
+import Parallax from "../../components/Parallax";
 
 //Images
 import logo from "../../public/logos/logoDef.svg";
@@ -24,7 +24,10 @@ export default {
     <>
       <Content>
         <div className="under-content">
-          <h2>About the project</h2>
+          <Parallax>
+            <h2>About the project</h2>
+          </Parallax>
+
           <p>
             My self-business need a logo that be identifiable and memorable by
             and for my futures employers. For this, the logo had to be simple
@@ -32,7 +35,10 @@ export default {
           </p>
         </div>
         <div className="under-content">
-          <h2>Sketchs</h2>
+          <Parallax>
+            <h2>Sketchs</h2>
+          </Parallax>
+
           <div className="sketch">
             <img src={sketches} />
           </div>
@@ -47,7 +53,10 @@ export default {
           </p>
         </div>
         <div className="under-content">
-          <h2>Colors</h2>
+          <Parallax>
+            <h2>Colors</h2>
+          </Parallax>
+
           <div className="colors">
             <Color className="white-green" hex="#eff5f3" />
             <Color className="green" hex="#b3d1c6" />
@@ -55,7 +64,10 @@ export default {
           </div>
         </div>
         <div className="under-content">
-          <h2>Final logo</h2>
+          <Parallax>
+            <h2>Final logo</h2>
+          </Parallax>
+
           <div className="logo">
             <img src={logo} />
             <img src={logoGreen} />
@@ -64,11 +76,16 @@ export default {
           </div>
         </div>
         <div className="under-content">
-          <h2>Pattern</h2>
+          <Parallax>
+            <h2>Pattern</h2>
+          </Parallax>
           <img src={pattern} />
         </div>
         <div className="under-content">
-          <h2>Social</h2>
+          <Parallax>
+            <h2>Social</h2>
+          </Parallax>
+
           <div className="card">
             <img src={frontCard} />
             <img src={backCard} />
