@@ -7,6 +7,9 @@ import { fromArticle } from "../lib/link";
 
 const ArticleProject = ({ title, category, img, imgHover, className }) => (
   <div className={"article-project"}>
+    <div className="img">
+      <img src={img} />
+    </div>
     <div className="title">
       <div>
         <h2>{title}</h2>
@@ -21,21 +24,17 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
       </div>
     </div>
 
-    <div className="img">
-      <img src={img} />
-    </div>
-
     <style jsx global>{`
       .article-project {
         display: flex;
-        justify-content: space-around;
-        margin: 2rem 0 2rem 0;
+        flex-direction: column;
+        gap: 2rem;
         width: 100%;
       }
       .link-view {
         transform: translate(0px, 0px);
         transform-origin: 100% 50%;
-        margin: 3rem;
+        margin: 1rem;
       }
       .link-view a h3 {
         line-height: 1.4;
@@ -51,7 +50,7 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         margin: auto;
         width: 50px;
         height: 50px;
-        background: #e2e9f4;
+        background: #e7d7d2;
         border-radius: 50%;
         z-index: -1;
         transform-origin: 0% 50%;
@@ -66,11 +65,9 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
       }
       .title {
         padding: 1rem;
-        gap: 3rem;
       }
 
       .title h2 {
-        font-size: 3rem;
         margin: 0;
         text-transform: uppercase;
       }
@@ -82,14 +79,8 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         margin-left: 10px;
       }
 
-      .article-project > .img > img {
-        width: 20rem;
-      }
-      // .article-project > .img img {
-      //   filter: blur(2px);
-      // }
-      // .article-project > .img:hover img {
-      //   filter: blur(0);
+      // .article-project > .img > img {
+      //   width: 20rem;
       // }
     `}</style>
 

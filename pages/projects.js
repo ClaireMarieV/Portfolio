@@ -24,51 +24,52 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
     <Content className="content">
-      <h2>My works</h2>
+      <div className="title">
+        <h2>My works</h2>
+      </div>
       <div id="projects">
         <ArticleProject
           className="identity"
           title={identity.title}
           category="Graphic Design"
-          img={logoAE}
         />
         <ArticleProject
           className="blog"
           title={blog.title}
           category="ReactJs"
-          img={logoAE}
         />
         <ArticleProject
           className="blob"
           title={blob.title}
           category="ReactJs"
-          img={blobImg}
-        />
-        <ArticleProject
-          className="alice"
-          title={alice.title}
-          category="UI/UX Design"
-          img={papillon}
         />
         <ArticleProject
           className="felicity"
           title={felicity.title}
           category="Wordpress"
-          img={felicityImg}
+        />
+        <ArticleProject
+          className="alice"
+          title={alice.title}
+          category="UI/UX Design"
         />
       </div>
     </Content>
-    <style jsx global>{`
+    <style jsx>{`
       #projects {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
       }
-
-      #projects .article-project:nth-child(3n + 1) {
-        flex-direction: row-reverse;
+      .title {
+        position: absolute;
+        z-index: -1;
+        margin: 0 auto;
+        color: #e4eaf1;
       }
-
+      .title h2 {
+        font-size: 12rem;
+      }
       @media (max-width: 700px) {
         #project {
           grid-template-columns: auto;
