@@ -5,14 +5,12 @@ const Content = ({ children }) => (
     {children}
     <style jsx>{`
       .content {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
         margin: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
-        width: 75vw;
-        grid-gap: 7rem;
+        gap: 5rem;
       }
       @media (max-width: 500px) {
         grid-gap: 3rem;
