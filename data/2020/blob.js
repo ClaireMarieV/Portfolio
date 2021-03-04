@@ -52,7 +52,12 @@ export default {
             <Color className="white" hex="#fafafa" />
           </div>
         </div>
-        <Picture title="Final" picture={{ picture: final }} />
+        <div className="final">
+          <Picture title="Final" picture={{ picture: final }} />
+          <a href="https://github.com/ClaireMarieV/Blob" target="_blank">
+            <h3>View source code</h3>
+          </a>
+        </div>
       </Content>
     </>
   ),
