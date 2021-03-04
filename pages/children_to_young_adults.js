@@ -58,7 +58,7 @@ const AlicePage = () => (
         margin: auto;
         width: 50px;
         height: 50px;
-        background: #e7d7d2;
+        background: #efddd7;
         border-radius: 50%;
         z-index: -1;
         transform-origin: 0% 50%;

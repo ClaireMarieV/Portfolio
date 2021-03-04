@@ -23,10 +23,7 @@ export default {
             Felicity is a simple blog wich introduce and go with podcast
             platform. I created a Wordpress theme.
           </p>
-          <div className="pictures">
-            <Picture title="Wireframe Index" picture={{ picture: wireframe }} />
-            <Picture title="Pré-production" picture={{ picture: index }} />
-          </div>
+          <Picture title="Wireframe Index" picture={{ picture: wireframe }} />
         </div>
 
         <div className="under-content">
@@ -65,6 +62,12 @@ export default {
             <Color className="grey" hex="#EDEDF2" />
             <Color className="white" hex="#fbf6f6" />
           </div>
+        </div>
+        <div className="final">
+          <Picture title="Pré-production" picture={{ picture: index }} />
+          <a href="https://felicitylab.com/" target="_blank">
+            <h3>View Website</h3>
+          </a>
         </div>
       </Content>
     </>
