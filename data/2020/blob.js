@@ -3,8 +3,12 @@ import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import Parallax from "../../components/Parallax";
 import Move from "../../components/Move";
+import Picture from "../../components/Picture";
 
 import blob from "../../public/logos/blobGrey.svg";
+import wireframe from "../../public/pictures/blob/wireframe.svg";
+import final from "../../public/pictures/blob/blobBis.png";
+
 export default {
   title: "Organic blob",
   category: "UI/UX Design",
@@ -16,11 +20,12 @@ export default {
             <h2>About the project</h2>
           </Parallax>
         </div>
+        <Picture title="Wireframe" picture={{ picture: wireframe }} />
+
         <div className="under-content">
           <Parallax>
             <h2>Typography</h2>
           </Parallax>
-
           <Fonts
             fonts={[
               {
@@ -47,6 +52,7 @@ export default {
             <Color className="white" hex="#fafafa" />
           </div>
         </div>
+        <Picture title="Final" picture={{ picture: final }} />
       </Content>
     </>
   ),
