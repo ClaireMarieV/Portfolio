@@ -22,16 +22,11 @@ export default {
           </Parallax>
 
           <p>
-            Cette page accompagne le profil Doctolib d'une psychologue
-            spécialisée de l'enfance aux jeunes adultes.
+            This page go with the Doctolib profile of a psychologist specialized
+            from childen to young adults.
           </p>
-          <div className="pictures">
-            <Picture title="Wireframe" picture={{ picture: wireframe }} />
-            <Picture
-              title="Final"
-              picture={{ preview: desktopPreview, picture: desktop }}
-            />
-          </div>
+          <Picture title="Wireframe" picture={{ picture: wireframe }} />
+          <p></p>
         </div>
         <div className="under-content">
           <Parallax>
@@ -68,6 +63,15 @@ export default {
             <Color className="neutral" hex="#ffe1d1" />
             <Color className="white" hex="#ffffff" />
           </div>
+        </div>
+        <div className="final">
+          <Picture
+            title="Final"
+            picture={{ preview: desktopPreview, picture: desktop }}
+          />
+          <a href="https://psychologue-alicefelt.fr/" target="_blank">
+            <h3>View Website</h3>
+          </a>
         </div>
       </Content>
     </>
