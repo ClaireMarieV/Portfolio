@@ -37,7 +37,7 @@ const Picture = ({ picture, title }) => {
         <img className="preview" src={picture.preview} hidden={pictureLoaded} />
         <style jsx>{`
           .picture {
-            // max-width: 33rem;
+            margin: 2rem;
           }
           img {
             object-fit: cover;
