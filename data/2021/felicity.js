@@ -18,7 +18,6 @@ export default {
           <Parallax>
             <h2>About the project</h2>
           </Parallax>
-
           <p>
             Felicity is a simple blog wich introduce and go with podcast
             platform. I created a Wordpress theme.
