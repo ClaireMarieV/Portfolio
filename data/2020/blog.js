@@ -5,12 +5,12 @@ import Content from "../../components/Content";
 import ContentGrid from "../../components/ContentGrid";
 import Viewports from "../../components/Viewports";
 import Parallax from "../../components/Parallax";
+import Picture from "../../components/Picture";
 
 //Images
 import pivoine from "../../public/logos/pivoine.svg";
 import blogDesktop from "../../public/pictures/blog/blogDesktop.png";
-import tablettePortrait from "../../public/pictures/blog/blogTablettePortrait.png";
-import phonePortrait from "../../public/pictures/blog/blogPortraitSmartphone.png";
+import wireframe from "../../public/pictures/blog/wireframe.svg";
 
 export default {
   title: "Il etait une fois",
@@ -27,12 +27,9 @@ export default {
             of end intensive training . It was written in PHP then I wanted to
             write it later to learn ReactJs.
           </p>
+          <Picture title="Wireframe Index" picture={{ picture: wireframe }} />
         </div>
 
-        <div className="under-content">
-          <h2>Plateform</h2>
-          <span></span>
-        </div>
         <div className="under-content">
           <Parallax>
             <h2>Typography</h2>
@@ -60,8 +57,11 @@ export default {
             <Color className="white-pink" hex="#ece0d5" />
           </div>
         </div>
-        <div className="under-content">
-          <h2>Viewports</h2>
+        <div className="final">
+          <Picture title="Final" picture={{ picture: blogDesktop }} />
+          <a href="https://ilétaitunefois.fr/" target="_blank">
+            <h3>View Website</h3>
+          </a>
         </div>
       </Content>
     </>
