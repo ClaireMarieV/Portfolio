@@ -13,59 +13,28 @@ import wireframe from "../../public/pictures/alice/wireframe.png";
 export default {
   title: "Children to young adults",
   category: "UI/UX Design",
-  content: (
-    <>
-      <Content>
-        <div className="under-content">
-          <Picture title="Concept final" picture={{ picture: wireframe }} />
-          <Picture
-            title="HomePage"
-            picture={{ preview: desktopPreview, picture: desktop }}
-          />
-        </div>
-        <div>
-          <h2>About the project</h2>
-          <p>
-            This page go with the Doctolib profile of a psychologist specialized
-            from childen to young adults.
-          </p>
-        </div>
-        <div>
-          <h2>Typography</h2>
-          <Fonts
-            fonts={[
-              {
-                family: "Professor,sans-serif",
-                weight: "Regular",
-                label: "Primary",
-              },
-              {
-                family: "Acumin-pro,sans-serif",
-                weight: "Bold",
-                label: "Secondary",
-              },
-              {
-                family: "Graphie,sans-serif",
-                weight: "Regular",
-                label: "Tertiary",
-              },
-            ]}
-          />
-        </div>
-        <div>
-          <h2>Colors</h2>
-          <div className="colors">
-            <Color className="blue" hex="#a9c1ed" />
-            <Color className="neutral" hex="#ffe1d1" />
-            <Color className="white" hex="#ffffff" />
-          </div>
-        </div>
-        <div className="final">
-          <a href="https://psychologue-alicefelt.fr/" target="_blank">
-            <h3>View Website</h3>
-          </a>
-        </div>
-      </Content>
-    </>
-  ),
+  concept: "/pictures/alice/wireframe.png",
+  render: "/pictures/alice/alice.png",
+  about: `This page go with the Doctolib profile of a psychologist specialized from childen to young adults.`,
+  fonts: [
+    {
+      family: "Professor,sans-serif",
+      weight: "Regular",
+      label: "Primary",
+    },
+    {
+      family: "Acumin-pro,sans-serif",
+      weight: "Bold",
+      label: "Secondary",
+    },
+    {
+      family: "Graphie,sans-serif",
+      weight: "Regular",
+      label: "Tertiary",
+    },
+  ],
+  colors: [{ code: "#a9c1ed" }, { code: "#ffe1d1" }, { code: "#ffffff" }],
+  links: {
+    website: "https://psychologue-alicefelt.fr",
+  },
 };
