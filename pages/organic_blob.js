@@ -26,8 +26,16 @@ const BlobPage = () => (
       .colors .white {
         background: #ece0d5;
       }
+      .under-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+      }
       .under-content h2 {
-        margin-bottom: 3rem;
+        width: 26rem;
+        padding: 2rem;
+        line-height: 1.5;
       }
       .final {
         display: grid;

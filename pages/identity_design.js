@@ -36,8 +36,16 @@ const BlogPage = () => (
       .colors .white-green {
         background: #eff5f3;
       }
-      .under-content h2 {
-        margin-bottom: 3rem;
+      .under-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+      }
+      .under-content h3 {
+        width: 26rem;
+        padding: 2rem;
+        line-height: 1.5;
       }
       .card {
         display: grid;

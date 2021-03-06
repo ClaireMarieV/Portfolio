@@ -30,8 +30,17 @@ const AlicePage = () => (
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
-      .under-content h2 {
-        margin-bottom: 3rem;
+      .under-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+      }
+      .under-content h3 {
+        width: 26rem;
+        padding: 2rem;
+        margin: 0 auto;
+        line-height: 1.5;
       }
       .final {
         display: grid;

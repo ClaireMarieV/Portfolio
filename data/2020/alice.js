@@ -8,7 +8,7 @@ import Parallax from "../../components/Parallax";
 //Images
 import desktopPreview from "../../public/pictures/alice/alice.png?lqip";
 import desktop from "../../public/pictures/alice/alice.png?resize&sizes[]=200&sizes[]=600";
-import wireframe from "../../public/pictures/alice/wireframe.svg";
+import wireframe from "../../public/pictures/alice/wireframe.png";
 
 export default {
   title: "Children to young adults",
@@ -17,22 +17,21 @@ export default {
     <>
       <Content>
         <div className="under-content">
-          <Parallax>
-            <h2>About the project</h2>
-          </Parallax>
-
+          <Picture title="Concept final" picture={{ picture: wireframe }} />
+          <Picture
+            title="HomePage"
+            picture={{ preview: desktopPreview, picture: desktop }}
+          />
+        </div>
+        <div>
+          <h2>About the project</h2>
           <p>
             This page go with the Doctolib profile of a psychologist specialized
             from childen to young adults.
           </p>
-          <Picture title="Wireframe" picture={{ picture: wireframe }} />
-          <p></p>
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Typography</h2>
-          </Parallax>
-
+        <div>
+          <h2>Typography</h2>
           <Fonts
             fonts={[
               {
@@ -53,11 +52,8 @@ export default {
             ]}
           />
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Colors</h2>
-          </Parallax>
-
+        <div>
+          <h2>Colors</h2>
           <div className="colors">
             <Color className="blue" hex="#a9c1ed" />
             <Color className="neutral" hex="#ffe1d1" />
@@ -65,10 +61,6 @@ export default {
           </div>
         </div>
         <div className="final">
-          <Picture
-            title="Final"
-            picture={{ preview: desktopPreview, picture: desktop }}
-          />
           <a href="https://psychologue-alicefelt.fr/" target="_blank">
             <h3>View Website</h3>
           </a>

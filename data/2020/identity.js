@@ -23,73 +23,50 @@ export default {
   content: (
     <>
       <Content>
-        <div className="under-content">
-          <Parallax>
-            <h2>About the project</h2>
-          </Parallax>
-
+        <div>
+          <h2>About the project</h2>
           <p>
             My self-business need a logo that be identifiable and memorable by
             and for my futures employers. For this, the logo had to be simple
             and meaningful while showing my skills.
           </p>
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Sketchs</h2>
-          </Parallax>
+        <h2>Sketchs</h2>
 
-          <div className="sketch">
-            <img src={sketches} />
-          </div>
-          <p>
-            I converted one of them to a vector with Adobe Illustrator. I was
-            looking for elegance but didn't want a black and white logo. It is
-            there unconsciously thanks to the global shape (diamond) repeated in
-            the middle. The shapes of the leaves are angular and at the same
-            time rounded. Although there has been a trend for thick strokes this
-            year 2021, the lines are fine and the asymmetry of the background
-            color brings smoothness and modernization.
-          </p>
+        <div className="sketch">
+          <img src={sketches} />
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Colors</h2>
-          </Parallax>
+        <p>
+          I converted one of them to a vector with Adobe Illustrator. I was
+          looking for elegance but didn't want a black and white logo. It is
+          there unconsciously thanks to the global shape (diamond) repeated in
+          the middle. The shapes of the leaves are angular and at the same time
+          rounded. Although there has been a trend for thick strokes this year
+          2021, the lines are fine and the asymmetry of the background color
+          brings smoothness and modernization.
+        </p>
+        <h2>Colors</h2>
 
-          <div className="colors">
-            <Color className="white-green" hex="#eff5f3" />
-            <Color className="green" hex="#b3d1c6" />
-            <Color className="black" hex="#000000" />
-          </div>
+        <div className="colors">
+          <Color className="white-green" hex="#eff5f3" />
+          <Color className="green" hex="#b3d1c6" />
+          <Color className="black" hex="#000000" />
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Final logo</h2>
-          </Parallax>
+        <h2>Final logo</h2>
 
-          <div className="logo">
-            <img src={logo} />
-            <img src={logoGreen} />
-            <img src={logoWhite} />
-            <img src={logoBlack} />
-          </div>
+        <div className="logo">
+          <img src={logo} />
+          <img src={logoGreen} />
+          <img src={logoWhite} />
+          <img src={logoBlack} />
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Pattern</h2>
-          </Parallax>
-          <img src={pattern} />
-        </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Social</h2>
-          </Parallax>
+        <h2>Pattern</h2>
+        <img src={pattern} />
+        <h2>Social</h2>
 
-          <div className="card">
-            <img src={frontCard} />
-            <img src={backCard} />
-          </div>
+        <div className="card">
+          <img src={frontCard} />
+          <img src={backCard} />
         </div>
       </Content>
     </>

@@ -15,21 +15,24 @@ export default {
     <>
       <Content>
         <div className="under-content">
-          <Parallax>
-            <h2>About the project</h2>
-          </Parallax>
+          <Picture
+            title="Concept final/Index"
+            picture={{ picture: wireframe }}
+          />
+          <Picture
+            title="Pré-production HomePage"
+            picture={{ picture: index }}
+          />
+        </div>
+        <div>
+          <h2>About the project</h2>
           <p>
             Felicity is a simple blog wich introduce and go with podcast
             platform. I created a Wordpress theme.
           </p>
-          <Picture title="Wireframe Index" picture={{ picture: wireframe }} />
         </div>
-
-        <div className="under-content">
-          <Parallax>
-            <h2>Typography</h2>
-          </Parallax>
-
+        <div>
+          <h2>Typography</h2>
           <Fonts
             fonts={[
               {
@@ -50,11 +53,8 @@ export default {
             ]}
           />
         </div>
-        <div className="under-content">
-          <Parallax>
-            <h2>Colors</h2>
-          </Parallax>
-
+        <div>
+          <h2>Colors</h2>
           <div className="colors">
             <Color className="dark-blue" hex="#1e1d28" />
             <Color className="yellow" hex="#fff952" />
@@ -63,7 +63,6 @@ export default {
           </div>
         </div>
         <div className="final">
-          <Picture title="Pré-production" picture={{ picture: index }} />
           <a href="https://felicitylab.com/" target="_blank">
             <h3>View Website</h3>
           </a>

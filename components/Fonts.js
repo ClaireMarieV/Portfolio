@@ -6,7 +6,7 @@ const Fonts = ({ fonts }) => (
       <h1 style={{ fontFamily: fonts[0].family }}>Aa</h1>
     </div>
     {fonts.map((font) => (
-      <div className="content-font">
+      <div key={font.family} className="content-font">
         <div className="font">
           <div>
             <span>{font.label}: </span>
@@ -33,9 +33,9 @@ const Fonts = ({ fonts }) => (
       .fonts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3rem;
-        width: 80vw;
-        margin: auto;
+        grid-gap: 2rem;
+        margin: 2rem;
+        justify-items: baseline;
       }
 
       .fonts span {

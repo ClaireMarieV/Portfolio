@@ -33,16 +33,17 @@ const BlogPage = () => (
       .under-content h2 {
         margin-bottom: 3rem;
       }
-      .viewport-phone .viewport:nth-child(1) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        z-index: 1;
+
+      .under-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
       }
-      .viewport-phone .viewport:nth-child(2) {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
+      .under-content h3 {
+        width: 26rem;
+        padding: 2rem;
+        line-height: 1.5;
       }
       .final {
         display: grid;

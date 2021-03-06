@@ -23,10 +23,7 @@ const Picture = ({ picture, title }) => {
   } else {
     return (
       <div className="picture">
-        <Parallax>
-          <h3>{title}</h3>
-        </Parallax>
-
+        <h3>{title}</h3>
         <img
           src={picture.picture.src || picture.picture}
           srcSet={picture.picture.srcSet}
@@ -42,6 +39,7 @@ const Picture = ({ picture, title }) => {
           img {
             object-fit: cover;
             padding: 0.5rem;
+            max-width: 28rem;
             width: 100%;
             height: auto;
           }

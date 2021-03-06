@@ -6,11 +6,12 @@ import ContentGrid from "../../components/ContentGrid";
 import Viewports from "../../components/Viewports";
 import Parallax from "../../components/Parallax";
 import Picture from "../../components/Picture";
+import UnderContent from "../../components/UnderContent";
 
 //Images
-import pivoine from "../../public/logos/pivoine.svg";
 import blogDesktop from "../../public/pictures/blog/blogDesktop.png";
-import wireframe from "../../public/pictures/blog/wireframe.svg";
+import wireframe from "../../public/pictures/blog/wireframe.png";
+import rustique from "../../public/pictures/blog/rustique4.png";
 
 export default {
   title: "Il etait une fois",
@@ -19,21 +20,22 @@ export default {
     <>
       <Content>
         <div className="under-content">
-          <Parallax>
-            <h2>About the project</h2>
-          </Parallax>
+          <Picture
+            title="Concept final/index"
+            picture={{ picture: wireframe }}
+          />
+          <Picture title="HomePage" picture={{ picture: blogDesktop }} />
+        </div>
+        <div>
+          <h2>About the project</h2>
           <p>
             "Il était une fois" is a blog originally created as a final project
             of end intensive training . It was written in PHP then I wanted to
             write it later to learn ReactJs.
           </p>
-          <Picture title="Wireframe Index" picture={{ picture: wireframe }} />
         </div>
-
-        <div className="under-content">
-          <Parallax>
-            <h2>Typography</h2>
-          </Parallax>
+        <div>
+          <h2>Typography</h2>
           <Fonts
             fonts={[
               {
@@ -49,7 +51,7 @@ export default {
             ]}
           />
         </div>
-        <div className="under-content">
+        <div>
           <h2>Colors</h2>
           <div className="colors">
             <Color className="grey" hex="#262525" />
@@ -58,7 +60,6 @@ export default {
           </div>
         </div>
         <div className="final">
-          <Picture title="Final" picture={{ picture: blogDesktop }} />
           <a href="https://ilétaitunefois.fr/" target="_blank">
             <h3>View Website</h3>
           </a>

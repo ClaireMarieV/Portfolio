@@ -30,8 +30,16 @@ const FelicityPage = () => (
         background: #ededf2;
       }
 
-      .under-content h2 {
-        margin-bottom: 3rem;
+      .under-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+      }
+      .under-content h3 {
+        width: 26rem;
+        padding: 2rem;
+        line-height: 1.5;
       }
       .final {
         display: grid;
