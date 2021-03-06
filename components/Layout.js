@@ -81,7 +81,7 @@ const Layout = ({ children }) => (
 
         h3 {
           color: #242424;
-          padding: 1rem;
+          padding: 1rem 0;
           margin: 0;
           font-size: 1.3rem;
         }
