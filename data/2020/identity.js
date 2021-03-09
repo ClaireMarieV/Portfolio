@@ -24,7 +24,7 @@ export default {
     <>
       <Content>
         <div>
-          <h2>About the project</h2>
+          <h4>About the project</h4>
           <p>
             My self-business need a logo that be identifiable and memorable by
             and for my futures employers. For this, the logo had to be simple
@@ -42,13 +42,13 @@ export default {
           brings smoothness and modernization.`}
         />
 
-        <h2>Colors</h2>
+        <h4>Colors</h4>
         <div className="colors">
           <Color code="#eff5f3" />
           <Color code="#b3d1c6" />
           <Color code="#000000" />
         </div>
-        <h2>Final logo</h2>
+        <h4>Final logo</h4>
         <div className="logo">
           <img src={logo} />
           <img src={logoGreen} />
