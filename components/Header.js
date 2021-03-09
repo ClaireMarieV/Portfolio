@@ -16,11 +16,9 @@ const Header = () => (
           </li>
           <span>____</span>
           <li>
-            <Link href="/contact">
-              <a>
-                <span>contact </span>
-              </a>
-            </Link>
+            <a href="mailto:claire.marie.vaney@gmail.com">
+              <span>contact </span>
+            </a>
           </li>
         </ul>
       </div>
@@ -46,10 +44,12 @@ const Header = () => (
 
       ul {
         display: flex;
-        justify-self: self-end;
         align-items: center;
       }
-
+      .ul {
+        align-items: center;
+        justify-self: center;
+      }
       a {
         display: inline-flex;
         padding: 15px 20px;
