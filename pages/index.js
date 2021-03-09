@@ -5,7 +5,6 @@ import SEO from "../components/Seo";
 import AnimatedWords from "../components/AnimatedWords";
 import Content from "../components/Content";
 import ContentGrid from "../components/ContentGrid";
-import Icon from "../components/Icon";
 import Img from "../components/Img";
 import Move from "../components/Move";
 import Picture from "../components/Picture";
