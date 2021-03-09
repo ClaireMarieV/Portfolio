@@ -40,6 +40,11 @@ const ProjectPage = () => {
         <Links project={project} />
       </div>
       <style jsx>{`
+        .project {
+          display: grid;
+          grid-template-rows: auto;
+          grid-gap: 3rem;
+        }
         .two-columns {
           display: grid;
           grid-template-columns: 1fr 1fr;

@@ -35,6 +35,6 @@ export default {
     { code: "#fbf6f6" },
   ],
   links: {
-    website: "https://felicitylab.com/",
+    website: "https://felicitylab.fr/",
   },
 };
