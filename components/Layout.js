@@ -37,6 +37,7 @@ const Layout = ({ children }) => (
           background-color: #f2f4f8;
           margin: 0;
           overscroll-behavior: none;
+          letter-spacing: 0.03rem;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -86,12 +87,15 @@ const Layout = ({ children }) => (
 
         h4 {
           font-weight: 500;
-          font-size: 1rem;
+          font-size: 4rem;
+          color: #b8c8da;
+          margin: 2rem 0 2rem 0;
+          text-tranform: uppercase;
         }
 
         p {
-          font-weight: 300;
-          font-size: 1.2rem;
+          font-weight: 500;
+          font-size: 1.5rem;
           text-align: justify;
           line-height: 2rem;
         }
@@ -109,7 +113,7 @@ const Layout = ({ children }) => (
           height: 15rem;
           border-radius: 50%;
           padding: 1.5rem;
-          border: 2px solid #e2e9f4;
+          border: 4px solid #e2e9f4;
           background-color: transparent;
           letter-spacing: 0.1rem;
           margin: 0;
