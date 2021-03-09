@@ -1,10 +1,7 @@
 //Comnposants
 import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
-import Viewports from "../../components/Viewports";
-import Parallax from "../../components/Parallax";
 import Picture from "../../components/Picture";
-import UnderContent from "../../components/UnderContent";
 
 export default {
   title: "Il etait une fois",
@@ -29,5 +26,6 @@ export default {
   colors: [{ code: "#262525" }, { code: "#f7c289" }, { code: "#ece0d5" }],
   links: {
     website: "https://ilétaitunefois.fr/",
+    source: "https://github.com/ClaireMarieV/blogReact",
   },
 };
