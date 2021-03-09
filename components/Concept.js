@@ -1,3 +1,5 @@
+import React from "react";
+
 const Concept = ({ project }) => (
   <div>
     <h3>Concept</h3>
