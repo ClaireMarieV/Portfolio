@@ -44,6 +44,7 @@ const ProjectPage = () => {
           display: grid;
           grid-template-rows: auto;
           grid-gap: 4rem;
+          margin: 5rem 0 5rem 0;
         }
         .two-columns {
           display: grid;
