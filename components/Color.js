@@ -21,17 +21,9 @@ const Colors = ({ code }) => (
       .code {
         align-self: center;
         justify-content: center;
-        position: absolute;
-        visibility: hidden;
-        height: 100%;
-      }
-      .code:hover,
-      .color:hover ~ .code {
-        visibility: visible;
       }
       .code span {
         font-weight: 600;
-        color: #494949;
         font-size: 1.2rem;
       }
     `}</style>
