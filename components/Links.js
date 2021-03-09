@@ -2,7 +2,7 @@ const Links = ({ project }) => (
   <div className="link-view">
     {project.links.source && (
       <a href={project.links.source} target="_blank">
-        <h3>View source code</h3>
+        <h4>View source code</h4>
       </a>
     )}
 

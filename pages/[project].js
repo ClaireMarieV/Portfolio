@@ -9,6 +9,7 @@ import About from "../components/About";
 import Typography from "../components/Typography";
 import Colors from "../components/Colors";
 import Links from "../components/Links";
+import Project from "../components/Project";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -28,17 +29,19 @@ const ProjectPage = () => {
 
   return (
     <Layout>
-      <div className="project">
-        <Title project={project} />
-        <div className="two-columns">
-          <Concept project={project} />
-          <Render project={project} />
+      <Project>
+        <div className="project">
+          <Title project={project} />
+          <div className="two-columns">
+            <Concept project={project} />
+            <Render project={project} />
+          </div>
+          <About project={project} />
+          <Typography project={project} />
+          <Colors project={project} />
+          <Links project={project} />
         </div>
-        <About project={project} />
-        <Typography project={project} />
-        <Colors project={project} />
-        <Links project={project} />
-      </div>
+      </Project>
       <style jsx>{`
         .project {
           display: grid;

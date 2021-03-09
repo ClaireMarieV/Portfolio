@@ -2,19 +2,15 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import Article from "../components/Article.js";
+import Project from "../components/Project.js";
 import article from "../data/2020/identity.js";
 
 const BlogPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Article
-      title={article.title}
-      category={article.category}
-      img={article.img}
-    >
+    <Project title={article.title} category={article.category}>
       {article.content}
-    </Article>
+    </Project>
     <style jsx global>{`
       .logo {
         display: grid;

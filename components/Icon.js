@@ -7,7 +7,7 @@ const Icon = ({ picture, title, className, id }) => (
       <Picture className="picture" picture={picture} />
     </div>
     <div className="title">
-      <h3>{title}</h3>
+      <h4>{title}</h4>
     </div>
 
     <style jsx>{`

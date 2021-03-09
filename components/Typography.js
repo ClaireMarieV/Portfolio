@@ -2,7 +2,7 @@ import Fonts from "./Fonts";
 
 const Typography = ({ project }) => (
   <div>
-    <h3>Typography</h3>
+    <h4>Typography</h4>
     <Fonts fonts={project.fonts} />
   </div>
 );

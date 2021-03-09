@@ -2,7 +2,7 @@ import React from "react";
 
 const Concept = ({ project }) => (
   <div>
-    <h3>Concept</h3>
+    <h4>Concept</h4>
     <img src={project.concept} />
   </div>
 );

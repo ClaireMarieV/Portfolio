@@ -1,8 +1,8 @@
 import React from "react";
 
-const Article = ({ children, img, category, title, className, id }) => (
+const Project = ({ children, img, category, title, className, id }) => (
   <>
-    <div className={"article" + (className || "")} id={id}>
+    <div className={"project" + (className || "")} id={id}>
       <div className="title-project">
         <h1>{title}</h1>
         <span>{category}</span>
@@ -11,13 +11,13 @@ const Article = ({ children, img, category, title, className, id }) => (
       <div>{children}</div>
 
       <style jsx global>{`
-        .article {
+        .project {
           display: grid;
           grid-template-columns: repeat(1, minmax(0, 1fr));
           grid-template-rows: auto;
           margin: 2rem;
         }
-        .article h1 {
+        .project h1 {
           font-size: 4rem;
           text-transform: uppercase;
         }
@@ -36,4 +36,4 @@ const Article = ({ children, img, category, title, className, id }) => (
   </>
 );
 
-export default Article;
+export default Project;

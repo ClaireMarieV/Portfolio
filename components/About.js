@@ -1,6 +1,6 @@
 const About = ({ project }) => (
   <div>
-    <h3>About the project</h3>
+    <h4>About the project</h4>
     <p>{project.about}</p>
   </div>
 );
