@@ -1,8 +1,7 @@
 const Render = ({ project }) => (
   <div>
+    <h4>Render Home</h4>
     <img src={project.render} />
-    <h4>Render</h4>
-    <style jsx>{``}</style>
   </div>
 );
 
