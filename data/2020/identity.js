@@ -3,8 +3,9 @@ import Color from "../../components/Color";
 import Fonts from "../../components/Fonts";
 import Content from "../../components/Content";
 import ContentGrid from "../../components/ContentGrid";
-import Viewports from "../../components/Viewports";
-import Parallax from "../../components/Parallax";
+import Pattern from "../../components/Pattern";
+import SocialCard from "../../components/SocialCard";
+import Sketches from "../../components/Sketches";
 
 //Images
 import logo from "../../public/logos/logoDef.svg";
@@ -19,7 +20,6 @@ import pattern from "../../public/pictures/identity/pattern.svg";
 export default {
   title: "identity design",
   category: "Graphic Design",
-  img: logo,
   content: (
     <>
       <Content>
@@ -31,43 +31,32 @@ export default {
             and meaningful while showing my skills.
           </p>
         </div>
-        <h2>Sketchs</h2>
-
-        <div className="sketch">
-          <img src={sketches} />
-        </div>
-        <p>
-          I converted one of them to a vector with Adobe Illustrator. I was
+        <Sketches
+          sketches={sketches}
+          text={`I converted one of them to a vector with Adobe Illustrator. I was
           looking for elegance but didn't want a black and white logo. It is
           there unconsciously thanks to the global shape (diamond) repeated in
           the middle. The shapes of the leaves are angular and at the same time
           rounded. Although there has been a trend for thick strokes this year
           2021, the lines are fine and the asymmetry of the background color
-          brings smoothness and modernization.
-        </p>
-        <h2>Colors</h2>
+          brings smoothness and modernization.`}
+        />
 
+        <h2>Colors</h2>
         <div className="colors">
-          <Color className="white-green" hex="#eff5f3" />
-          <Color className="green" hex="#b3d1c6" />
-          <Color className="black" hex="#000000" />
+          <Color code="#eff5f3" />
+          <Color code="#b3d1c6" />
+          <Color code="#000000" />
         </div>
         <h2>Final logo</h2>
-
         <div className="logo">
           <img src={logo} />
           <img src={logoGreen} />
           <img src={logoWhite} />
           <img src={logoBlack} />
         </div>
-        <h2>Pattern</h2>
-        <img src={pattern} />
-        <h2>Social</h2>
-
-        <div className="card">
-          <img src={frontCard} />
-          <img src={backCard} />
-        </div>
+        <Pattern pattern={pattern} />
+        <SocialCard frontCard={frontCard} backCard={backCard} />
       </Content>
     </>
   ),
