@@ -1,6 +1,10 @@
+import Parallax from "./Parallax";
+
 const Render = ({ project }) => (
   <div>
-    <h4>Render Home</h4>
+    <Parallax>
+      <h4>Render Home</h4>
+    </Parallax>
     <img src={project.render} />
   </div>
 );

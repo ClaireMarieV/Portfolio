@@ -1,9 +1,11 @@
 import React from "react";
-
+import Parallax from "./Parallax";
 const Concept = ({ project }) => (
   <div>
     <img src={project.concept} />
-    <h4>Concept</h4>
+    <Parallax>
+      <h4>Concept</h4>
+    </Parallax>
   </div>
 );
 
