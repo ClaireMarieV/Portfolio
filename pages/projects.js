@@ -5,7 +5,6 @@ import SEO from "../components/Seo";
 
 import ArticleProject from "../components/ArticleProject";
 import Content from "../components/Content";
-import Svg from "../components/Svg";
 
 //Articles
 import blog from "../data/2020/blog";

@@ -1,5 +1,4 @@
 import React from "react";
-import Picture from "./picture";
 import Link from "next/link";
 
 import Parallax from "../components/Parallax";
