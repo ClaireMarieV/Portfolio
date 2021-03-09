@@ -14,12 +14,6 @@ import alice from "../data/2020/alice";
 import felicity from "../data/2021/felicity";
 import identity from "../data/2020/identity";
 
-//Images
-import logoAE from "../public/logos/logoDef.svg";
-import blobImg from "../public/logos/blobGrey.svg";
-import papillon from "../public/logos/papillon.svg";
-import felicityImg from "../public/logos/felicity.svg";
-
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />

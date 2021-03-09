@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
 
 import Project from "../components/Project.js";
 import article from "../data/2020/identity.js";
