@@ -14,7 +14,7 @@ const Links = ({ project }) => (
     <style jsx>{`
       .link-view {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
       }
       .link-view a {
         justify-self: center;
