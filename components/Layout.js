@@ -88,8 +88,8 @@ const Layout = ({ children }) => (
         h4 {
           font-weight: 500;
           font-size: 4rem;
-          color: #b8c8da;
-          margin: 2rem 0 2rem 0;
+          color: #353535;
+          margin: 2rem 0 2rem 1rem;
           text-tranform: uppercase;
         }
 
