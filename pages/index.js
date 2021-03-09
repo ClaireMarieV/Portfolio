@@ -15,7 +15,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Content>
-      <div>
+      <div className="animated-words">
         <AnimatedWords text="HELLO,"></AnimatedWords>
         <AnimatedWords text="I'M FREELANCE DEVELOPER "></AnimatedWords>
         <AnimatedWords text="FRONT AND UI DESIGNER"></AnimatedWords>
@@ -97,6 +97,9 @@ const IndexPage = () => (
         transform: scale3d(1, 1, 1);
         transform-origin: 100% 50%;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      .animated-words {
+        padding: 3rem;
       }
       .titles {
         display: grid;

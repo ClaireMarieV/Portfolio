@@ -20,9 +20,7 @@ const Layout = ({ children }) => (
           overflow: hidden;
           height: 100%;
         }
-        main {
-          height: 100vh;
-        }
+
         html,
         body {
           margin: 0;
@@ -107,8 +105,8 @@ const Layout = ({ children }) => (
         }
         button {
           font-size: 1.3rem;
-          width: 10rem;
-          height: 10rem;
+          width: 15rem;
+          height: 15rem;
           border-radius: 50%;
           padding: 1.5rem;
           border: 2px solid #e2e9f4;
