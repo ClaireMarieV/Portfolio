@@ -10,8 +10,10 @@ const Colors = ({ project }) => (
     </div>
     <style jsx>{`
       .colors {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+        width: 100%;
       }
     `}</style>
   </div>

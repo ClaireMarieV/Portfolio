@@ -8,9 +8,16 @@ const Colors = ({ code }) => (
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-
+      width: 100%;
+      align-items: center;
+    }
       .color {
         min-height: 3rem;
+      }
+      .color:nth-child(2) {
+        align-sef: center;
+
+        justify-content: center;
       }
     `}</style>
   </div>
