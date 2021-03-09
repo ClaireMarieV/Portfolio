@@ -109,8 +109,8 @@ const Layout = ({ children }) => (
         }
         button {
           font-size: 1.3rem;
-          width: 15rem;
-          height: 15rem;
+          width: 10rem;
+          height: 10rem;
           border-radius: 50%;
           padding: 1.5rem;
           border: 4px solid #e2e9f4;
