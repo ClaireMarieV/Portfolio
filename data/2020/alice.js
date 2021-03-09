@@ -5,11 +5,6 @@ import Content from "../../components/Content";
 import Picture from "../../components/Picture";
 import Parallax from "../../components/Parallax";
 
-//Images
-import desktopPreview from "../../public/pictures/alice/alice.png?lqip";
-import desktop from "../../public/pictures/alice/alice.png?resize&sizes[]=200&sizes[]=600";
-import wireframe from "../../public/pictures/alice/wireframe.png";
-
 export default {
   title: "Children to young adults",
   category: "UI/UX Design",
