@@ -74,7 +74,7 @@ const Layout = ({ children }) => (
         h2 {
           font-weight: 400;
           margin-bottom: 0.5rem;
-          font-size: 2rem;
+          font-size: 3rem;
           margin: 0;
         }
 
