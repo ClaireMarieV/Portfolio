@@ -26,6 +26,9 @@ const Colors = ({ code }) => (
         font-weight: 600;
         font-size: 1.2rem;
       }
+      @media (max-width: 700px) {
+        margin: 1rem 0 1rem 0;
+      }
     `}</style>
   </div>
 );

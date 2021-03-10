@@ -4,7 +4,12 @@ const About = ({ project }) => (
     <p>{project.about}</p>
     <style jsx>{`
       .about {
-        width: 35vw;
+        width: 55%;
+      }
+      @media (max-width: 700px) {
+        .about {
+          width: 100%;
+        }
       }
     `}</style>
   </div>

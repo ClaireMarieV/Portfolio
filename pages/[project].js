@@ -50,6 +50,15 @@ const ProjectPage = () => {
           display: grid;
           grid-template-columns: 1fr 1fr;
         }
+        @media (max-width: 600px) {
+          .project {
+            display: block;
+            padding: 2rem;
+          }
+          .two-columns {
+            grid-template-columns: auto;
+          }
+        }
       `}</style>
     </Layout>
   );

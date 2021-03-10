@@ -51,6 +51,11 @@ const Links = ({ project }) => (
         width: 15rem;
         border-radius: 30px;
       }
+      @media (max-width: 600px) {
+        .link-view {
+          grid-template-columns: auto;
+        }
+      }
     `}</style>
   </div>
 );

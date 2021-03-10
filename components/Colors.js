@@ -16,6 +16,11 @@ const Colors = ({ project }) => (
         justify-self: center;
         width: 100%;
       }
+      @media (max-width: 700px) {
+        .colors {
+          grid-template-columns: auto;
+        }
+      }
     `}</style>
   </div>
 );
