@@ -6,7 +6,7 @@ const Colors = ({ project }) => (
     <h4>Colors</h4>
     <div className="colors">
       {project.colors.map((color) => (
-        <Color key={color.code} code={color.code} />
+        <Color key={color.code} name={color.name} code={color.code} />
       ))}
     </div>
     <style jsx>{`

@@ -28,7 +28,11 @@ export default {
       label: "Tertiary",
     },
   ],
-  colors: [{ code: "#a9c1ed" }, { code: "#ffe1d1" }, { code: "#ffffff" }],
+  colors: [
+    { code: "#a9c1ed", name: "Light Steel Blue" },
+    { code: "#ffe1d1", name: "Unbleached Silk" },
+    { code: "#ffffff", name: "White" },
+  ],
   links: {
     website: "https://psychologue-alicefelt.fr",
   },

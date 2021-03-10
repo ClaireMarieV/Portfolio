@@ -23,7 +23,11 @@ export default {
       label: "Secondary",
     },
   ],
-  colors: [{ code: "#262525" }, { code: "#f7c289" }, { code: "#ece0d5" }],
+  colors: [
+    { code: "#262525", name: "Eerie Black" },
+    { code: "#f7c289", name: "Mellow Apricot" },
+    { code: "#ece0d5", name: "Almond" },
+  ],
   links: {
     website: "https://ilétaitunefois.fr/",
     source: "https://github.com/ClaireMarieV/blogReact",

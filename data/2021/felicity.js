@@ -29,10 +29,10 @@ export default {
     },
   ],
   colors: [
-    { code: "#1e1d28" },
-    { code: "#fff952" },
-    { code: "#EDEDF2" },
-    { code: "#fbf6f6" },
+    { code: "#1e1d28", name: "Raisin Black" },
+    { code: "#fff952", name: "Icterine" },
+    { code: "#EDEDF2", name: "Ghost White" },
+    { code: "#fbf6f6", name: "Snow" },
   ],
   links: {
     website: "https://felicitylab.fr/",

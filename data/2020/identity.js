@@ -44,9 +44,9 @@ export default {
 
         <h4>Colors</h4>
         <div className="colors">
-          <Color code="#eff5f3" />
-          <Color code="#b3d1c6" />
-          <Color code="#000000" />
+          <Color code="#eff5f3" name="Cultured" />
+          <Color code="#b3d1c6" name="Opal" />
+          <Color code="#000000" name="Black" />
         </div>
         <h4>Final logo</h4>
         <div className="logo">
