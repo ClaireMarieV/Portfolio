@@ -27,13 +27,11 @@ const Colors = ({ code, name }) => (
       .name {
         align-self: center;
         justify-content: center;
+        padding: 1rem;
       }
       span {
         font-weight: 500;
         font-size: 1.2rem;
-      }
-      @media (max-width: 700px) {
-        margin: 1rem 0 1rem 0;
       }
     `}</style>
   </div>
