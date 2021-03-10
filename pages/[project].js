@@ -43,13 +43,14 @@ const ProjectPage = () => {
         .project {
           display: grid;
           grid-template-rows: auto;
-          grid-gap: 2rem;
+          grid-gap: 3rem;
           margin: 5rem 0 5rem 0;
           padding: 2rem;
         }
         .two-columns {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          gap: 2rem;
         }
 
         @media (max-width: 600px) {

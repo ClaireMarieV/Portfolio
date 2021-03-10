@@ -29,7 +29,7 @@ const Colors = ({ code, name }) => (
         justify-content: center;
       }
       span {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 1.2rem;
       }
       @media (max-width: 700px) {
