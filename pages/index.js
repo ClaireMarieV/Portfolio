@@ -130,6 +130,9 @@ const IndexPage = () => (
           width: 100%;
           margin: 0;
         }
+        .animated-words {
+          padding: 0;
+        }
       }
     `}</style>
   </Layout>

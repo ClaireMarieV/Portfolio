@@ -45,11 +45,13 @@ const ProjectPage = () => {
           grid-template-rows: auto;
           grid-gap: 4rem;
           margin: 5rem 0 5rem 0;
+          padding: 2rem;
         }
         .two-columns {
           display: grid;
           grid-template-columns: 1fr 1fr;
         }
+
         @media (max-width: 600px) {
           .project {
             display: block;

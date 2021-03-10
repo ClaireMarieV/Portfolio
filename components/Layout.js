@@ -97,11 +97,14 @@ const Layout = ({ children }) => (
             font-size: 3rem;
           }
         }
+        @media (max-width: 400px) {
+          h4 {
+            font-size: 2rem;
+          }
+        }
 
         p {
-          font-weight: 500;
-          font-size: 1.5rem;
-          text-align: justify;
+          font-size: 1.3rem;
           line-height: 2rem;
         }
         ul {

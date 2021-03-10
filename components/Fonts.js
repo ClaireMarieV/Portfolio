@@ -65,6 +65,14 @@ const Fonts = ({ fonts }) => (
           grid-template-columns: auto;
         }
       }
+      @media (max-width: 400px) {
+        .font {
+          display: block;
+        }
+        .sentence {
+          display: block;
+        }
+      }
     `}</style>
   </div>
 );
