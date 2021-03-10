@@ -11,8 +11,11 @@ const Content = ({ children }) => (
         padding-bottom: 5rem;
         gap: 5rem;
       }
-      @media (max-width: 500px) {
-        grid-gap: 3rem;
+      @media (max-width: 600px) {
+        .content {
+          grid-gap: 3rem;
+          margin: 2rem;
+        }
       }
     `}</style>
   </div>

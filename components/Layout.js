@@ -74,7 +74,7 @@ const Layout = ({ children }) => (
         h2 {
           font-weight: 400;
           margin-bottom: 0.5rem;
-          font-size: 3rem;
+          font-size: 2rem;
           margin: 0;
         }
 
@@ -91,6 +91,11 @@ const Layout = ({ children }) => (
           color: #353535;
           margin: 2rem 0 2rem 1rem;
           text-tranform: uppercase;
+        }
+        @media (max-width: 600px) {
+          h4 {
+            font-size: 3rem;
+          }
         }
 
         p {

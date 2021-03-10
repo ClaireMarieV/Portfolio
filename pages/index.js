@@ -122,7 +122,10 @@ const IndexPage = () => (
           grid-template-columns: 1fr;
         }
       }
-      @media (max-width: 500px) {
+      @media (max-width: 600px) {
+        .content-button {
+          justify-self: center;
+        }
         .img {
           width: 100%;
           margin: 0;
