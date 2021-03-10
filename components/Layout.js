@@ -89,8 +89,8 @@ const Layout = ({ children }) => (
           font-weight: 500;
           font-size: 4rem;
           color: #353535;
-          margin: 2rem 0 2rem 1rem;
           text-tranform: uppercase;
+          margin: 2rem 0 2rem 0;
         }
         @media (max-width: 600px) {
           h4 {

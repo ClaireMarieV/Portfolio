@@ -43,7 +43,7 @@ const ProjectPage = () => {
         .project {
           display: grid;
           grid-template-rows: auto;
-          grid-gap: 4rem;
+          grid-gap: 2rem;
           margin: 5rem 0 5rem 0;
           padding: 2rem;
         }
