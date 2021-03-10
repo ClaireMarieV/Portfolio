@@ -9,7 +9,7 @@ const Content = ({ children }) => (
         flex-direction: column;
         margin-top: 2rem;
         padding-bottom: 5rem;
-        gap: 5rem;
+        gap: 3rem;
       }
       @media (max-width: 600px) {
         .content {
