@@ -87,16 +87,12 @@ const Layout = ({ children }) => (
 
         h4 {
           font-weight: 500;
-          font-size: 4rem;
+          font-size: 3rem;
           color: #353535;
           text-tranform: uppercase;
           margin: 2rem 0 2rem 0;
         }
-        @media (max-width: 600px) {
-          h4 {
-            font-size: 3rem;
-          }
-        }
+
         @media (max-width: 400px) {
           h4 {
             font-size: 2rem;
