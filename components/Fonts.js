@@ -36,7 +36,9 @@ const Fonts = ({ fonts }) => (
         grid-gap: 2rem;
         justify-items: baseline;
       }
-
+      h1 {
+        font-size: 3rem;
+      }
       .fonts span {
         font-size: 1.2rem;
         align-self: center;
