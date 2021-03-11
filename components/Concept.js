@@ -1,9 +1,7 @@
 const Concept = ({ project }) => (
   <div>
     <h4>Concept</h4>
-    <div>
-      <img src={project.concept} />
-    </div>
+    <img src={project.concept} />
   </div>
 );
 
