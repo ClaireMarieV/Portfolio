@@ -1,8 +1,3 @@
-//Comnposants
-import Color from "../../components/Color";
-import Fonts from "../../components/Fonts";
-import Picture from "../../components/Picture";
-
 export default {
   title: "Il etait une fois",
   category: "ReactJs",

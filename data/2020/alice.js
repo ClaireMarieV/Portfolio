@@ -1,10 +1,3 @@
-//Components
-import Color from "../../components/Color";
-import Fonts from "../../components/Fonts";
-import Content from "../../components/Content";
-import Picture from "../../components/Picture";
-import Parallax from "../../components/Parallax";
-
 export default {
   title: "Children to young adults",
   category: "UI/UX Design",

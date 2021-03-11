@@ -1,15 +1,9 @@
-import Color from "../../components/Color";
-import Fonts from "../../components/Fonts";
-import Content from "../../components/Content";
-import Picture from "../../components/Picture";
-import Parallax from "../../components/Parallax";
-
 export default {
   title: "FelicityLab",
   category: "Wordpress",
   concept: "/pictures/felicity/felicity.png",
   render: "/pictures/felicity/index.png",
-  about: `  Felicity is a simple blog wich introduce and go with podcast
+  about: `Felicity is a simple blog wich introduce and go with podcast
     platform. I created a Wordpress theme.`,
   fonts: [
     {
