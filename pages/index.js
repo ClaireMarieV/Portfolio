@@ -6,7 +6,6 @@ import AnimatedWords from "../components/AnimatedWords";
 import Content from "../components/Content";
 import ContentGrid from "../components/ContentGrid";
 import Move from "../components/Move";
-import Picture from "../components/Picture";
 import Svg from "../components/Svg";
 
 const IndexPage = () => (
@@ -16,7 +15,7 @@ const IndexPage = () => (
       <div className="animated-words">
         <AnimatedWords text="HELLO,"></AnimatedWords>
         <AnimatedWords text="I'M FREELANCE DEVELOPER "></AnimatedWords>
-        <AnimatedWords text="FRONT AND UI DESIGNER"></AnimatedWords>
+        <AnimatedWords text="FRONT AND UI/UX DESIGNER"></AnimatedWords>
       </div>
       <Move>
         <div className="img">
