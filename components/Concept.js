@@ -1,4 +1,3 @@
-import React from "react";
 const Concept = ({ project }) => (
   <div>
     <h4>Concept</h4>
