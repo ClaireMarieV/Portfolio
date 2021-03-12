@@ -46,7 +46,7 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         margin: auto;
         width: 50px;
         height: 50px;
-        background: #efddd7;
+        background: #dedbeb;
         border-radius: 50%;
         z-index: -1;
         transform-origin: 0% 50%;
