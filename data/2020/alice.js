@@ -3,7 +3,7 @@ export default {
   category: "UI/UX Design",
   concept: "/pictures/alice/wireframe.png",
   render: "/pictures/alice/alice.png",
-  about: `This page go with the Doctolib profile of a psychologist specialized from childen to young adults.`,
+  about: `This page was created to go with the Doctolib profile of a psychologist specialized in childen and young adults.`,
   fonts: [
     {
       family: "Professor,sans-serif",

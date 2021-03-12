@@ -3,7 +3,7 @@ export default {
   category: "UI/UX Design",
   concept: "/pictures/blob/wireframe.png",
   render: "/pictures/blob/blob.png",
-  about: ``,
+  about: `The blob generator was created to try my hand at dynamic SVG generation. It allows a user to create random blobs, selecting the color and complexity of the shape.`,
   fonts: [
     {
       family: "Raleway, sans-serif",

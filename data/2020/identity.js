@@ -26,20 +26,21 @@ export default {
         <div>
           <h4>About the project</h4>
           <p>
-            My self-business need a logo that be identifiable and memorable by
-            and for my futures employers. For this, the logo had to be simple
-            and meaningful while showing my skills.
+            My business needed a logo that my future customers would easily
+            recognize and remember. To achieve this, it had to be simple and
+            meaningful while showing my skills.
           </p>
         </div>
         <Sketches
           sketches={sketches}
-          text={`I converted one of them to a vector with Adobe Illustrator. I was
-          looking for elegance but didn't want a black and white logo. It is
-          there unconsciously thanks to the global shape (diamond) repeated in
-          the middle. The shapes of the leaves are angular and at the same time
-          rounded. Although there has been a trend for thick strokes this year
-          2021, the lines are fine and the asymmetry of the background color
-          brings smoothness and modernization.`}
+          text={`I converted one of my sketches to a vector with Adobe Illustrator.
+            I was looking for elegance but didn't want a black and white logo.
+          The logo takes the overall shape of a diamond, further reinforced by
+          the presence of an actual diamond at the top.
+          The leaves are slightly bent to contrast with the sharpness of their angles.
+          Although there has been a trend for thick strokes in 2021,
+          the lines are thin and the asymmetry of the background color
+          brings smoothness and modernity.`}
         />
 
         <h4>Colors</h4>

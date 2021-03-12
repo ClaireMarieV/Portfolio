@@ -3,8 +3,7 @@ export default {
   category: "Wordpress",
   concept: "/pictures/felicity/felicity.png",
   render: "/pictures/felicity/index.png",
-  about: `Felicity is a simple blog wich introduce and go with podcast
-    platform. I created a Wordpress theme.`,
+  about: `Felicity is a simple blog to introduce a podcast and list its episodes. It uses Wordpress with a custom theme I created.`,
   fonts: [
     {
       family: "Bodoni-urw, serif;",

@@ -3,7 +3,7 @@ export default {
   category: "ReactJs",
   concept: "/pictures/blog/wireframe.png",
   render: "/pictures/blog/blogDesktop.png",
-  about: `"Il était une fois" is a blog originally created as a final project of end intensive training. It was written in PHP then I wanted to write it later to learn React.`,
+  about: `"Il était une fois" is a blog originally created as a final project for the end of my training. It was initially written in PHP but i rewrote it later to learn React.`,
   fonts: [
     {
       family: "Gravesend, sans-serif",
