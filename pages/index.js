@@ -14,24 +14,24 @@ const IndexPage = () => (
     <Content>
       <div className="animated-words">
         <AnimatedWords text="HELLO,"></AnimatedWords>
-        <AnimatedWords text="I'M FREELANCE DEVELOPER "></AnimatedWords>
-        <AnimatedWords text="FRONT AND UI/UX DESIGNER"></AnimatedWords>
+        <AnimatedWords text="I'M A FREELANCE FRONT-END"></AnimatedWords>
+        <AnimatedWords text="DEVELOPER AND UI/UX DESIGNER"></AnimatedWords>
       </div>
       <Move>
         <div className="img">
-          <img src="pictures/photoAE.png" />
+          <img src="pictures/photoAEBis.png" />
         </div>
       </Move>
 
       <ContentGrid>
         <div id="title">
           <h2>
-            For several years, I love design whether it's fashion, product or
-            web.
+            For several years, I have loved design whether it's fashion, product
+            or web.
           </h2>
           <h2>
             Creating, modeling and composing a design that will convey an
-            emotion.Living in Nancy, France; I'll glad to tell you more.
+            emotion. Living in Nancy, France; I'll gladly tell you more.
           </h2>
         </div>
         <div className="content-button">
@@ -51,7 +51,7 @@ const IndexPage = () => (
         </div>
         <div>
           <h2>I choose front-development and UX/UI.</h2>
-          <h2>Mix the both is to mix logic and creation.</h2>
+          <h2>To mix both is to mix logic and creation.</h2>
         </div>
       </div>
     </Content>
@@ -73,6 +73,9 @@ const IndexPage = () => (
         transform: matrix(1, 0, 0, 1, 0);
         will-change: transform;
       }
+      .img img {
+        // filter: hue-rotate(30deg);
+      }
       h2 {
         margin-bottom: 5rem;
       }
@@ -90,7 +93,7 @@ const IndexPage = () => (
         height: 0.8rem;
         left: 0.05em;
         top: 1.25em;
-        background: #e2e9f4;
+        background: #dedbeb;
         transform: scale3d(1, 1, 1);
         transform-origin: 100% 50%;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
