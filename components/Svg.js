@@ -33,8 +33,8 @@ const Svg = () => (
       path {
         fill: none;
         height: 3rem;
-        stroke: #e2e9f4;
-        stroke-width: 0.2rem;
+        stroke: #dedbeb;
+        stroke-width: 0.4rem;
       }
     `}</style>
   </div>
