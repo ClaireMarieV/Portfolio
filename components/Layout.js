@@ -14,6 +14,13 @@ const Layout = ({ children }) => (
     >
       <main>{children}</main>
     </div>
+    {process.env.FATHOM && (
+      <script
+        src="https://cdn.usefathom.com/script.js"
+        site={process.env.FATHOM}
+        defer
+      ></script>
+    )}
     <style jsx global>
       {`
         html {
