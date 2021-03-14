@@ -50,7 +50,7 @@ const IndexPage = () => (
           <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
         </div>
         <div>
-          <h2>I choose front-development and UX/UI.</h2>
+          <h2>I chose front-development and UX/UI.</h2>
           <h2>To mix both is to mix logic and creation.</h2>
         </div>
       </div>
@@ -73,13 +73,8 @@ const IndexPage = () => (
         transform: matrix(1, 0, 0, 1, 0);
         will-change: transform;
       }
-      .img img {
-        // filter: hue-rotate(30deg);
-      }
       h2 {
         margin-bottom: 5rem;
-      }
-      h2 {
         letter-spacing: 0.05em;
         transform: translate3d(0, 0, 0);
         transition: transform 0.5s;

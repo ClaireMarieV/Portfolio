@@ -44,7 +44,6 @@ const Layout = ({ children }) => (
           background-color: #f2f4f8;
           margin: 0;
           overscroll-behavior: none;
-          letter-spacing: 0.03rem;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -99,8 +98,21 @@ const Layout = ({ children }) => (
           text-tranform: uppercase;
           margin: 2rem 0 2rem 0;
         }
-
-        @media (max-width: 400px) {
+        @media (max-width: 600px) {
+          h1 {
+            font-size: 3.5rem;
+          }
+          h2 {
+            font-size: 2rem;
+          }
+        }
+        @media (max-width: 500px) {
+          h1 {
+            font-size: 2.5rem;
+          }
+          h2 {
+            font-size: 1.5rem;
+          }
           h4 {
             font-size: 2rem;
           }
