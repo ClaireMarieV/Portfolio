@@ -19,7 +19,7 @@ const IndexPage = () => (
       </div>
       <Move>
         <div className="img">
-          <img src="pictures/photoAEBis.png" />
+          <img src="pictures/photoAEBis.png" alt="profil picture" />
         </div>
       </Move>
 

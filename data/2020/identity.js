@@ -51,10 +51,10 @@ export default {
         </div>
         <h4>Final logo</h4>
         <div className="logo">
-          <img src={logo} />
-          <img src={logoGreen} />
-          <img src={logoWhite} />
-          <img src={logoBlack} />
+          <img src={logo} alt="logo" />
+          <img src={logoGreen} alt="logo contour blanc fond vert" />
+          <img src={logoWhite} alt="logo noir fond blanc" />
+          <img src={logoBlack} alt="logo blanc fond noir" />
         </div>
         <Pattern pattern={pattern} />
         <SocialCard frontCard={frontCard} backCard={backCard} />

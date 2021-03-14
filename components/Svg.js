@@ -7,6 +7,7 @@ const Svg = () => (
       height="100"
       viewBox="0 850 100"
       xmlns="http://www.w3.org/1999/xlink"
+      alt="line svg"
     >
       <path d="M8.2,52.3c0-0.1,854,0,854,0">
         <animate
