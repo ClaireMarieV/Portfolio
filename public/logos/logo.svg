@@ -5,13 +5,14 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;fill:#FFFFFF;}
-	.st2{fill:#B3D1C6;stroke:#EFF5F3;stroke-width:0.75;stroke-miterlimit:10;}
+	.st2{fill:#DEDBEB;stroke:#EFF5F3;stroke-width:0.75;stroke-miterlimit:10;}
 	.st3{opacity:0.49;fill:none;stroke:#EFF5F3;stroke-miterlimit:10;enable-background:new    ;}
 	.st4{fill:none;stroke:#EFF5F3;stroke-width:3;stroke-miterlimit:10;}
-	.st5{display:inline;stroke:#EFF5F3;stroke-width:3;stroke-miterlimit:10;}
+	.st5{display:inline;}
 	.st6{font-family:'GravesendSans-Light';}
 	.st7{font-size:80.6075px;}
 	.st8{display:inline;fill:none;stroke:#EFF5F3;stroke-width:3;stroke-miterlimit:10;}
+	.st9{fill:#B3D1C6;stroke:#EFF5F3;stroke-width:0.75;stroke-miterlimit:10;}
 </style>
 <g id="Background" class="st0">
 	<rect x="-17.3" y="-15" class="st1" width="623.5" height="666.7"/>
@@ -45,14 +46,17 @@
 	<g id="Text" class="st0">
 		<text transform="matrix(1.4932 0 0 1 548.5908 254.1221)" class="st5 st6 st7">CLAIRE</text>
 		<text transform="matrix(1.4932 0 0 1 548.5908 254.1221)" class="st8 st6 st7">CLAIRE</text>
-		<text transform="matrix(1.2257 5.748581e-03 -5.950000e-03 1 587.4235 344.8317)" class="st5 st6" style="font-size:90.5291px;">MARIE</text>
-		<text transform="matrix(1.2257 5.748581e-03 -5.950000e-03 1 587.4235 344.8317)" class="st8 st6" style="font-size:90.5291px;">MARIE</text>
+		<text transform="matrix(1.4932 0 0 1 548.5908 254.1221)" class="st8 st6 st7">CLAIRE</text>
+		<text transform="matrix(1.2257 5.748581e-03 -5.950000e-03 1 587.4229 344.8316)" class="st5 st6" style="font-size:90.5291px;">MARIE</text>
+		<text transform="matrix(1.2257 5.748581e-03 -5.950000e-03 1 587.4229 344.8316)" class="st8 st6" style="font-size:90.5291px;">MARIE</text>
+		<text transform="matrix(1.2257 5.748581e-03 -5.950000e-03 1 587.4229 344.8316)" class="st8 st6" style="font-size:90.5291px;">MARIE</text>
 		<text transform="matrix(1.4932 0 0 1 562.25 433.9521)" class="st5 st6 st7">VANEY</text>
+		<text transform="matrix(1.4932 0 0 1 562.25 433.9521)" class="st8 st6 st7">VANEY</text>
 		<text transform="matrix(1.4932 0 0 1 562.25 433.9521)" class="st8 st6 st7">VANEY</text>
 	</g>
 	<g id="Cadre" class="st0">
 		<rect x="-62.2" y="5.9" class="st8" width="1196.6" height="630.7"/>
 	</g>
 </g>
-<rect x="926.5" y="404.5" class="st2" width="0" height="9"/>
+<rect x="926.5" y="404.5" class="st9" width="0" height="9"/>
 </svg>

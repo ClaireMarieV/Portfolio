@@ -8,7 +8,7 @@ import SocialCard from "../../components/SocialCard";
 import Sketches from "../../components/Sketches";
 
 //Images
-import logo from "../../public/logos/logoDef.svg";
+import logo from "../../public/logos/logo1.svg";
 import logoGreen from "../../public/logos/logo.svg";
 import sketches from "../../public/pictures/identity/sketchs.jpg";
 import logoWhite from "../../public/pictures/identity/logoSerieWhite.svg";
@@ -45,9 +45,10 @@ export default {
 
         <h4>Colors</h4>
         <div className="colors">
-          <Color code="#eff5f3" name="Cultured" />
-          <Color code="#b3d1c6" name="Opal" />
-          <Color code="#000000" name="Black" />
+          <Color code="#F6F5F9" name="Ghost White" />
+          <Color code="#E7E5F1" name="Lavender Web" />
+          <Color code="#DEDBEB" name="Lavender Web" />
+          <Color code="#121212" name="Rich Black FOGRA 39" />
         </div>
         <h4>Final logo</h4>
         <div className="logo">
