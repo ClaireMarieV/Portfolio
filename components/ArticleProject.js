@@ -55,14 +55,14 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         fill: none;
         stroke: #000000;
         stroke-width: 0.7;
-        stroke-dasharray: 172.49;
-        stroke-dashoffset: 172.49;
+        stroke-dasharray: 200.49;
+        stroke-dashoffset: 200.49;
         visibility: hidden;
         transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
       }
       .link-view:hover path {
         visibility: visible;
-        stroke-dasharray: 172.49;
+        stroke-dasharray: 200.49;
         stroke-dashoffset: 0;
         transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
         transition-duration: 0.5s;
