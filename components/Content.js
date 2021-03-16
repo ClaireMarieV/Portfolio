@@ -7,7 +7,7 @@ const Content = ({ children }) => (
       .content {
         display: flex;
         flex-direction: column;
-        margin: 2rem 2rem 0 2rem;
+        margin: 4rem 2rem 0 2rem;
         padding-bottom: 5rem;
         gap: 3rem;
       }

@@ -6,7 +6,7 @@ const animation = (node, animationPercentage) => {
 };
 
 const AnimatedWords = ({ text }) => {
-  const animationDuration = 800;
+  const animationDuration = 500;
   const staggerDelay = 50;
 
   const words = (text || "").split(" ");

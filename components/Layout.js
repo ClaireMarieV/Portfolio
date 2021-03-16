@@ -38,7 +38,6 @@ const Layout = ({ children }) => (
             margin: 0;
             padding: 0;
             border: 0;
-            color: #eff0f5;
           }
           body {
             height: 100%;
@@ -74,7 +73,7 @@ const Layout = ({ children }) => (
             margin: 0;
             font-weight: 400;
             font-style: normal;
-            font-size: 5rem;
+            font-size: 3rem;
           }
           h2,
           h3,
@@ -141,7 +140,7 @@ const Layout = ({ children }) => (
             height: 10rem;
             border-radius: 50%;
             padding: 1.5rem;
-            border: 4px solid #dedbeb;
+            border: 1.5px solid #1d201f;
             background-color: transparent;
             letter-spacing: 0.1rem;
             margin: 0;
