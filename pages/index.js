@@ -13,23 +13,23 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Content>
-      <div className="animated-words">
+      <section className="animated-words">
         <AnimatedWords text="HELLO I'M CLAIRE,"></AnimatedWords>
         <AnimatedWords text="A FRENCH FREELANCE FRONT-END"></AnimatedWords>
         <AnimatedWords text="DEVELOPER AND UI/UX DESIGNER"></AnimatedWords>
-      </div>
+      </section>
       <Move>
         <div className="img">
-          <img src="pictures/photoAEBis.png" alt="profil picture" />
+          <img src="pictures/pictureProfil.png" alt="profil picture" />
         </div>
       </Move>
 
       <ContentGrid>
-        <div id="titles">
-          <h3>
+        <section id="titles">
+          <span>
             For several years, I have loved design whether it's fashion, product
             or web.
-          </h3>
+          </span>
           <div className="surrounded-words">
             <h2>
               Creating, modeling and composing a design that will convey an
@@ -39,7 +39,7 @@ const IndexPage = () => (
             </h2>
             <h2>I'll gladly tell you more.</h2>
           </div>
-        </div>
+        </section>
         <div className="content-button">
           <a download="CVclaireMarieVaney" href="CV02.2021.pdf">
             <button>
@@ -48,7 +48,7 @@ const IndexPage = () => (
           </a>
         </div>
       </ContentGrid>
-      <div className="titles">
+      <section className="titles">
         <div>
           <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
         </div>
@@ -57,16 +57,18 @@ const IndexPage = () => (
           <div className="content-sentences">
             <h2>To mix both is to mix </h2>
             <Contour text="logic and creation." />
-            <h2> </h2>
           </div>
         </div>
-      </div>
+      </section>
+      <section></section>
     </Content>
 
     <style jsx global>{`
-      h3 {
+      #titles span {
         text-transform: uppercase;
         font-weight: 400;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
       }
       .content-button {
         justify-self: center;
