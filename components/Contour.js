@@ -23,12 +23,6 @@ const Svg = ({ text }) => (
         stroke: #000000;
         stroke-width: 1;
         stroke-miterlimit: 10;
-
-      }
-      h2:hover svg{
-        stroke-dasharray: 172.479;
-        stroke-dashoffset: 172.479;
-        stroke-dasharray=172.4788055419922;
       }
       .surrounded-words {
         position: relative;
@@ -40,7 +34,6 @@ const Svg = ({ text }) => (
         left: 50%;
         top: 50%;
         z-index: -1;
-
       }
     `}</style>
   </div>

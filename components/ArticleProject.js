@@ -14,6 +14,20 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
       <div className="link-view">
         <Link href={fromArticle({ title })}>
           <a>
+            <svg
+              className="line__graphic"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="150px"
+              y="75px"
+              viewBox="0 0 210 120"
+            >
+              <path
+                d="M106.9,11.7c0.8-1.9-1.9-3.8-5.5-4.7c-3.6-0.9-7.9-1-12-1C58.1,6.4,29.7,15.1,9.1,26.1c-3,1.6-6.1,3.6-4.8,5.7
+          c1.5,2.4,8,3.2,13.4,3.3c21.2,0.3,41.6-3.4,61.7-6.7c4.1-0.7,8.4-1.3,12.7-1.1"
+              />
+            </svg>
             <h3>View project </h3>
           </a>
         </Link>
@@ -27,37 +41,33 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         gap: 2rem;
         width: 100%;
       }
+
+      path {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 0.7;
+        stroke-miterlimit: 10;
+      }
+      link-view:hover .line__graphic {
+        stroke-dashoffset: 1;
+        transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+        transition-duration: 0.3s;
+      }
       .link-view {
-        transform: translate(0px, 0px);
-        transform-origin: 100% 50%;
-        margin: 1rem;
+        position: relative;
       }
-      .link-view a h3 {
-        line-height: 1.4;
-        transition: all 1s;
-        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-      }
-      .link-view a h3::before {
-        content: "";
+      .link-view svg {
+        width: 150%;
         position: absolute;
-        left: -20px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: 50px;
-        height: 50px;
-        background: #dedbeb;
-        border-radius: 50%;
+        transform: translateX(-70%) translateY(-17%);
+        left: 100%;
+        top: 50%;
         z-index: -1;
-        transform-origin: 0% 50%;
-        transition: transform 1s;
-        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        visibility: hidden;
       }
-      .link-view a h3:hover::before,
-      .link-view a h3:focus::before {
-        transform: scale3d(1, 1, 1);
-        width: 15rem;
-        border-radius: 30px;
+      .link-view:hover svg {
+        visibility: visible;
+        stroke-dasharray: 200;
       }
       .title {
         padding: 1rem;
