@@ -7,6 +7,7 @@ const Layout = ({ children }) => (
     <Head>
       <title>Portfolio Claire Marie Vaney</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="Portfolio Claire Marie Vaney" />
     </Head>
     <div className="layout">
       <Header />
