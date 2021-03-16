@@ -1,6 +1,6 @@
 export default {
   title: "FelicityLab",
-  category: "Wordpress",
+  category: "Wordpress, development, ui design, ux design ",
   concept: "/pictures/felicity/felicity.png",
   render: "/pictures/felicity/index.png",
   about: `Felicity is a simple blog to introduce a podcast and list its episodes. It uses Wordpress with a custom theme I created.`,

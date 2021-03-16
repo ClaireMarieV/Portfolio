@@ -8,8 +8,8 @@ import SocialCard from "../../components/SocialCard";
 import Sketches from "../../components/Sketches";
 
 //Images
-import logo from "../../public/logos/logo1.svg";
-import logoGreen from "../../public/logos/logo.svg";
+import logo from "../../public/logos/logo.svg";
+import logoGreen from "../../public/pictures/identity/logoGreen.svg";
 import sketches from "../../public/pictures/identity/sketchs.jpg";
 import logoWhite from "../../public/pictures/identity/logoSerieWhite.svg";
 import logoBlack from "../../public/pictures/identity/logoSerieBlack.svg";

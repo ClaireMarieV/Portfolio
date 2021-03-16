@@ -1,6 +1,6 @@
 export default {
   title: "Children to young adults",
-  category: "UI/UX Design",
+  category: "Eleventy, development, ui design, ux design, illustration - 2019",
   concept: "/pictures/alice/wireframe.png",
   render: "/pictures/alice/alice.png",
   about: `This page was created to go with the Doctolib profile of a psychologist specialized in childen and young adults.`,

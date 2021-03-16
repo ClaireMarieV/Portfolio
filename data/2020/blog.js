@@ -1,6 +1,6 @@
 export default {
-  title: "Il etait une fois",
-  category: "ReactJs",
+  title: "Once upon a time",
+  category: "ReactJs, development, illustration, ui design, ux design - 2019",
   concept: "/pictures/blog/wireframe.png",
   render: "/pictures/blog/blogDesktop.png",
   about: `"Il était une fois" is a blog originally created as a final project for the end of my training. It was initially written in PHP but i rewrote it later to learn React.`,
