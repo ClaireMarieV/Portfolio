@@ -1,5 +1,5 @@
 const SocialCard = ({ project, alt }) => (
-  <>
+  <section>
     <h4>Social</h4>
     <div className="card">
       <img src={project.frontCard} alt="social card recto" />
@@ -12,6 +12,6 @@ const SocialCard = ({ project, alt }) => (
         gap: 2rem;
       }
     `}</style>
-  </>
+  </section>
 );
 export default SocialCard;

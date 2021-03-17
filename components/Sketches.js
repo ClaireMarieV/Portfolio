@@ -1,8 +1,8 @@
 const Sketches = ({ project }) => (
   <>
-    <div className="sketches">
+    <section className="sketches">
       <img src={project.sketches} alt="croquis logo" />
-    </div>
+    </section>
   </>
 );
 export default Sketches;

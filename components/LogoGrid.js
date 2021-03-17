@@ -1,5 +1,5 @@
 const LogoGrid = ({ project, alt }) => (
-  <>
+  <section>
     <h4>Final logo</h4>
     <div className="logo">
       <img src={project.logo} alt="logo" />
@@ -17,6 +17,6 @@ const LogoGrid = ({ project, alt }) => (
         gap: 2rem;
       }
     `}</style>
-  </>
+  </section>
 );
 export default LogoGrid;
