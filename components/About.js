@@ -1,10 +1,10 @@
 const About = ({ project }) => (
   <div className="about">
-    <h4>About the project</h4>
     <p>{project.about}</p>
     <style jsx>{`
       .about {
-        width: 60%;
+        width: 90%;
+        justify-self: center;
       }
       @media (max-width: 700px) {
         .about {
