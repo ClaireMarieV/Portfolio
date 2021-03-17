@@ -18,7 +18,7 @@ const ProjectsPage = () => (
     <SEO title="Home" />
     <Content className="content">
       <div className="title">
-        <h2>My works</h2>
+        <h2>My Projects</h2>
       </div>
       <div id="projects">
         <ArticleProject
@@ -58,7 +58,7 @@ const ProjectsPage = () => (
         position: absolute;
         z-index: -1;
         margin: 0 auto;
-        color: #e4eaf1;
+        color: #e6eaf2;
       }
       .title h2 {
         font-size: 12rem;
