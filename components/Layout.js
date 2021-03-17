@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
     <Head>
       <html lang="en" />
       <title>Portfolio Claire Marie Vaney</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Portfolio Claire Marie Vaney" />
     </Head>
     <div className="layout">
@@ -50,6 +50,7 @@ const Layout = ({ children }) => (
             background-color: #f2f4f8;
             margin: 0;
             overscroll-behavior: none;
+            letter-spacing: 0.05rem;
           }
           ::-webkit-scrollbar {
             scrollbar-width: 5px;
@@ -142,7 +143,7 @@ const Layout = ({ children }) => (
             height: 10rem;
             border-radius: 50%;
             padding: 1.5rem;
-            border: 1.5px solid #1d201f;
+            border: 2px solid #dedbeb;
             background-color: transparent;
             letter-spacing: 0.1rem;
             margin: 0;
@@ -151,7 +152,7 @@ const Layout = ({ children }) => (
             transition: all 0.3s ease;
           }
           button:hover {
-            transform: rotate(15deg);
+            transform: rotate(46deg);
             transition: all 0.3s ease;
           }
         `}
