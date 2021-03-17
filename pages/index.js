@@ -63,14 +63,28 @@ const IndexPage = () => (
       <section className="end-sentences">
         <h3>You've got a project? An idea?</h3>
         <h3>Let's talk about it and create a solid identity</h3>
-        <div>
+        <svg
+          class="arrow"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 41 57"
+        >
+          <path class="st0" d="M3,1c-5.9,24.2,15.2,30.6,22.1,21.6" />
+          <path
+            class="st0"
+            d="M24.9,26.9c0.2-1.5,0.3-3.1,0.5-4.6c-1.6,0.2-3.1,0.3-4.7,0.5"
+          />
+        </svg>
+        <div className="mail">
           <a href="mailto:claire.marie.vaney@gmail.com">
             <i>
               <h3>Keep in touch by mail</h3>
             </i>
           </a>
           <svg
-            className="line__graphic"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +92,7 @@ const IndexPage = () => (
             y="35px"
             viewBox="0 0 150 35"
           >
-            <path d="M4.5,5.5c76,8,167-4,176-2" />
+            <path className="line__graphic" d="M4.5,5.5c76,8,167-4,176-2" />
           </svg>
         </div>
       </section>
@@ -133,27 +147,30 @@ const IndexPage = () => (
         font-weight: 400;
         font-size: 3rem;
       }
-      .end-sentences svg {
-        width: 35%;
-      }
 
-      .end-sentences path {
+      .end-sentences > .arrow {
+        fill: none;
+        stroke: #cbc6e0;
+        stroke-width: 1.5;
+        width: 8%;
+      }
+      .end-sentences .line__graphic {
         fill: none;
         stroke: #000000;
         stroke-width: 0.5;
         stroke-dasharray: 200.49;
         stroke-dashoffset: 200.49;
-        visibility: hidden;
         transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
       }
-      .end-sentences:hover path {
-        visibility: visible;
+      .end-sentences:hover .line__graphic {
         stroke-dasharray: 200.49;
         stroke-dashoffset: 0;
         transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
         transition-duration: 0.5s;
       }
-
+      .end-sentences .mail {
+        display: inline-block;
+      }
       @media (max-width: 800px) {
         #title {
           width: 100%;
