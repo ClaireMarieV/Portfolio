@@ -49,8 +49,8 @@ const IndexPage = () => (
         </div>
       </ContentGrid>
       <section className="titles">
-        <div>
-          <h1>LESS IS MORE, MAKE IT SIMPLE</h1>
+        <div className="less">
+          <h2>LESS IS MORE, MAKE IT SIMPLE</h2>
         </div>
         <div>
           <h2>I chose front-development and UX/UI.</h2>
@@ -65,16 +65,18 @@ const IndexPage = () => (
         <h3>Let's talk about it and create a solid identity</h3>
         <div>
           <a href="mailto:claire.marie.vaney@gmail.com">
-            <h3>Keep in touch by mail</h3>
+            <i>
+              <h3>Keep in touch by mail</h3>
+            </i>
           </a>
           <svg
             className="line__graphic"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
-            x="100px"
+            x="150px"
             y="35px"
-            viewBox="0 0 100 35"
+            viewBox="0 0 150 35"
           >
             <path d="M4.5,5.5c76,8,167-4,176-2" />
           </svg>
@@ -111,6 +113,9 @@ const IndexPage = () => (
         transform: translate3d(0, 0, 0);
         transition: transform 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      .less h2 {
+        font-size: 4rem;
       }
       #title {
         width: 50vw;

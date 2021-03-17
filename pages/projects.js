@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
-
 import ArticleProject from "../components/ArticleProject";
 import Content from "../components/Content";
+import ArticleLogo from "../components/ArticleLogo";
 
 //Articles
 import blog from "../data/2020/blog";
@@ -21,7 +21,7 @@ const ProjectsPage = () => (
         <h2>My Projects</h2>
       </div>
       <div id="projects">
-        <ArticleProject
+        <ArticleLogo
           className="identity"
           title={identity.title}
           category="Graphic Design"

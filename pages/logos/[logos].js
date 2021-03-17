@@ -1,22 +1,26 @@
 import { useEffect, useState } from "react";
-import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+import Layout from "../../components/Layout";
+import SEO from "../../components/Seo";
 import { useRouter } from "next/router";
-import Title from "../components/Title";
-import Concept from "../components/Concept";
-import Render from "../components/Render";
-import About from "../components/About";
-import Typography from "../components/Typography";
-import Colors from "../components/Colors";
-import Links from "../components/Links";
+import About from "../../components/About";
+import Colors from "../../components/Colors";
+import Title from "../../components/Title";
+import Content from "../../components/Content";
+import ContentGrid from "../../components/ContentGrid";
+import Pattern from "../../components/Pattern";
+import SocialCard from "../../components/SocialCard";
+import Sketches from "../../components/Sketches";
+import Links from "../../components/Links";
+import Text from "../../components/Text";
+import LogoGrid from "../../components/LogoGrid";
 
-const ProjectPage = () => {
+const LogoPage = () => {
   const router = useRouter();
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-    if (router.query.project) {
-      fetch(`/api/projects/${router.query.project}`)
+    if (router.query.logos) {
+      fetch(`/api/logos/${router.query.logos}`)
         .then((response) => response.json())
         .then(setProject);
     }
@@ -30,14 +34,14 @@ const ProjectPage = () => {
     <Layout>
       <div className="project">
         <Title project={project} />
-        <div className="two-columns">
-          <Concept project={project} />
-          <Render project={project} />
-        </div>
         <About project={project} />
-        <Typography project={project} />
+        <Sketches project={project} />
+        <Text project={project} />
+        <div className="two-columns"></div>
         <Colors project={project} />
-        <Links project={project} />
+        <LogoGrid project={project} />
+        <Pattern project={project} />
+        <SocialCard project={project} />
       </div>
       <style jsx>{`
         .project {
@@ -67,4 +71,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default LogoPage;
