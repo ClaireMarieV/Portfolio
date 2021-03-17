@@ -37,7 +37,6 @@ const LogoPage = () => {
         <About project={project} />
         <Sketches project={project} />
         <Text project={project} />
-        <div className="two-columns"></div>
         <Colors project={project} />
         <LogoGrid project={project} />
         <Pattern project={project} />
