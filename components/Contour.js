@@ -11,8 +11,8 @@ const Svg = ({ text }) => (
       viewBox="0 0 210 120"
     >
       <path
-        d="M106.9,11.7c0.8-1.9-1.9-3.8-5.5-4.7c-3.6-0.9-7.9-1-12-1C58.1,6.4,29.7,15.1,9.1,26.1c-3,1.6-6.1,3.6-4.8,5.7
-    	c1.5,2.4,8,3.2,13.4,3.3c21.2,0.3,41.6-3.4,61.7-6.7c4.1-0.7,8.4-1.3,12.7-1.1"
+        d="M107.4,15.4c0.9-1.8-1.6-3.9-5.1-5.1s-7.8-1.6-11.9-1.9C59.1,6.6,30.2,13.3,8.8,22.8c-3.1,1.4-6.3,3.2-5.2,5.3
+    	c1.3,2.5,7.7,3.8,13.1,4.3c21.1,1.8,41.7-0.4,62-2.3c4.1-0.4,8.5-0.7,12.7-0.2"
       />
     </svg>
     <h2>{text}</h2>
@@ -21,8 +21,9 @@ const Svg = ({ text }) => (
       path {
         fill: none;
         stroke: #000000;
-        stroke-width: 1;
+        stroke-width: 0.7;
         stroke-miterlimit: 10;
+        opacity: 0.8;
       }
       .surrounded-words {
         position: relative;
@@ -34,6 +35,14 @@ const Svg = ({ text }) => (
         left: 60%;
         top: 50%;
         z-index: -1;
+      }
+      @media (max-width: 800px) {
+        .surrounded-words svg {
+          width: 90%;
+        }
+        parh {
+          stroke-width: 1.5;
+        }
       }
     `}</style>
   </div>
