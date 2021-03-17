@@ -15,19 +15,15 @@ const Header = () => (
           </li>
           <span>____</span>
           <li>
-            <a href="mailto:claire.marie.vaney@gmail.com">
-              <span>contact </span>
-            </a>
+            <Link href="/projects">
+              <a>
+                <span>PROJECTS</span>
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
-      <div className="ul">
-        <Link href="/projects">
-          <a>
-            <span>PROJECTS</span>
-          </a>
-        </Link>
-      </div>
+      <div className="ul"></div>
     </div>
 
     <style jsx>{`
