@@ -5,6 +5,7 @@ import Header from "./Header";
 const Layout = ({ children }) => (
   <div>
     <Head>
+      <html lang="en" />
       <title>Portfolio Claire Marie Vaney</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="Portfolio Claire Marie Vaney" />
@@ -74,7 +75,7 @@ const Layout = ({ children }) => (
             margin: 0;
             font-weight: 400;
             font-style: normal;
-            font-size: 3rem;
+            font-size: 4rem;
           }
           h2,
           h3,
@@ -91,7 +92,7 @@ const Layout = ({ children }) => (
 
           h3 {
             color: #242424;
-            padding: 1rem 0;
+            padding-top: 1rem;
             margin: 0;
             font-size: 1.3rem;
           }
