@@ -75,7 +75,7 @@ const Layout = ({ children }) => (
             margin: 0;
             font-weight: 400;
             font-style: normal;
-            font-size: 4rem;
+            font-size: 7rem;
           }
           h2,
           h3,

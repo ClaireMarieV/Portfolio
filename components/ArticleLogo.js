@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { fromProject } from "../lib/link";
+import { fromLogo } from "../lib/link";
 
 const ArticleProject = ({ title, category, img, imgHover, className }) => (
   <div className={"article-project"}>
@@ -10,7 +10,7 @@ const ArticleProject = ({ title, category, img, imgHover, className }) => (
         <span>{category}</span>
       </div>
       <div className="link-view">
-        <Link href={fromProject({ title })}>
+        <Link href={fromLogo({ title })}>
           <a>
             <h3>View project </h3>
             <svg

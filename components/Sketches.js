@@ -1,10 +1,7 @@
-import React from "react";
-
-const Sketches = ({ sketches, text }) => (
+const Sketches = ({ project }) => (
   <>
     <div className="sketches">
-      <img src={sketches} alt="croquis logo" />
-      <p>{text}</p>
+      <img src={project.sketches} alt="croquis logo" />
     </div>
   </>
 );

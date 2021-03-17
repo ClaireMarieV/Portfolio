@@ -1,9 +1,7 @@
-import React from "react";
-
-const Logo = ({ pattern, alt }) => (
+const Pattern = ({ project, alt }) => (
   <>
     <h4>Pattern</h4>
-    <img src={pattern} alt="pattern" />
+    <img src={project.pattern} alt="pattern" />
   </>
 );
-export default Logo;
+export default Pattern;
