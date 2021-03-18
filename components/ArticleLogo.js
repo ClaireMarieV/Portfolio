@@ -27,7 +27,6 @@ const ArticleLogo = ({ title, category, year, img, imgHover, className }) => (
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        width: 100%;
       }
 
       svg {
@@ -58,6 +57,7 @@ const ArticleLogo = ({ title, category, year, img, imgHover, className }) => (
       .title > div {
         display: flex;
         flex-direction: column;
+        align-self: center;
       }
       .title img {
         max-width: 5rem;

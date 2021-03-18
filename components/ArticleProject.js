@@ -34,7 +34,6 @@ const ArticleProject = ({
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        width: 100%;
       }
 
       svg {
@@ -65,6 +64,7 @@ const ArticleProject = ({
       .title > div {
         display: flex;
         flex-direction: column;
+        align-self: center;
       }
       .title img {
         max-width: 5rem;
