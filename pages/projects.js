@@ -17,11 +17,11 @@ import identity from "../data/2020/identity";
 const ProjectsPage = () => (
   <Layout>
     <Content className="content">
-      <div className="listing-projects-title">
+      <div className="projects-title">
         <h1>Selected works</h1>
         <span>from 2020 to 2021</span>
       </div>
-      <div id="projects">
+      <div className="listing-projects">
         <ArticleLogo
           className="identity"
           title={identity.title}
@@ -53,36 +53,35 @@ const ProjectsPage = () => (
           year="2020"
         />
       </div>
-      <Mail />
+      <Mail className="mail" />
     </Content>
     <style jsx global>{`
-      #projects {
+      .listing-projects {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 3rem;
+        width: 100%;
       }
-
-      #projects:nth-child(1n + 2) {
-        align-self: end;
+      .article-project:nth-child(even) {
+        align-items: flex-end;
       }
-
-      .listing-projects-title h1 {
+      .projects-title h1 {
         text-transform: uppercase;
         font-size: 3rem;
       }
-      .listing-projects-title {
+      .projects-title {
         display: flex;
         flex-direction: column;
       }
       @media (max-width: 850px) {
-        #projects {
+        .listing-projects {
           grid-template-columns: 1fr 1fr;
         }
-        .listing-projects-title h2 {
+        .projects-title h2 {
           font-size: 4.5rem;
         }
-        .listing-projects-title {
+        .projects-title {
           position: inherit;
           z-index: 0;
           margin: 0 auto;
@@ -90,13 +89,13 @@ const ProjectsPage = () => (
         }
       }
       @media (max-width: 500px) {
-        #projects {
+        .listing-projects {
           grid-template-columns: 1fr;
         }
-        .listing-projects-title h2 {
+        .projects-title h2 {
           font-size: 2rem;
         }
-        .listing-projects-title {
+        .projects-title {
           position: inherit;
           z-index: 0;
           margin: 0 auto;
