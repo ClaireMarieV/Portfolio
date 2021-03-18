@@ -4,8 +4,11 @@ import Header from "./Header";
 
 const Layout = ({ children }) => (
   <div>
-    <Head>
-      <html lang="en" />
+    <Head
+      htmlAttributes={{
+        lang: "fr",
+      }}
+    >
       <title>Portfolio Claire Marie Vaney</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Portfolio Claire Marie Vaney" />
