@@ -55,6 +55,7 @@ const ArticleLogo = ({ title, category, year, img, imgHover, className }) => (
         display: flex;
         flex-direction: column;
         align-self: center;
+        color: #f7c289;
       }
       .title img {
         max-width: 5rem;
@@ -77,7 +78,7 @@ const ArticleLogo = ({ title, category, year, img, imgHover, className }) => (
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 4px;
         top: calc(50%);
         transform: scale3d(0, 1, 1);
         transform-origin: 0% 50%;
@@ -89,7 +90,7 @@ const ArticleLogo = ({ title, category, year, img, imgHover, className }) => (
         transform: scale3d(1, 1, 1);
       }
       a .h3::before {
-        background: #1d201f;
+        background: #dedbeb;
       }
 
       .h3 {
