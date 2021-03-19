@@ -20,30 +20,35 @@ const ProjectsPage = () => (
       <div className="projects-title">
         <h1>Selected works</h1>
         <span>from 2020 to 2021</span>
+        <div>
+          <h2>Interface Design, XP user & </h2>
+          <h2>front-end development</h2>
+          <span>Logotypes </span>
+        </div>
       </div>
       <div className="listing-projects">
         <ArticleLogo
           className="identity"
           title={identity.title}
           category="Graphic Design"
-          year="2019"
+          year="2020"
         />
         <ArticleProject
           className="blog"
           title={blog.title}
-          category="ReactJs"
+          category="ReactJs, UX/UI Design & Illustration"
           year="2020"
         />
         <ArticleProject
           className="blob"
           title={blob.title}
-          category="ReactJs"
+          category="Development & UX/UI Design"
           year="2020"
         />
         <ArticleProject
           className="felicity"
           title={felicity.title}
-          category="Wordpress"
+          category="Development, UX/UI Design & Logotypes"
           year="2021"
         />
         <ArticleProject
@@ -65,7 +70,9 @@ const ProjectsPage = () => (
       }
       .article-project:nth-child(even) {
         align-items: flex-end;
+        // flex-direction: row-reverse;
       }
+
       .projects-title h1 {
         text-transform: uppercase;
         font-size: 3rem;
@@ -73,6 +80,12 @@ const ProjectsPage = () => (
       .projects-title {
         display: flex;
         flex-direction: column;
+      }
+      .projects-title > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-transform: uppercase;
       }
       @media (max-width: 850px) {
         .listing-projects {

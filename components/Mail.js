@@ -66,7 +66,7 @@ const LogoGrid = ({ project, alt }) => (
       }
       .arrow {
         fill: none;
-        stroke: #cbc6e0;
+        stroke: #f7c289;
         stroke-width: 0.8;
         width: 8%;
       }

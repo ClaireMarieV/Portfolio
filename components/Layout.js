@@ -98,7 +98,7 @@ const Layout = ({ children }) => (
             color: #242424;
             padding-top: 1rem;
             margin: 0;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
           }
 
           h4 {
