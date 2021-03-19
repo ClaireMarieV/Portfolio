@@ -1,27 +1,30 @@
 import Link from "next/link";
 import { fromLogo } from "../lib/link";
 import SVG from "./Svg";
-const ArticleLogo = ({ title, category, year, img, imgHover, className }) => (
+const ArticleLogo = ({ title, category, year }) => (
   <div className={"article-project"}>
     <section>
-      <h2>{title}</h2>
-      <span>{category}</span>
+      <div>
+        <h2>{title}</h2>
+        <span>{category}</span>
 
-      <div className="title">
-        <div>
-          <span>{year}</span>
+        <div className="title">
+          <div>
+            <span>{year}</span>
+          </div>
+        </div>
+        <div className="link-view">
+          <img src="/svg/arrowProject.svg" />
+
+          <Link href={fromLogo({ title })}>
+            <a>
+              <h3 className="h3">View project </h3>
+            </a>
+          </Link>
         </div>
       </div>
     </section>
-    <div className="link-view">
-      <img src="/svg/arrowProject.svg" />
 
-      <Link href={fromLogo({ title })}>
-        <a>
-          <h3 className="h3">View project </h3>
-        </a>
-      </Link>
-    </div>
     <style jsx>{`
       .article-project {
         display: flex;
