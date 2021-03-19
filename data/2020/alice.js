@@ -1,5 +1,5 @@
 export default {
-  title: "Children to young adults",
+  title: "Children and young adults",
   category: "Eleventy, development, ui design, ux design, illustration - 2019",
   concept: "/pictures/alice/wireframe.png",
   render: "/pictures/alice/alice.png",
