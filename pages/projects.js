@@ -66,7 +66,8 @@ const ProjectsPage = () => (
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 3rem;
-        width: 100%;
+        width: 90%;
+        align-self: center;
       }
       .article-project:nth-child(even) {
         align-items: flex-end;
