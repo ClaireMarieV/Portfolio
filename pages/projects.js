@@ -62,18 +62,16 @@ const ProjectsPage = () => (
     </Content>
     <style jsx global>{`
       .listing-projects {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         grid-template-rows: auto;
         gap: 3rem;
         width: 80%;
         align-self: center;
       }
       .article-project:nth-child(even) {
-        align-self: self-end;
-        justify-self: flex-end;
+        flex-direction: row-reverse;
       }
-
       .projects-title h1 {
         text-transform: uppercase;
         font-size: 3rem;
@@ -85,7 +83,8 @@ const ProjectsPage = () => (
       .projects-title > div {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-self: center;
+        justify-self: center;
         text-transform: uppercase;
       }
       @media (max-width: 850px) {
