@@ -66,12 +66,12 @@ const ProjectsPage = () => (
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 3rem;
-        width: 90%;
+        width: 80%;
         align-self: center;
       }
       .article-project:nth-child(even) {
-        align-items: flex-end;
-        // flex-direction: row-reverse;
+        align-self: self-end;
+        justify-self: flex-end;
       }
 
       .projects-title h1 {
@@ -92,9 +92,7 @@ const ProjectsPage = () => (
         .listing-projects {
           grid-template-columns: 1fr 1fr;
         }
-        .projects-title h2 {
-          font-size: 4.5rem;
-        }
+
         .projects-title {
           position: inherit;
           z-index: 0;
