@@ -15,13 +15,14 @@ const ArticleProject = ({
       <span>{category}</span>
 
       <div className="title">
-        <img src="/svg/arrowProject.svg" />
         <div>
           <span>{year}</span>
         </div>
       </div>
     </section>
     <div className="link-view">
+      <img src="/svg/arrowProject.svg" />
+
       <Link href={fromProject({ title })}>
         <a>
           <h3 className="h3">View project </h3>
@@ -45,11 +46,6 @@ const ArticleProject = ({
         stroke-width: 0.3px;
         stroke-miterlimit: 10;
       }
-
-      .title {
-        display: flex;
-        padding: 1rem;
-      }
       h2 {
         margin: 0;
         text-transform: uppercase;
@@ -60,46 +56,22 @@ const ArticleProject = ({
       .title > div {
         display: flex;
         flex-direction: column;
-        align-self: center;
         color: #f7c289;
       }
-      .title img {
+      .link-view img {
         max-width: 5rem;
       }
       .title > div > span {
         font-size: 1.5em;
       }
       .link-view {
+        display: flex;
+        align-items: center;
         position: relative;
         max-width: fit-content;
-        padding: 1rem;
       }
 
       a > .h3 {
-        font-weight: 400;
-        transition: all 0.5s;
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-      }
-      .link-view a > .h3::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        top: calc(50%);
-        transform: scale3d(0, 1, 1);
-        transform-origin: 0% 50%;
-        transition: transform 0.5s;
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-      }
-      .link-view a:hover .h3::before,
-      .link-view a:focus .h3::before {
-        transform: scale3d(1, 1, 1);
-      }
-      a .h3::before {
-        background: #dedbeb;
-      }
-
-      .h3 {
         padding: 0;
       }
     `}</style>
