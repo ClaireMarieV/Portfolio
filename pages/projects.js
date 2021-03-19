@@ -85,7 +85,7 @@ const ProjectsPage = () => (
       .projects-title > div {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         text-transform: uppercase;
       }
       @media (max-width: 850px) {
