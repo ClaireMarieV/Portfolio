@@ -21,5 +21,8 @@ export default {
     { code: "#a7d4b7", name: "Turquoise Green" },
     { code: "#fafafa", name: "Cultured" },
   ],
-  links: { source: "https://github.com/ClaireMarieV/Blob" },
+  links: {
+    website: "https://organicblob.com/",
+    source: "https://github.com/ClaireMarieV/Blob",
+  },
 };
