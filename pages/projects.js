@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import ArticleProject from "../components/ArticleProject";
-import Content from "../components/Content";
+import ContentGrid from "../components/ContentGrid";
 import ArticleLogo from "../components/ArticleLogo";
 import Mail from "../components/Mail";
 
@@ -16,14 +16,13 @@ import identity from "../data/2020/identity";
 
 const ProjectsPage = () => (
   <Layout>
-    <Content className="content">
+    <ContentGrid className="content">
       <div className="projects-title">
         <h1>Selected works</h1>
         <span>from 2020 to 2021</span>
         <div>
-          <h2>Interface Design, XP user & </h2>
+          <h2>Interface design, user experience & </h2>
           <h2>front-end development</h2>
-          <span>Logotypes </span>
         </div>
       </div>
       <div className="listing-projects">
@@ -59,22 +58,21 @@ const ProjectsPage = () => (
         />
       </div>
       <Mail className="mail" />
-    </Content>
+    </ContentGrid>
     <style jsx global>{`
       .listing-projects {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         flex-direction: column;
         grid-template-rows: auto;
-        gap: 3rem;
-        width: 80%;
-        align-self: center;
+        gap: 8rem;
+        justify-self: center;
+        justify-items: center;
       }
-      .article-project:nth-child(even) {
-        flex-direction: row-reverse;
-      }
+
       .projects-title h1 {
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 4rem;
       }
       .projects-title {
         display: flex;
@@ -83,9 +81,9 @@ const ProjectsPage = () => (
       .projects-title > div {
         display: flex;
         flex-direction: column;
-        align-self: center;
-        justify-self: center;
-        text-transform: uppercase;
+      }
+      .sentences {
+        justify-self: end;
       }
       @media (max-width: 850px) {
         .listing-projects {
@@ -103,7 +101,7 @@ const ProjectsPage = () => (
         .listing-projects {
           grid-template-columns: 1fr;
         }
-        .projects-title h2 {
+        .projects-title h1 {
           font-size: 2rem;
         }
         .projects-title {

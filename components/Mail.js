@@ -42,7 +42,7 @@ const LogoGrid = ({ project, alt }) => (
     <style jsx>{`
       .sentences h3 {
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       .sentences .line__graphic {
         fill: none;
