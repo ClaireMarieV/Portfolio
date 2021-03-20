@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import ArticleProject from "../components/ArticleProject";
-import ContentGrid from "../components/ContentGrid";
+import OneColumn from "../components/OneColumn";
 import ArticleLogo from "../components/ArticleLogo";
 import Mail from "../components/Mail";
 
@@ -16,13 +16,13 @@ import identity from "../data/2020/identity";
 
 const ProjectsPage = () => (
   <Layout>
-    <ContentGrid className="content">
+    <OneColumn className="content">
       <div className="projects-title">
         <h1>Selected works</h1>
         <span>from 2020 to 2021</span>
         <div>
-          <h2>Interface design, user experience & </h2>
-          <h2>front-end development</h2>
+          <h2>Graphic and Interface design, user experience & </h2>
+          <h2>Front-end development</h2>
         </div>
       </div>
       <div className="listing-projects">
@@ -58,7 +58,7 @@ const ProjectsPage = () => (
         />
       </div>
       <Mail className="mail" />
-    </ContentGrid>
+    </OneColumn>
     <style jsx global>{`
       .listing-projects {
         display: grid;
