@@ -53,7 +53,8 @@ const Layout = ({ children }) => (
             background-color: #f2f4f8;
             margin: 0;
             overscroll-behavior: none;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.06rem;
+            font-family: neue-haas-grotesk-display, sans-serif;
           }
           ::-webkit-scrollbar {
             scrollbar-width: 5px;
@@ -75,7 +76,6 @@ const Layout = ({ children }) => (
             text-decoration: none;
           }
           h1 {
-            font-family: neue-haas-grotesk-display, sans-serif;
             margin: 0;
             font-weight: 400;
             font-style: normal;
@@ -146,7 +146,7 @@ const Layout = ({ children }) => (
             height: 10rem;
             border-radius: 50%;
             padding: 1.5rem;
-            border: 2px solid #dedbeb;
+            border: 3px solid #dedbeb;
             background-color: transparent;
             letter-spacing: 0.1rem;
             margin: 0;
