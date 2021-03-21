@@ -10,6 +10,7 @@ const OneColumn = ({ children }) => (
         margin: 0 auto 4rem auto;
         line-height: 3rem;
         gap: 4rem;
+        padding: 2rem;
       }
     `}</style>
   </div>

@@ -85,9 +85,10 @@ const ProjectsPage = () => (
       .sentences {
         justify-self: end;
       }
-      @media (max-width: 850px) {
+      @media (max-width: 900px) {
         .listing-projects {
           grid-template-columns: 1fr 1fr;
+          justify-items: baseline;
         }
 
         .projects-title {
