@@ -12,9 +12,16 @@ const ContentGrid = ({ children }) => (
         gap: 4rem;
         width: 44%;
       }
+      @media (max-width: 1100px) {
+        .content-grid {
+          width: 60%;
+        }
+      }
+
       @media (max-width: 800px) {
         .content-grid {
           grid-template-columns: repeat(1, 1fr);
+          width: 100%;
         }
       }
     `}</style>
