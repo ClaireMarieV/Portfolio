@@ -16,6 +16,11 @@ const LogoGrid = ({ project, alt }) => (
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
       }
+      @media (max-width: 500px) {
+        .logo {
+          grid-template-columns: 1fr;
+        }
+      }
     `}</style>
   </section>
 );

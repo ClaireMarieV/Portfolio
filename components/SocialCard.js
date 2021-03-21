@@ -14,6 +14,11 @@ const SocialCard = ({ project, alt }) => (
       .card img {
         box-shadow: 10px 16px 10px rgb(0 0 0 / 3%);
       }
+      @media (max-width: 500px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+      }
     `}</style>
   </section>
 );
