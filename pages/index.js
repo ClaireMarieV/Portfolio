@@ -79,9 +79,7 @@ const IndexPage = () => (
       }
       .img {
         width: 35vw;
-        margin: auto;
-        margin-bottom: 4rem;
-        margin-top: 4rem;
+        margin: 4rem auto 4rem auto;
         transform: matrix(1, 0, 0, 1, 0);
         will-change: transform;
       }
