@@ -11,6 +11,9 @@ const SocialCard = ({ project, alt }) => (
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
       }
+      .card img {
+        box-shadow: 10px 16px 10px rgb(0 0 0 / 3%);
+      }
     `}</style>
   </section>
 );
