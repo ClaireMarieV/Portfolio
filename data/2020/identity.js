@@ -15,8 +15,8 @@ export default {
       brings smoothness and modernity.`,
   colors: [
     { code: "#F6F5F9", name: "Ghost White" },
-    { code: "#E7E5F1", name: "Lavender Web" },
-    { code: "#DEDBEB", name: "Lavender Web" },
+    { code: "#E4E7F1", name: "Ghost White" },
+    { code: "#D1D5E7", name: "Light Periwinkle" },
     { code: "#121212", name: "Rich Black FOGRA 39" },
   ],
   frontCard: "/pictures/identity/frontVisitCard.png",
