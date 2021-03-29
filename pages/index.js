@@ -19,9 +19,25 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Content>
         <section className="animated-words">
-          <AnimatedWords text="HELLO I'M CLAIRE,"></AnimatedWords>
-          <AnimatedWords text="A FRENCH FREELANCE FRONT-END"></AnimatedWords>
-          <AnimatedWords text="DEVELOPER AND UI/UX DESIGNER"></AnimatedWords>
+          <AnimatedWords
+            text={
+              router.locale === "fr" ? `BONJOUR, CLAIRE` : `HELLO I'M CLAIRE,`
+            }
+          ></AnimatedWords>
+          <AnimatedWords
+            text={
+              router.locale === "fr"
+                ? `FREELANCE DEVELOPPEUSE`
+                : `A FRENCH FREELANCE FRONT-END`
+            }
+          ></AnimatedWords>
+          <AnimatedWords
+            text={
+              router.locale === "fr"
+                ? `FRONT ET UX/UI DESIGNER`
+                : `DEVELOPER AND UI/UX DESIGNER`
+            }
+          ></AnimatedWords>
         </section>
         <Move>
           <div className="img">
@@ -41,7 +57,9 @@ const IndexPage = () => {
                 {router.locale === "fr"
                   ? `Créer, modeler et composer un design, y transmettre une `
                   : `Creating, shaping and composing a design, conveying an`}
-                <Contour text="emotion" />
+                <Contour
+                  text={router.locale === "fr" ? `émotion` : `emotion`}
+                />
               </h2>
               <h2>
                 {router.locale === "fr"
@@ -82,7 +100,13 @@ const IndexPage = () => {
                   ? `Allier les deux c'est allier`
                   : `To mix both is to mix`}
               </h2>
-              <Contour text="logic and creation." />
+              <Contour
+                text={
+                  router.locale === "fr"
+                    ? `logique et création.`
+                    : `logic and creation.`
+                }
+              />
             </div>
           </div>
         </section>

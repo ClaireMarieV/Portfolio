@@ -11,7 +11,7 @@ const Header = () => {
             <li>
               <Link href="/">
                 <a>
-                  <span>ClAIRE MARIE VANEY</span>
+                  <span>CLAIRE MARIE VANEY</span>
                 </a>
               </Link>
             </li>
