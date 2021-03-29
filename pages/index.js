@@ -45,7 +45,7 @@ const IndexPage = () => {
               </h2>
               <h2>
                 {router.locale === "fr"
-                  ? `est de la recherche mais on y met aussi un peu de soi. Je serai ravie de vous en dire plus. `
+                  ? `est de la recherche mais on y met aussi un peu de soi. Je serai ravie de vous en dire plus si vous le souhaitez. `
                   : ` is research but also a bit of ourselves. I would gladly tell you more.`}
               </h2>
             </div>
