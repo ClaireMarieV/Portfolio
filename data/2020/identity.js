@@ -8,7 +8,7 @@ export default {
     en: `My business needed a logo that my future customers would easily
             recognize and remember. To achieve this, it had to be simple and
             meaningful while showing my skills.`,
-    fr: `Mon entreprise avait besoin d'un logo que mes futurs clients reconnaitraient se souviendraient facilement. Pour y parvenir, il fallait que ce soit simple et
+    fr: `Mon entreprise avait besoin d'un logo facilement identifiable. Pour y parvenir, il fallait que ce soit simple et
             significatif tout en montrant mes compétences.`,
   },
   sketches: "/pictures/identity/sketchs.jpg",
