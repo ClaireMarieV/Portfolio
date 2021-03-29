@@ -39,7 +39,7 @@ const LogoGrid = ({ project, alt }) => {
             <i>
               <h3>
                 {router.locale === "fr"
-                  ? `Restons-en contact par email!`
+                  ? `Restons-en contact par email`
                   : `Keep in touch by mail`}
               </h3>
             </i>

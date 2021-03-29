@@ -39,16 +39,14 @@ const IndexPage = () => {
             <div className="surrounded-words">
               <h2>
                 {router.locale === "fr"
-                  ? `Créer, modeler et composer un design qui transmet une `
-                  : `Creating, modeling and composing a design that will convey an`}
-                <div>
-                  <Contour text="emotion" />
-                </div>
+                  ? `Créer, modeler et composer un design, y transmettre une `
+                  : `Creating, shaping and composing a design, conveying an`}
+                <Contour text="emotion" />
               </h2>
               <h2>
                 {router.locale === "fr"
-                  ? `est un réel plaisir. Je serai ravie de vous en dire plus. `
-                  : `is a I'll gladly tell you more.`}
+                  ? `est de la recherche mais on y met aussi un peu de soi. Je serai ravie de vous en dire plus. `
+                  : ` is research but also a bit of ourselves. I would gladly tell you more.`}
               </h2>
             </div>
           </section>
@@ -111,7 +109,6 @@ const IndexPage = () => {
           will-change: transform;
         }
         h2 {
-          margin-bottom: 2rem;
           letter-spacing: 0.05em;
           transform: translate3d(0, 0, 0);
           transition: transform 0.5s;

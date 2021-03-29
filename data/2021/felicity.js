@@ -1,9 +1,16 @@
 export default {
-  title: "FelicityLab",
-  category: "Wordpress, development, ui design, ux design ",
+  title: `FelicityLab`,
+  category: {
+    en: `Wordpress, development, ui design, ux design`,
+    fr: `Wordpress, developpement, ui design, ux design`,
+  },
   concept: "/pictures/felicity/felicity.png",
   render: "/pictures/felicity/index.png",
-  about: `Felicity is a simple blog to introduce a podcast and list its episodes. It uses Wordpress with a custom theme I created.`,
+  about: {
+    en: `Felicity is a simple blog to introduce a podcast and list its episodes. It uses Wordpress with a custom theme I created.`,
+    fr: `Felicity est un blog pour présenter un podcast et lister ses épisodes ainsi que des articles.
+    Il a été crée avec Wordpress à partir d'un thème personnalisé que j'ai créé.`,
+  },
   fonts: [
     {
       family: "Bodoni-urw, serif;",

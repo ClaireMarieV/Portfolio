@@ -1,9 +1,16 @@
 export default {
   title: "Children and young adults",
-  category: "Eleventy, development, ui design, ux design, illustration - 2019",
+  category: {
+    en: "Eleventy, development, ui design, ux design, illustration - 2019",
+    fr: "Eleventy, développement, ui design, ux design, illustration, 2019",
+  },
   concept: "/pictures/alice/wireframe.png",
   render: "/pictures/alice/alice.png",
-  about: `This page was created to go with the Doctolib profile of a psychologist specialized in childen and young adults.`,
+  about: {
+    en: `This page was created to go with the Doctolib profile of a psychologist specialized in childen and young adults.`,
+    fr:
+      "Cette page a été crée pour accompagner le profil Doctolib d'une psychologue spécialisée dans la période de l'enfance aux jeunes adultes compris.",
+  },
   fonts: [
     {
       family: "Professor,sans-serif",

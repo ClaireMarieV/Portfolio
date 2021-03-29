@@ -44,7 +44,7 @@ const Header = () => {
               <span>French</span>
             </a>
           </Link>
-          <Link href="/" locale="en-US">
+          <Link href="/" locale="en">
             <a>
               <span>English</span>
             </a>
@@ -64,7 +64,6 @@ const Header = () => {
           text-transform: uppercase;
         }
         span {
-          padding: 1rem;
           cursor: pointer;
         }
         ul {
