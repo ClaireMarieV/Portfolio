@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <header>
       <div className="header">
@@ -32,7 +34,7 @@ const Header = () => {
         c1.5,2.4,8,3.2,13.4,3.3c21.2,0.3,41.6-3.4,61.7-6.7c4.1-0.7,8.4-1.3,12.7-1.1"
                     />
                   </svg>
-                  <span>PROJECTS</span>
+                  <span>{router.locale === "fr" ? `PROJETS` : `PROJECTS`}</span>
                 </a>
               </Link>
             </li>
