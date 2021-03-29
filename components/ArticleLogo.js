@@ -19,8 +19,6 @@ const ArticleLogo = ({ title, category, year }) => {
             </div>
           </div>
           <div className="link-view">
-            <img src="/svg/arrowProject.svg" />
-
             <Link href={fromLogo({ title })}>
               <a>
                 <h3 className="h3">
@@ -64,6 +62,7 @@ const ArticleLogo = ({ title, category, year }) => {
         .link-view img {
           max-width: 5rem;
         }
+
         .title > div > span {
           font-size: 1.5em;
         }

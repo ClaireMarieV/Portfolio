@@ -19,8 +19,6 @@ const ArticleProject = ({ title, category, year }) => {
             </div>
           </div>
           <div className="link-view">
-            <img src="/svg/arrowProject.svg" />
-
             <Link href={fromProject({ title })}>
               <a>
                 <h3 className="h3">
@@ -71,6 +69,13 @@ const ArticleProject = ({ title, category, year }) => {
           display: flex;
           align-items: center;
           position: relative;
+        }
+        .link-view a {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
 
         a > .h3 {

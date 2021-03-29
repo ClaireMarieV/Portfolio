@@ -58,13 +58,13 @@ const IndexPage = () => {
                   ? `Créer, modeler et composer un design, y transmettre une `
                   : `Creating, shaping and composing a design, conveying an`}
                 <Contour
-                  text={router.locale === "fr" ? `émotion` : `emotion`}
+                  text={router.locale === "fr" ? `émotion est ` : `emotion is `}
                 />
               </h2>
               <h2>
                 {router.locale === "fr"
-                  ? `est de la recherche mais on y met aussi un peu de soi. Je serai ravie de vous en dire plus si vous le souhaitez. `
-                  : ` is research but also a bit of ourselves. I would gladly tell you more.`}
+                  ? `de la recherche mais on y met aussi un peu de soi. Je serai ravie de vous en dire plus si vous le souhaitez. `
+                  : `research but also a bit of ourselves. I would gladly tell you more.`}
               </h2>
             </div>
           </section>

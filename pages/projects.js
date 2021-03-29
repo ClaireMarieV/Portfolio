@@ -78,7 +78,6 @@ const ProjectsPage = () => {
           grid-template-rows: auto;
           gap: 8rem;
           justify-self: center;
-          justify-items: center;
         }
 
         .projects-title h1 {
