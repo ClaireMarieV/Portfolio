@@ -16,44 +16,16 @@ const LogoGrid = ({ project, alt }) => {
           : `Let's talk about it and create a solid identity`}
       </h3>
       <div className="arrow-mail">
-        <svg
-          id="arrow"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          viewBox="-6 0 40 60"
-        >
-          <path
-            className="arrow"
-            d="M3.9,0.7C-4,8.5,14,2.2,8.6,8.3C-2.7,21,12.7,23.2,20.2,16.1"
-          />
-          <path
-            className="arrow"
-            d="M19.4,19.8c0.3-1.2,0.5-2.5,0.8-3.7c-1.5,0-2.9,0-4.4,0"
-          />
-          <path className="arrow" d="M5.9,13.2" />
-        </svg>
         <div className="mail">
           <a href="mailto:claire.marie.vaney@gmail.com">
             <i>
               <h3>
                 {router.locale === "fr"
-                  ? `Restons-en contact par email`
+                  ? `Restons en contact par email`
                   : `Keep in touch by mail`}
               </h3>
             </i>
           </a>
-          <svg
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            x="150px"
-            y="35px"
-            viewBox="0 0 150 35"
-          >
-            <path className="line__graphic" d="M4.5,5.5c76,8,167-4,176-2" />
-          </svg>
         </div>
       </div>
       <style jsx>{`
@@ -89,6 +61,33 @@ const LogoGrid = ({ project, alt }) => {
         }
         .arrow-mail {
           display: flex;
+        }
+        .mail {
+          position: relative;
+          transition: 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+        .mail h3::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.8rem;
+          z-index: -1;
+          opacity: 0.8;
+          background: #f7c289;
+          transform: scale3d(0.3, 1, 1);
+          transform-origin: 0% 50%;
+          transition: transform 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        /* Hover */
+
+        .mail a:hover h3::before,
+        .mail a:focus h3::before {
+          transform: scale3d(1, 1, 1);
         }
         @media (max-width: 600px) {
           .sentences h3 {
