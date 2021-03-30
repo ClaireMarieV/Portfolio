@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 
-import AnimatedWords from "../components/AnimatedWords";
+import PerspectiveWords from "../components/PerspectiveWords";
 import Content from "../components/Content";
 import ContentGrid from "../components/ContentGrid";
 import Move from "../components/Move";
@@ -19,25 +19,25 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Content>
         <section className="animated-words">
-          <AnimatedWords
+          <PerspectiveWords
             text={
               router.locale === "fr" ? `BONJOUR, CLAIRE` : `HELLO I'M CLAIRE,`
             }
-          ></AnimatedWords>
-          <AnimatedWords
+          ></PerspectiveWords>
+          <PerspectiveWords
             text={
               router.locale === "fr"
                 ? `FREELANCE DEVELOPPEUSE`
                 : `A FRENCH FREELANCE FRONT-END`
             }
-          ></AnimatedWords>
-          <AnimatedWords
+          ></PerspectiveWords>
+          <PerspectiveWords
             text={
               router.locale === "fr"
                 ? `FRONT ET UX/UI DESIGNER`
                 : `DEVELOPER AND UI/UX DESIGNER`
             }
-          ></AnimatedWords>
+          ></PerspectiveWords>
         </section>
         <Move>
           <div className="img">
