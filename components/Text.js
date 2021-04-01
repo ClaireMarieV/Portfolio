@@ -1,11 +1,10 @@
 import { useRouter } from "next/router";
-import WaveWords from "./WaveWords";
 
 const Text = ({ project }) => {
   const router = useRouter();
   return (
     <div>
-      <WaveWords text={project.text[router.locale]} />
+      <p>{project.text[router.locale]} </p>
       <style jsx>{``}</style>
     </div>
   );
