@@ -33,20 +33,7 @@ const LogoGrid = ({ project, alt }) => {
           font-weight: 400;
           font-size: 2.5rem;
         }
-        .sentences .line__graphic {
-          fill: none;
-          stroke: #000000;
-          stroke-width: 0.5;
-          stroke-dasharray: 200.49;
-          stroke-dashoffset: 200.49;
-          transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-        }
-        .sentences:hover .line__graphic {
-          stroke-dasharray: 200.49;
-          stroke-dashoffset: 0;
-          transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
-          transition-duration: 0.5s;
-        }
+
         .sentences .mail {
           display: inline-block;
         }
@@ -73,7 +60,7 @@ const LogoGrid = ({ project, alt }) => {
           bottom: 0;
           left: 0;
           width: 100%;
-          height: 0.8rem;
+          height: 0.3rem;
           z-index: -1;
           opacity: 0.8;
           background: #f7c289;
