@@ -1,7 +1,11 @@
+import BottomTranslate from "./BottomTranslate";
+
 const Sketches = ({ project }) => (
   <>
     <section className="sketches">
-      <img src={project.sketches} alt="croquis logo" />
+      <BottomTranslate>
+        <img src={project.sketches} alt="croquis logo" />
+      </BottomTranslate>
     </section>
   </>
 );

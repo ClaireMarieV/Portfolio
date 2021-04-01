@@ -1,7 +1,11 @@
+import PerspectivePicture from "./PerspectivePicture";
+
 const Concept = ({ project }) => (
   <div>
     <h4>Concept</h4>
-    <img src={project.concept} alt="wireframe" />
+    <PerspectivePicture>
+      <img src={project.concept} alt="wireframe" />
+    </PerspectivePicture>
     <style jsx>{``}</style>
   </div>
 );

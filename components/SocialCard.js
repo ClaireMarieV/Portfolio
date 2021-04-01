@@ -1,9 +1,15 @@
+import PerspectivePicture from "./PerspectivePicture";
+
 const SocialCard = ({ project, alt }) => (
   <section>
     <h4>Social</h4>
     <div className="card">
-      <img src={project.frontCard} alt="social card recto" />
-      <img src={project.backCard} alt="social card verso" />
+      <PerspectivePicture>
+        <img src={project.frontCard} alt="social card recto" />
+      </PerspectivePicture>
+      <PerspectivePicture>
+        <img src={project.backCard} alt="social card verso" />
+      </PerspectivePicture>
     </div>
     <style jsx>{`
       .card {

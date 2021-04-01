@@ -92,9 +92,6 @@ const WaveWords = ({ text }) => {
           p > span.whitespace {
             width: 0.5rem;
           }
-          @media (max-width: 500px) {
-            font-size: 2rem;
-          }
         `}
       </style>
     </div>
