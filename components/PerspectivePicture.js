@@ -17,7 +17,6 @@ const PerspectivePicture = ({ children }) => {
   return (
     <motion.div
       className="container-perspective"
-      style={{ transformPerspective: 4000 }}
       whileHover={{
         translateY: 5,
         transformPerspective: 3000,
@@ -40,7 +39,7 @@ const PerspectivePicture = ({ children }) => {
         ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ ease: "easeOut", duration: 1 }}
+        transition={{ ease: "easeOut", duration: 1.5 }}
         variants={{
           visible: {
             rotateY: 0,
