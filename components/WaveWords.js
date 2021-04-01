@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef, createRef } from "react";
 
 const animation = (node, animationPercentage) => {
-  // node.style.transform = `translate(0px, ${(1 - animationPercentage) * 100}%)`;
-  node.style.transform = `matrix(1, 0, 0,${animationPercentage}, -${animationPercentage}, -1)`;
+  node.style.transform = `translateY( ${(1 - animationPercentage) * 100}%)`;
 };
 
-const AnimatedWords = ({ text }) => {
-  const animationDuration = 500;
-  const staggerDelay = 50;
+const WaveWords = ({ text }) => {
+  const animationDuration = 400;
+  const staggerDelay = 10;
 
   const words = (text || "").split(" ");
   const wordsRef = useRef(words.map(() => createRef()));
@@ -59,7 +58,7 @@ const AnimatedWords = ({ text }) => {
 
   return (
     <div className="split">
-      <h1>
+      <p>
         {words
           .map((word, wordIndex) => (
             <span key={wordIndex} ref={wordsRef.current[wordIndex]}>
@@ -75,24 +74,23 @@ const AnimatedWords = ({ text }) => {
               ),
             []
           )}
-      </h1>
+      </p>
       <style jsx>
         {`
           .split {
             display: flex;
           }
-          h1 {
+          p {
             overflow: hidden;
             display: block;
-            font-size: 4rem;
             margin: 0;
             transition: 0.2s;
           }
           span {
             display: inline-block;
           }
-          h1 > span.whitespace {
-            width: 1rem;
+          p > span.whitespace {
+            width: 0.5rem;
           }
           @media (max-width: 500px) {
             font-size: 2rem;
@@ -103,4 +101,4 @@ const AnimatedWords = ({ text }) => {
   );
 };
 
-export default AnimatedWords;
+export default WaveWords;

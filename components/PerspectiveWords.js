@@ -7,7 +7,7 @@ const animation = (node, animationPercentage) => {
 
 const PerspectiveWords = ({ text }) => {
   const animationDuration = 500;
-  const staggerDelay = 50;
+  const staggerDelay = 150;
 
   const words = (text || "").split(" ");
   const wordsRef = useRef(words.map(() => createRef()));
