@@ -36,7 +36,7 @@ const ArticleProject = ({ title, category, year }) => {
         }
         span {
           font-size: 1.5rem;
-          color: #f7c289;
+          color: #cbc6e0;
         }
 
         a > .h3 {
