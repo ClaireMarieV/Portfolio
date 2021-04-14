@@ -60,10 +60,10 @@ const LogoGrid = ({ project, alt }) => {
           bottom: 0;
           left: 0;
           width: 100%;
-          height: 0.3rem;
+          height: 1rem;
           z-index: -1;
           opacity: 0.8;
-          background: #f7c289;
+          background: #cbc6e0;
           transform: scale3d(0.3, 1, 1);
           transform-origin: 0% 50%;
           transition: transform 0.5s;

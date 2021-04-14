@@ -146,7 +146,7 @@ const Layout = ({ children }) => (
             height: 10rem;
             border-radius: 50%;
             padding: 1rem;
-            border: 3px solid #dedbeb;
+            border: 4px solid #dedbeb;
             background-color: transparent;
             letter-spacing: 0.1rem;
             margin: 0;
