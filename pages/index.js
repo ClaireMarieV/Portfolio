@@ -69,7 +69,7 @@ const IndexPage = () => {
             </div>
           </section>
           <div className="content-button">
-            <a download="CVclaireMarieVaney" href="CV02.2021.pdf">
+            <a download="CVclaireMarieVaney" href="/CVclaireMarieVaney.pdf">
               <button>
                 <span>
                   {router.locale === "fr"

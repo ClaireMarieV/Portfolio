@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 25.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 330.7 321.2" style="enable-background:new 0 0 330.7 321.2;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#F6E056;stroke-width:6;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#F6E056;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#F6E056;stroke-width:3;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#F6E056;stroke-width:10;stroke-miterlimit:10;}
-	.st4{fill:#F6E056;stroke:#F6E056;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#F6E056;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#373737;stroke-width:10;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M33.2,247.4V43.7c0-6.5,3.9-11.8,8.6-11.8h246.4c4.8,0,8.6,5.3,8.6,11.8v203.7c0,6.5-3.9,11.8-8.6,11.8H41.9
-	C37.1,259.2,33.2,253.9,33.2,247.4z"/>
-<path class="st1" d="M17.5,266v-1"/>
-<line class="st2" x1="296.8" y1="68.7" x2="32.2" y2="69.4"/>
-<line class="st2" x1="284.7" y1="50.7" x2="221.4" y2="50.7"/>
-<path class="st3" d="M143.7,101.7l-47.3,41.8c-2.7,2-2.8,6.7-0.2,8.6l46.6,43"/>
-<line class="st3" x1="183.7" y1="86" x2="150.5" y2="213"/>
-<path class="st3" d="M189.9,101.8l47.3,41.8c2.7,2,2.8,6.7,0.2,8.6l-46.6,43"/>
-<ellipse class="st4" cx="62.5" cy="51.2" rx="2.9" ry="4.3"/>
-<ellipse class="st4" cx="92.4" cy="51.1" rx="2.9" ry="4.3"/>
-<ellipse class="st4" cx="82.2" cy="51.2" rx="2.9" ry="4.3"/>
-<ellipse class="st4" cx="72.4" cy="51.1" rx="2.9" ry="4.3"/>
-<ellipse class="st4" cx="212.2" cy="50.6" rx="2.9" ry="4.3"/>
+<path class="st0" d="M17.5,266v-1"/>
+<path class="st1" d="M132.2,101.7l-47.3,41.8c-2.7,2-2.8,6.7-0.2,8.6l46.6,43"/>
+<line class="st1" x1="182" y1="81.9" x2="148.8" y2="214.9"/>
+<path class="st1" d="M198.5,101.7l45.5,41.8c2.6,2,2.7,6.7,0.2,8.6l-44.8,43"/>
 </svg>
