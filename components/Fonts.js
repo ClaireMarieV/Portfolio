@@ -40,7 +40,7 @@ const Fonts = ({ fonts }) => (
         font-size: 3rem;
       }
       .fonts span {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         align-self: center;
         justify-self: center;
       }
