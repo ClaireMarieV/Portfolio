@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const Links = ({ project }) => {
   const router = useRouter();
-
   return (
     <div className="link-view">
       <div className="link">
@@ -31,36 +31,32 @@ const Links = ({ project }) => {
           align-items: center;
           justify-items: center;
         }
-
-        .link-view a h3 {
-          line-height: 1.4;
-          transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-          margin: 1rem;
-        }
         .link {
           position: relative;
+          transition: 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
-        .link svg {
+        .link a h3::before {
+          content: "";
           position: absolute;
+          bottom: 0;
           left: 0;
-          top: 0;
-          width: 200%;
+          width: 100%;
+          height: 1rem;
           z-index: -1;
+          opacity: 0.8;
+          background: #dedbeb;
+          transform: scale3d(0, 1, 1);
+          transform-origin: 0% 50%;
+          transition: transform 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
 
-        path {
-          fill: none;
-          stroke: #000000;
-          stroke-width: 1;
-          stroke-dasharray: 200.49;
-          stroke-dashoffset: 200.49;
-          transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-        }
-        .link:hover path {
-          stroke-dasharray: 200.49;
-          stroke-dashoffset: 0;
-          transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
-          transition-duration: 0.5s;
+        /* Hover */
+
+        .link a:hover h3::before,
+        .link a:focus h3::before {
+          transform: scale3d(1, 1, 1);
         }
         @media (max-width: 600px) {
           .link-view {
