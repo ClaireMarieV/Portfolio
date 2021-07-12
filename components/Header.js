@@ -66,31 +66,6 @@ const Header = () => {
           display: inline-flex;
           padding: 15px 20px;
         }
-        .projects {
-          position: relative;
-        }
-        .projects svg {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 200%;
-          z-index: -1;
-        }
-
-        path {
-          fill: none;
-          stroke: #000000;
-          stroke-width: 1;
-          stroke-dasharray: 200.49;
-          stroke-dashoffset: 200.49;
-          transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-        }
-        .projects:hover path {
-          stroke-dasharray: 200.49;
-          stroke-dashoffset: 0;
-          transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
-          transition-duration: 0.5s;
-        }
 
         @media screen and (max-height: 300px) {
           ul {
