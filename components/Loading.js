@@ -11,16 +11,12 @@ const Loading = () => (
     <style jsx>{`
       .loading {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         justify-items: center;
         gap: 2rem;
-        margin: 4rem auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
         overflow: hidden;
         height: 100vh;
       }
