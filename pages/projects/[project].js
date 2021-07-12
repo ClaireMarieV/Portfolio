@@ -9,6 +9,7 @@ import About from "../../components/About";
 import Typography from "../../components/Typography";
 import Colors from "../../components/Colors";
 import Links from "../../components/Links";
+import Loading from "../../components/Loading";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -23,7 +24,11 @@ const ProjectPage = () => {
   }, [router]);
 
   if (!project) {
-    return <Layout>Loading</Layout>;
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (

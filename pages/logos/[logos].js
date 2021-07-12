@@ -13,6 +13,7 @@ import Sketches from "../../components/Sketches";
 import Links from "../../components/Links";
 import Text from "../../components/Text";
 import LogoGrid from "../../components/LogoGrid";
+import Loading from "../../components/Loading";
 
 const LogoPage = () => {
   const router = useRouter();
@@ -27,7 +28,11 @@ const LogoPage = () => {
   }, [router]);
 
   if (!project) {
-    return <Layout>Loading</Layout>;
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
   }
 
   return (
