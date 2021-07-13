@@ -18,7 +18,7 @@ export default {
     en:
       "The purpose of this website is to make a simplified e-commerce website with a minimalist interface and user experience where the merchant has autonomy",
     fr:
-      "Le but de ce site est de faire un site e-commerce simplifié avec une interface et experience utilisateur minimaliste ou le commercant a une autonomie",
+      "Le but de ce site est de faire un site e-commerce simplifié avec une interface et experience utilisateur minimaliste et où le commercant à une autonomie",
   },
 
   colors: [
