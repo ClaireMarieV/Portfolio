@@ -3,9 +3,11 @@ import Layout from "../../components/Layout";
 import SEO from "../../components/Seo";
 import { useRouter } from "next/router";
 import Title from "../../components/Title";
-import Concept from "../../components/Concept";
 import Render from "../../components/Render";
 import About from "../../components/About";
+import Years from "../../components/Years";
+import Role from "../../components/Role";
+import Goals from "../../components/Goals";
 import Typography from "../../components/Typography";
 import Colors from "../../components/Colors";
 import Links from "../../components/Links";
@@ -35,12 +37,12 @@ const ProjectPage = () => {
     <Layout>
       <div className="project">
         <Title project={project} />
-        <div className="two-columns">
-          <Concept project={project} />
-          <Render project={project} />
-        </div>
+        <Render project={project} />
         <About project={project} />
-        <Typography project={project} />
+        <Goals project={project} />
+        <Render project={project} />
+        <Render project={project} />
+        <Render project={project} />
         <Colors project={project} />
         <Links project={project} />
       </div>
@@ -48,16 +50,22 @@ const ProjectPage = () => {
         .project {
           display: grid;
           grid-template-rows: auto;
-          grid-gap: 3rem;
-          margin: 5rem 0 5rem 0;
+          justify-items: center;
+          row-gap: 10rem;
+          margin: 5rem auto 5rem auto;
           padding: 2rem;
+          max-width: 90%;
         }
         .two-columns {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 2rem;
         }
-
+        // .three-columns {
+        //   display: grid;
+        //   grid-template-columns: repeat(3, 1fr);
+        //   gap: 2rem;
+        // }
         @media (max-width: 600px) {
           .project {
             display: block;
