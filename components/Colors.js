@@ -10,6 +10,7 @@ const Colors = ({ project }) => (
       ))}
     </div>
     <style jsx>{`
+      width: 100%;
       .colors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
