@@ -21,20 +21,22 @@ const IndexPage = () => {
         <section className="animated-words">
           <PerspectiveWords
             text={
-              router.locale === "fr" ? `BONJOUR, CLAIRE` : `HELLO I'M CLAIRE,`
+              router.locale === "fr"
+                ? `BONJOUR, JE M'APPELLE CLAIRE`
+                : `HELLO I'M CLAIRE,`
             }
           ></PerspectiveWords>
           <PerspectiveWords
             text={
               router.locale === "fr"
-                ? `FREELANCE DEVELOPPEUSE`
+                ? `UNE FREELANCE FRANCAISE DEVELOPPEUSE FRONT `
                 : `A FRENCH FREELANCE FRONT-END`
             }
           ></PerspectiveWords>
           <PerspectiveWords
             text={
               router.locale === "fr"
-                ? `FRONT ET UX/UI DESIGNER`
+                ? `ET UX/UI DESIGNER`
                 : `DEVELOPER AND UI/UX DESIGNER`
             }
           ></PerspectiveWords>
