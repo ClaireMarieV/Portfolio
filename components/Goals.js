@@ -68,6 +68,11 @@ const Goals = ({ project }) => {
           display: flex;
           flex-direction: column;
         }
+        @media (max-width: 700px) {
+          section {
+            grid-template-columns: auto;
+          }
+        }
       `}</style>
     </section>
   );
