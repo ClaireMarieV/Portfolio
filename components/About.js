@@ -8,8 +8,12 @@ const About = ({ project }) => {
       <p>{project.about[router.locale]} </p>
       <style jsx>{`
         .about {
-          width: 90%;
+          display: flex;
           justify-self: center;
+          justify-content: center;
+        }
+        .about p {
+          font-size: 1.8rem;
         }
         @media (max-width: 700px) {
           .about {
