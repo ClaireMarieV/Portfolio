@@ -21,6 +21,11 @@ Il a été initialement écrit en PHP et réécrit plus tard pour apprendre Reac
     fr:
       "Le but de ce site est de faire un site e-commerce simplifié avec une interface et experience utilisateur minimaliste ou le commercant a une autonomie",
   },
+  colors: [
+    { code: "#ece0d5", name: "Almond" },
+    { code: "#f7c289", name: "Mellow Apricot" },
+    { code: "#262525", name: "Eerie Black" },
+  ],
   links: {
     website: "https://ilétaitunefois.fr/",
     source: "https://github.com/ClaireMarieV/blogReact",
