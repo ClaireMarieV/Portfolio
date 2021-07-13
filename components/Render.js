@@ -1,12 +1,22 @@
-import PerspectivePicture from "./PerspectivePicture";
+import Parallax from "./Parallax";
 
 const Render = ({ project }) => (
   <div>
-    <h4>Render Home</h4>
-    <PerspectivePicture>
-      <img src={project.render} alt="render index website" />
-    </PerspectivePicture>
-    <style jsx>{``}</style>
+    <img
+      className="render-img"
+      src={project.render}
+      alt="render index website"
+    />
+    <style jsx>{`
+      .render-img {
+        filter: hue-rotate(-105deg);
+        margin: auto;
+        object-fit: cover;
+        object-position: center center;
+      }
+      .parallax img {
+      }
+    `}</style>
   </div>
 );
 
