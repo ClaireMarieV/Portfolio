@@ -14,6 +14,7 @@ import blob from "../data/2020/blob";
 import alice from "../data/2020/alice";
 import felicity from "../data/2021/felicity";
 import identity from "../data/2020/identity";
+import habaah from "../data/2021/habaah";
 
 const ProjectsPage = () => {
   const router = useRouter();
@@ -26,13 +27,13 @@ const ProjectsPage = () => {
           <div>
             <h2>
               {router.locale === "fr"
-                ? `Design graphique, d'interface, experience utilisateur & `
-                : `Graphic and Interface design, user experience & `}
+                ? `Design graphique & d'interface, experience utilisateur `
+                : `Graphic & Interface design, user experience `}
             </h2>
             <h2>
               {router.locale === "fr"
-                ? `Développement front-end`
-                : `Front-end development`}
+                ? `Développement front-end & full-stack`
+                : `Front-end & FullStack development`}
             </h2>
           </div>
         </div>
@@ -40,32 +41,32 @@ const ProjectsPage = () => {
           <ArticleLogo
             className="identity"
             title={identity.title}
-            category="Graphic Design"
-            year="2020"
+            category="Graphic Design - 2020"
           />
           <ArticleProject
-            className="blog"
-            title={blog.title}
-            category="ReactJs, UX/UI Design & Illustration"
-            year="2020"
+            className="habaah"
+            title={habaah.title}
+            category="Development, UX/UI Design -2021"
           />
           <ArticleProject
             className="blob"
             title={blob.title}
-            category="Development & UX/UI Design"
-            year="2020"
+            category="Development & UX/UI Design - 2020"
+          />
+          <ArticleProject
+            className="blog"
+            title={blog.title}
+            category="ReactJs, UX/UI Design -2020"
           />
           <ArticleProject
             className="felicity"
             title={felicity.title}
-            category="Development, UX/UI Design & Logotypes"
-            year="2021"
+            category="Development, UX/UI Design - 2021"
           />
           <ArticleProject
             className="alice"
             title={alice.title}
-            category="UI/UX Design"
-            year="2020"
+            category="UI/UX Design - 2020"
           />
         </div>
         <Mail className="mail" />
