@@ -4,7 +4,6 @@ export default {
     en: `ReactJs, development, ui design, ux design, illustration - 2019`,
     fr: `ReactJs, développement, ui design, ux design, illustration - 2019`,
   },
-  concept: "/pictures/blog/wireframe.png",
   render: "/pictures/blog/blogDesktop.png",
   about: {
     en: `"Il était une fois" is a blog originally created as a final project for the end of my training. It was initially written in PHP but i rewrote it later to learn React.`,

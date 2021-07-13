@@ -4,7 +4,6 @@ export default {
     en: "Eleventy, development, ui design, ux design, illustration - 2019",
     fr: "Eleventy, développement, ui design, ux design, illustration, 2019",
   },
-  concept: "/pictures/alice/wireframe.png",
   render: "/pictures/alice/alice.png",
   about: {
     en: `This page was created to go with the Doctolib profile of a psychologist specialized in childen and young adults.`,

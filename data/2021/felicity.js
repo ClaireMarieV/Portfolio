@@ -4,7 +4,6 @@ export default {
     en: `Wordpress, development, ui design, ux design`,
     fr: `Wordpress, developpement, ui design, ux design`,
   },
-  concept: "/pictures/felicity/felicity.png",
   render: "/pictures/felicity/index.png",
   about: {
     en: `Felicity is a simple blog to introduce a podcast and list its episodes. It uses Wordpress with a custom theme I created.`,
