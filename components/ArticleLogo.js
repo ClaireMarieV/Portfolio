@@ -11,7 +11,7 @@ const ArticleLogo = ({ title, category, year }) => {
         <div>
           <h2>{title}</h2>
           <div className="year-project">
-            <span>{year}</span>{" "}
+            <span>{category}</span>
             <Link href={fromLogo({ title })}>
               <a>
                 <h3 className="h3">
@@ -35,7 +35,7 @@ const ArticleLogo = ({ title, category, year }) => {
           text-transform: uppercase;
         }
         span {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: #cbc6e0;
         }
 
