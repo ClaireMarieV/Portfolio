@@ -10,23 +10,17 @@ export default {
     fr: `"Il était une fois" est un blog créé à l'origine comme projet final de fin de formation.
 Il a été initialement écrit en PHP et réécrit plus tard pour apprendre React.`,
   },
-  fonts: [
-    {
-      family: "Gravesend, sans-serif",
-      weight: "Bold",
-      label: "Primary",
-    },
-    {
-      family: "Arboria, sans-serif",
-      weight: "Regular",
-      label: "Secondary",
-    },
-  ],
-  colors: [
-    { code: "#262525", name: "Eerie Black" },
-    { code: "#f7c289", name: "Mellow Apricot" },
-    { code: "#ece0d5", name: "Almond" },
-  ],
+  years: "2020",
+  role: {
+    en: "FullStack Developer/UI Designer/UX Designer",
+    fr: "Developpeuse FullStack/UI Designer/UX Designer",
+  },
+  goals: {
+    en:
+      "The purpose of this website is to make a simplified e-commerce website with a minimalist interface and user experience where the merchant has autonomy",
+    fr:
+      "Le but de ce site est de faire un site e-commerce simplifié avec une interface et experience utilisateur minimaliste ou le commercant a une autonomie",
+  },
   links: {
     website: "https://ilétaitunefois.fr/",
     source: "https://github.com/ClaireMarieV/blogReact",

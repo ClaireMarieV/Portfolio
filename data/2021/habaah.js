@@ -11,7 +11,7 @@ export default {
   },
   years: "2021",
   role: {
-    en: "FullStackDeveloper/UI Designer/UX Designer",
+    en: "FullStack Developer/UI Designer/UX Designer",
     fr: "Developpeuse FullStack/UI Designer/UX Designer",
   },
   goals: {
@@ -20,8 +20,7 @@ export default {
     fr:
       "Le but de ce site est de faire un site e-commerce simplifié avec une interface et experience utilisateur minimaliste ou le commercant a une autonomie",
   },
-  render: "/pictures/habaah/indexHabaah.png",
-  render: "pictures/vogueSuit.png",
+
   colors: [
     { code: "#f9f1ea", name: "Seashell" },
     { code: "#E6C2A2", name: "Desert Sand" },

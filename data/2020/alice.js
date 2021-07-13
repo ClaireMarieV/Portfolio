@@ -10,23 +10,17 @@ export default {
     fr:
       "Cette page a été crée pour accompagner le profil Doctolib d'une psychologue spécialisée dans la période de l'enfance aux jeunes adultes compris.",
   },
-  fonts: [
-    {
-      family: "Professor,sans-serif",
-      weight: "Regular",
-      label: "Primary",
-    },
-    {
-      family: "Acumin-pro,sans-serif",
-      weight: "Bold",
-      label: "Secondary",
-    },
-    {
-      family: "Graphie,sans-serif",
-      weight: "Regular",
-      label: "Tertiary",
-    },
-  ],
+  years: "2020",
+  role: {
+    en: "UI Designer/UX Designer",
+    fr: "UI Designer/UX Designer",
+  },
+  goals: {
+    en:
+      "The purpose of this website is to make accessible to a healthcare professional thanks to a one-page website with a fun and simplified interface and user experience.",
+    fr:
+      "Le but de ce site est de rendre accessible une professionnelle de santé grace a un site one-page avec une interface et experience utilisateur ludique et simplifiée",
+  },
   colors: [
     { code: "#a9c1ed", name: "Light Steel Blue" },
     { code: "#ffe1d1", name: "Unbleached Silk" },
