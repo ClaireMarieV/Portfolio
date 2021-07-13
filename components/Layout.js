@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1400,
+          maxWidth: `auto`,
         }}
       >
         <main>{children}</main>
@@ -45,6 +45,8 @@ const Layout = ({ children }) => (
             border: 0;
           }
           body {
+            perspective: 1px;
+            transform-style: preserve-3d;
             height: 100%;
             overflow-y: scroll;
             overflow-x: hidden;
@@ -53,7 +55,7 @@ const Layout = ({ children }) => (
             background-color: #f2f4f8;
             margin: 0;
             overscroll-behavior: none;
-            letter-spacing: 0.06rem;
+            letter-spacing: 0.1rem;
             font-family: neue-haas-grotesk-display, sans-serif;
           }
           ::-webkit-scrollbar {
@@ -129,7 +131,6 @@ const Layout = ({ children }) => (
           }
 
           p {
-            font-size: 1.3rem;
             line-height: 2rem;
           }
           ul {
