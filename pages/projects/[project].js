@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 import Title from "../../components/Title";
 import Render from "../../components/Render";
 import About from "../../components/About";
-import Years from "../../components/Years";
-import Role from "../../components/Role";
 import Goals from "../../components/Goals";
 import Typography from "../../components/Typography";
 import Colors from "../../components/Colors";
@@ -40,9 +38,6 @@ const ProjectPage = () => {
         <Render project={project} />
         <About project={project} />
         <Goals project={project} />
-        <Render project={project} />
-        <Render project={project} />
-        <Render project={project} />
         <Colors project={project} />
         <Links project={project} />
       </div>
