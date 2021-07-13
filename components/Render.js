@@ -9,10 +9,8 @@ const Render = ({ project }) => (
     />
     <style jsx>{`
       .render-img {
-        filter: hue-rotate(-105deg);
         margin: auto;
         object-fit: cover;
-        object-position: center center;
       }
       .parallax img {
       }
