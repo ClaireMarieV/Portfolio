@@ -29,7 +29,7 @@ const IndexPage = () => {
           <PerspectiveWords
             text={
               router.locale === "fr"
-                ? `UNE FREELANCE FRANCAISE DEVELOPPEUSE FRONT `
+                ? `UNE FREELANCE DEVELOPPEUSE FRONT `
                 : `A FRENCH FREELANCE FRONT-END`
             }
           ></PerspectiveWords>
