@@ -29,14 +29,14 @@ const IndexPage = () => {
           <PerspectiveWords
             text={
               router.locale === "fr"
-                ? `UNE FREELANCE DEVELOPPEUSE FRONT `
+                ? `UNE FREELANCE FRANCAISE`
                 : `A FRENCH FREELANCE FRONT-END`
             }
           ></PerspectiveWords>
           <PerspectiveWords
             text={
               router.locale === "fr"
-                ? `ET UX/UI DESIGNER`
+                ? `DEVELOPPEUSE WEB ET UX/UI DESIGNER`
                 : `DEVELOPER AND UI/UX DESIGNER`
             }
           ></PerspectiveWords>
@@ -154,6 +154,7 @@ const IndexPage = () => {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 4rem;
+          justify-items: center;
         }
 
         @media (max-width: 800px) {
