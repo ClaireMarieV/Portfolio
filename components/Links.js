@@ -42,7 +42,7 @@ const Links = ({ project }) => {
           bottom: 0;
           left: 0;
           width: 100%;
-          height: 1rem;
+          height: 0.7rem;
           z-index: -1;
           opacity: 0.8;
           background: #dedbeb;
