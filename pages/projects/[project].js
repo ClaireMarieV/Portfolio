@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import Layout from "../../components/Layout";
 import SEO from "../../components/Seo";
 import { useRouter } from "next/router";
@@ -40,6 +41,11 @@ const ProjectPage = () => {
         <Goals project={project} />
         <Colors project={project} />
         <Links project={project} />
+        <Link href="/projects">
+          <a className="all-projects">
+            <span>All projects</span>
+          </a>
+        </Link>
       </div>
       <style jsx>{`
         .project {
@@ -56,11 +62,11 @@ const ProjectPage = () => {
           grid-template-columns: 1fr 1fr;
           gap: 2rem;
         }
-        // .three-columns {
-        //   display: grid;
-        //   grid-template-columns: repeat(3, 1fr);
-        //   gap: 2rem;
-        // }
+
+        .all-projects > span {
+          font-size: 1.5rem;
+        }
+
         @media (max-width: 600px) {
           .project {
             display: block;
