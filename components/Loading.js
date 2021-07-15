@@ -164,6 +164,11 @@ const Loading = () => (
           top: 50vh;
         }
       }
+      @media (max-width: 600px) {
+        .loading h1.load {
+          display: none;
+        }
+      }
     `}</style>
   </div>
 );

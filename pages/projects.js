@@ -109,7 +109,7 @@ const ProjectsPage = () => {
             color: inherit;
           }
         }
-        @media (max-width: 500px) {
+        @media (max-width: 570px) {
           .listing-projects {
             grid-template-columns: 1fr;
           }

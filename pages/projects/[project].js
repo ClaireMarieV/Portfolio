@@ -41,11 +41,13 @@ const ProjectPage = () => {
         <Goals project={project} />
         <Colors project={project} />
         <Links project={project} />
-        <Link href="/projects">
-          <a className="all-projects">
-            <span>All projects</span>
-          </a>
-        </Link>
+        <div>
+          <Link href="/projects">
+            <a className="all-projects">
+              <span>All projects</span>
+            </a>
+          </Link>
+        </div>
       </div>
       <style jsx>{`
         .project {
@@ -66,11 +68,16 @@ const ProjectPage = () => {
         .all-projects > span {
           font-size: 1.5rem;
         }
-
+        .all-projects {
+          display: flex;
+          justify-content: center;
+        }
         @media (max-width: 600px) {
           .project {
-            display: block;
+            display: flex;
+            flex-direction: column;
             padding: 2rem;
+            row-gap: 5rem;
           }
           .two-columns {
             grid-template-columns: auto;
