@@ -4,7 +4,7 @@ const Title = ({ project }) => {
   const router = useRouter();
 
   return (
-    <div className="article-title">
+    <section className="article-title">
       <h1>{project.title}</h1>
       <h3>{project.category[router.locale]}</h3>
       <style jsx>{`
@@ -21,7 +21,7 @@ const Title = ({ project }) => {
           font-weight: 400;
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

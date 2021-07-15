@@ -4,7 +4,7 @@ const About = ({ project }) => {
   const router = useRouter();
 
   return (
-    <div className="about">
+    <section className="about">
       <p>{project.about[router.locale]} </p>
       <style jsx>{`
         .about {
@@ -21,7 +21,7 @@ const About = ({ project }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 

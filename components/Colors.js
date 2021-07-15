@@ -2,7 +2,7 @@ import React from "react";
 import Color from "./Color";
 
 const Colors = ({ project }) => (
-  <div>
+  <section>
     <h4>Colors</h4>
     <div className="colors">
       {project.colors.map((color) => (
@@ -24,7 +24,7 @@ const Colors = ({ project }) => (
         }
       }
     `}</style>
-  </div>
+  </section>
 );
 
 export default Colors;

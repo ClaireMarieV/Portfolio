@@ -4,7 +4,7 @@ import { useState } from "react";
 const Links = ({ project }) => {
   const router = useRouter();
   return (
-    <div className="link-view">
+    <section className="link-view">
       <div className="link">
         {project.links.source && (
           <a href={project.links.source} target="_blank">
@@ -64,7 +64,7 @@ const Links = ({ project }) => {
           }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 export default Links;
